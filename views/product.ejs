@@ -8,10 +8,10 @@
         <!-- Product Details -->
         <div class="flex flex-col space-y-5 px-9">
             <div class="text-lg text-gray-800 font-semibold tracking-wider md:text-xl lg:text-3xl"><%= name %></div>
-            <p class="text-gray-800 text-lg"><%= desc %></p>
+            <p class="text-gray-800 text-lg"><%= description %></p>
             <p class="text-gray-600 text-lg">&#8377;<%= price %></p>
-            <form action="/products/<%= url %>" method="post">
-                <input type="hidden" id="url" value="<%= url %>">
+            <form action="/products/<%= slug %>" method="post">
+                <input type="hidden" id="slug" value="<%= slug %>">
                 <button type="submit" class="px-5 py-3 bg-green-400 text-white rounded-full text-center text-2xl hover:text-green-400 hover:bg-white">Whatsapp Link</button>
             </form>
             <!-- <a href="" class="px-5 py-3 bg-green-400 text-white rounded-full text-center text-2xl hover:text-green-400 hover:bg-white">Whatsapp Link</a> -->
