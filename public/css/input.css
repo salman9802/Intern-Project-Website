@@ -1,3 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hamburger--open {
+    @apply -translate-x-0;
+}
+.hamburger--close {
+    @apply -translate-x-full;
+}
+
+.banner {
+    @apply absolute h-full w-full;
+}
+.banner-img {
+    @apply opacity-0 object-cover object-left;
+    transition: opacity 1000ms ease-in;
+    height: 100%;
+    width: 100%;
+}
+.banner-content {
+    @apply hidden p-5 text-center w-3/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex-col space-y-2 md:space-y-7 md:w-1/2 lg:w-1/5;
+}
+.banner-content > h4 {
+    @apply text-white font-semibold uppercase text-sm lg:text-xs;
+}
+.banner-content > h2 {
+    @apply text-white text-lg uppercase md:text-3xl lg:text-4xl;
+}
+.banner-content > button {
+    /* @apply w-4/5 mx-auto cursor-pointer text-sm px-3 py-1 bg-white md:px-5 md:py-3; */
+    @apply  mx-auto cursor-pointer text-sm px-5 py-1 bg-white md:px-5 md:py-3;
+}
+.banner-selected img {
+    opacity: 1;
+}
+.banner-selected .banner-content {
+    display: flex;
+}
+
+/* .demo-image::before {
+    z-index: -999;
+} */
+
+.product-card {
+    @apply flex flex-col items-center space-y-5 snap-start min-w-[50vw] md:min-w-[33vw] lg:min-w-[25vw];
+}
+.product-card > img {
+    @apply h-4/5 object-contain object-center;
+}
+.product-card > .product-name {
+    @apply font-semibold text-gray-800;
+}
+.product-card > .product-price {
+    @apply text-gray-600;
+}
+
+.section {
+    @apply relative w-11/12 mx-auto;
+}
+.section-image-wrapper {
+    @apply relative;
+}
+.section-image-wrapper > img {
+    @apply relative z-20;
+}
+.section-image-wrapper > .section-overlay {
+    @apply absolute inset-0 bg-black z-30 opacity-40;
+}
+.section > .section-content {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 flex flex-col space-y-5;
+}
+
+.dropdown-link {
+    @apply flex flex-col space-y-0 items-center relative z-50;
+    /* @apply flex flex-col space-y-5 items-center; */
+    /* @apply relative z-50; */
+}
+.dropdown-content {
+    @apply flex flex-col divide-y divide-gray-800 absolute bg-red-500;
+    /* @apply top-4; */
+    /* z-index: 60; */
+}
+.dropdown-content > a {
+    @apply py-6;
+}

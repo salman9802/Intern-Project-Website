@@ -6,6 +6,9 @@ import express from "express";
 import expressLayouts from "express-ejs-layouts";
 import defaultRoutes from "./routes/index.mjs";
 
+import { connectDB } from "./config/db.mjs";
+connectDB();
+
 const PORT = 80;
 const app = express();
 
@@ -13,13 +16,13 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// Set static folder
+app.use(express.static(path.join(__dirname, "public")));
+
 // Set ejs layouts
 app.use(expressLayouts);
 // Set ejs view engine as ejs
 app.set("view engine", "ejs");
-
-// Set static folder
-app.use(express.static(path.join(__dirname, "public")));
 
 // Setup express json & body parsers
 app.use(express.json());

@@ -1,2 +1,337 @@
-<%- include('./partials/header.ejs') %>
-<h1>Index Page</h1>
+<div id="hamburger-overlay" class="hidden w-screen h-screen absolute z-40 bg-black opacity-30"></div>
+<div id="hamburger-menu"
+    class="px-7 h-screen w-full absolute z-50 bg-white flex flex-col space-y-5 -translate-x-full transition-transform md:w-1/2">
+    <span id="close-hamburger-btn" class="text-4xl py-5">&times;</span>
+    <div class="flex flex-col divide-y divide-gray-800">
+        <div class="py-5 flex items-center justify-between">
+            <span class="text-gray-800">BEST SELLER</span>
+            <span>&rang;</span>
+        </div>
+        <div class="py-5 flex items-center justify-between">
+            <span class="text-gray-800">FRAGARANCE</span>
+            <span>&rang;</span>
+        </div>
+        <div class="py-5 flex items-center justify-between">
+            <span class="text-gray-800">BRANDS</span>
+            <span>&rang;</span>
+        </div>
+        <div class="py-5 flex items-center justify-between">
+            <span class="text-gray-800">FANCY BOTTLE</span>
+            <span>&rang;</span>
+        </div>
+        <div class="py-5 flex items-center justify-between">
+            <span class="text-gray-800">ACCESSORIES</span>
+            <span>&rang;</span>
+        </div>
+        <div class="py-5 flex items-center justify-between">
+            <span class="text-gray-800">DECANT/SAMPLE</span>
+            <span>&rang;</span>
+        </div>
+    </div>
+</div>
+
+<div class="relative w-screen h-[400px] md:h-screen">
+
+    <%- include('./partials/header.ejs') %>
+
+        <!-- Banner -->
+        <div class="absolute top-0 left-0 right-0 z-20 w-screen min-h-full overflow-hidden">
+            <!-- Slider Container -->
+            <!-- <div class="relative"> -->
+            <!-- Banner 1 -->
+            <div class="banner">
+                <!-- Image -->
+                <img class="banner-img" src="/assets/img/banner-1_w-1800.webp" alt="" srcset="
+              /assets/img/banner-1_w-300.avif   300w,
+              /assets/img/banner-1_w-600.webp   600w,
+              /assets/img/banner-1_w-1000.webp 1000w
+            " />
+                <!-- Content -->
+                <div class="banner-content">
+                    <h4 class="">
+                        Junaid Al Atoor
+                    </h4>
+                    <h2 class="">
+                        The blue attar
+                    </h2>
+                    <button class="">SHOP NOW</button>
+                </div>
+            </div>
+            <!-- Banner 2 -->
+            <div class="banner">
+                <!-- Image -->
+                <img class="banner-img" src="/assets/img/banner-2_w-1800.webp" alt="" srcset="
+              /assets/img/banner-2_w-300.avif   300w,
+              /assets/img/banner-2_w-600.webp   600w,
+              /assets/img/banner-2_w-1000.webp 1000w
+            " />
+                <!-- Content -->
+                <div class="banner-content">
+                    <h4 class="">
+                        Swiss Arabian
+                    </h4>
+                    <h2 class="">
+                        MUKHALLATH MALIK
+                    </h2>
+                    <button class="">SHOP NOW</button>
+                </div>
+            </div>
+            <!-- Banner 3 -->
+            <div class="banner">
+                <!-- Image -->
+                <img class="banner-img" src="/assets/img/banner-3_w-1800.webp" alt="" srcset="
+              /assets/img/banner-3_w-300.avif   300w,
+              /assets/img/banner-3_w-600.webp   600w,
+              /assets/img/banner-3_w-1000.webp 1000w
+            " />
+                <!-- Content -->
+                <div class="banner-content">
+                    <h4 class="">
+                        Junaid Al Atoor
+                    </h4>
+                    <h2 class="">
+                        FIRDAUS
+                    </h2>
+                    <button class="">SHOP NOW</button>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+</div>
+
+<!-- Wrapper -->
+<div class="pt-16 pb-8 divide-y divide-gray-300 bg-gray-200 w-screen">
+    <!-- Shop - Premium Best Seller -->
+    <div class="py-8 flex flex-col space-y-7">
+        <!-- Title(s) -->
+        <div class="flex flex-col space-y-3 items-center">
+            <h5 class="text-gray-800 text-sm">SHOP</h5>
+            <p class="text-xl text-gray-800 font-semibold">PREMIUM BEST SELLER</p>
+            <!-- <img class="mx-auto w-11/12" src="assets/img/p-1_w-1000.webp" alt="" srcset="assets/img/p-1_w-300.avif 300w, assets/img/p-1_w-600.webp 600w"> -->
+            <!-- <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button> -->
+        </div>
+        <!-- Product(s) -->
+        <div class="flex flex-col md:flex-row md:space-x-7">
+            <!-- Left Portion -->
+            <div class="w-11/12 mx-auto md:w-1/2">
+                <img class="mx-auto w-11/12 object-center object-contain" src="assets/img/p-1_w-1000.webp" alt=""
+                    srcset="
+            assets/img/p-1_w-300.avif   300w,
+            assets/img/p-1_w-600.webp   600w,
+            assets/img/p-1_w-1000.webp 1000w
+          " />
+                <button class="block w-2/5 mx-auto my-3 px-3 py-1 text-white bg-black md:px-5 md:py-3 md:hidden">
+                    VIEW PRODUCTS
+                </button>
+            </div>
+            <!-- Right Portion -->
+            <div class="hidden w-1/2 flex-col space-y-5 items-center md:flex">
+                <img class="mx-auto w-1/2" src="assets/img/p-1_w-1000.webp" alt="" srcset="
+            assets/img/p-1_w-300.avif   300w,
+            assets/img/p-1_w-600.webp   600w,
+            assets/img/p-1_w-1000.webp 1000w
+          " />
+                <h5 class="text-gray-800 font-semibold text-lg">
+                    MUKHALLATH JUNAID ATTAR
+                </h5>
+                <p class="text-gray-600">From &#8377;400.00</p>
+                <button class="w-2/5 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">
+                    VIEW PRODUCTS
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Featured Collection - Junaid Al Atoor Attar -->
+    <div class="py-24 flex flex-col space-y-7">
+        <!-- Title(s) -->
+        <div class="flex flex-col space-y-3 items-center">
+            <h5 class="text-gray-800 text-sm">FEATURED COLLECTION</h5>
+            <p class="text-xl text-gray-800 font-semibold">JUNAID AL ATOOR ATTAR</p>
+        </div>
+        <!-- Product(s) -->
+        <div
+            class="products mx-auto flex space-x-5 w-11/12 overflow-x-scroll whitespace-nowrap no-scrollbar snap-mandatory snap-x cursor-grab lg:container">
+            <!-- Product Card -->
+            <% if (featured_products.length > 0) { %>
+                <% for( let featured_product of featured_products ) { %>
+                    <div class="product-card">
+                        <a href="/products/<%= featured_product.slug %>" target="_blank">
+                            <img class=""
+                                src="<%= featured_product.absolute_img_url %>"
+                                alt="" />
+                            <p class="product-name"><%= featured_product.name %></p>
+                            <p class="product-price">From &#8377;<%= featured_product.price %></p>
+                        </a>
+                    </div>
+                <% } %>
+            <% } else { %>
+                <div class="product-card">
+                    <img class=""
+                        src="https://junaidalatoor.com/cdn/shop/products/image_b4a4b7ca-b894-4865-a3f2-44aec9e724a5.jpg?v=1668222152&width=2048"
+                        alt="" />
+                    <p class="product-name">HOOR ATTAR</p>
+                    <p class="product-price">From &#8377;400.00</p>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    <!-- Section(s) -->
+    <div class="py-24 mx-auto grid gap-1 md:grid-cols-2 lg:grid-cols-3 lg:container">
+        <!-- Section 1-->
+        <div class="section">
+            <div class="section-image-wrapper">
+                <img src="//junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=667"
+                    alt="MEN PERFUMES" srcset="
+              //junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=200 200w,
+              //junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=300 300w,
+              //junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=400 400w,
+              //junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=500 500w,
+              //junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=600 600w
+            " width="667" height="1000" loading="lazy" sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw"
+                    draggable="false"/>
+                <div class="section-overlay"></div>
+            </div>
+            <div class="section-content">
+                <p class="text-white font-semibold text-lg md:text-xl">MEN'S PERFUMES</p>
+                <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
+            </div>
+        </div>
+        <!-- Section 2-->
+        <div class="section">
+            <div class="section-image-wrapper">
+                <img src="//junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=752" alt=""
+                    srcset="//junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=200 200w, //junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=300 300w, //junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=400 400w, //junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=500 500w, //junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=600 600w"
+                    width="752" height="752" loading="lazy" sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw"
+                    class="" draggable="false">
+                <div class="section-overlay"></div>
+            </div>
+            <div class="section-content">
+                <p class="text-white font-semibold text-lg md:text-xl">WOMEN'S PERFUMES</p>
+                <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
+            </div>
+        </div>
+        <!-- Section 3-->
+        <div class="section">
+            <div class="section-image-wrapper">
+                <img src="//junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=742" alt=""
+                    srcset="//junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=200 200w, //junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=300 300w, //junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=400 400w, //junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=500 500w, //junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=600 600w"
+                    width="742" height="1000" loading="lazy"
+                    sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw" class=""
+                    draggable="false">
+                <div class="section-overlay"></div>
+            </div>
+            <div class="section-content">
+                <p class="text-white font-semibold text-lg md:text-xl">JUNAID PERFUMES</p>
+                <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
+            </div>
+        </div>
+        <!-- Section 4-->
+        <div class="section">
+            <div class="section-image-wrapper">
+                <img src="//junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=788" alt=""
+                    srcset="//junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=200 200w, //junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=300 300w, //junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=400 400w, //junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=500 500w, //junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=600 600w"
+                    width="788" height="1000" loading="lazy"
+                    sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw" class=""
+                    draggable="false">
+                <div class="section-overlay"></div>
+            </div>
+            <div class="section-content">
+                <p class="text-white font-semibold text-lg md:text-xl">MEN'S ATTAR</p>
+                <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
+            </div>
+        </div>
+        <!-- Section 5-->
+        <div class="section">
+            <div class="section-image-wrapper">
+                <img src="//junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=3072"
+                    alt=""
+                    srcset="//junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=200 200w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=300 300w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=400 400w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=500 500w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=600 600w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=800 800w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=1000 1000w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=1200 1200w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=1400 1400w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=1600 1600w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=1800 1800w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=2000 2000w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=2200 2200w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=2400 2400w"
+                    width="3072" height="3840" loading="lazy"
+                    sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw" class=""
+                    draggable="false">
+                    <div class="section-overlay"></div>
+            </div>
+            <div class="section-content">
+                <p class="text-white font-semibold text-lg md:text-xl">WOMEN'S ATTAR</p>
+                <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
+            </div>
+        </div>
+        <!-- Section 6-->
+        <div class="section">
+            <div class="section-image-wrapper">
+                <img src="//junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=1080" alt=""
+                    srcset="//junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=200 200w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=300 300w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=400 400w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=500 500w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=600 600w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=800 800w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=1000 1000w"
+                    width="1080" height="1080" loading="lazy"
+                    sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw" class=""
+                    draggable="false">
+                    <div class="section-overlay"></div>
+            </div>
+            <div class="section-content">
+                <p class="text-white font-semibold text-lg md:text-xl">JUNAID ATTARS</p>
+                <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- SHOP - OUR BEST SELLER -->
+    <div class="py-24 mx-auto flex flex-col space-y-7 lg:container">
+        <!-- Title(s) -->
+        <div class="flex flex-col space-y-3 items-center">
+            <h5 class="text-gray-800 text-sm">SHOP</h5>
+            <p class="text-xl text-gray-800 font-semibold">OUR BEST SELLER</p>
+        </div>
+        <!-- Product -->
+        <div class="flex flex-col space-y-5 md:flex-row md:space-x-7 md:space-y-0">
+            <div class="w-11/12 mx-auto md:w-1/2">
+                <img class="mx-auto w-11/12 object-center object-contain"
+                    src="https://junaidalatoor.com/cdn/shop/products/image_9e404e5d-34d1-448a-8c33-9ae7874861d9.jpg?v=1662006469&width=1200"
+                    alt="" srcset="
+                  https://junaidalatoor.com/cdn/shop/products/image_9e404e5d-34d1-448a-8c33-9ae7874861d9.jpg?v=1662006469&width=300  300w,
+                  https://junaidalatoor.com/cdn/shop/products/image_9e404e5d-34d1-448a-8c33-9ae7874861d9.jpg?v=1662006469&width=600  600w,
+                  https://junaidalatoor.com/cdn/shop/products/image_9e404e5d-34d1-448a-8c33-9ae7874861d9.jpg?v=1662006469&width=1000 1000w
+                " />
+            </div>
+            <div class="w-11/12 text-center flex flex-col space-y-2 md:w-1/2 md:justify-center">
+                <h5 class="text-gray-800 font-semibold text-lg">
+                    MUKHALLATH JUNAID ATTAR
+                </h5>
+                <p class="text-gray-600">From &#8377;400.00</p>
+                <button class="w-2/5 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">
+                    VIEW PRODUCTS
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- Features -->
+    <div class="mx-auto lg:container">
+        <div class="flex flex-col space-y-5 md:flex-row md:space-y-0 md:justify-between md:mx-auto">
+            <div class="py-9 flex flex-col space-y-3 items-center">
+                <img src="/assets/truck.svg" alt="" class="w-8 h-8">
+                <p>FREE DOMESTIC DELIVERY</p>
+                <p>On all order above 999 | Whatsapp 1234567890</p>
+            </div>
+            <div class="py-9 flex flex-col space-y-3 items-center">
+                <img src="/assets/heart.svg" alt="" class="w-8 h-8">
+                <p>FREE SAMPLE</p>
+                <p>Get free complimentary sample with each order.</p>
+            </div>
+            <div class="py-9 flex flex-col space-y-3 items-center">
+                <img src="/assets/heart.svg" alt="" class="w-8 h-8">
+                <p>SECURE PAYMENTS</p>
+                <p>Encrypted data to ensure payment security.</p>
+            </div>
+            <div class="py-9 flex flex-col space-y-3 items-center">
+                <img src="/assets/chat.svg" alt="" class="w-8 h-8">
+                <p>CUSTOMER SUPPORT</p>
+                <p>Feel free to whatsapp for any queries.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('./partials/footer.ejs') %>
+
+    <script src="/js/index.js" defer></script>
+    <script src="/js/hamburger.js" defer></script>
+    <script src="/js/home-products.js" defer></script>

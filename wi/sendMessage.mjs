@@ -92,7 +92,7 @@ export default async (product) => {
             },
             {
                 type: "text",
-                text: description // Product Description
+                text: description.join("\\n") // Product Description
             }
         ]
     };
