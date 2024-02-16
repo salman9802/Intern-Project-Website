@@ -1,6 +1,22 @@
-<!-- TODO: Add header -->
+<!-- <div class="text-black">
+</div> -->
 
 <div class="bg-slate-100 w-screen min-h-screen">
+    <!-- Alerts -->
+    <% if (locals.response) { %>
+        <% if (response.status === "success") { %>
+            <div class="notification-alert w-11/12 mx-auto my-2 px-3 py-2 flex items-center justify-center space-x-1 bg-green-200 text-green-700 rounded-lg md:px-5 md:py-3 md:space-x-3 lg:container">
+                <span class="bg-white px-3 py-1 rounded-full">&check;</span>
+                <span>Whatsapp message sent to <%= response.to %>. It will arrive in a minute.</span> 
+            </div>
+        <% } else { %>
+            <div class="notification-alert w-11/12 mx-auto my-2 px-3 py-2 flex items-center justify-center space-x-1 bg-red-200 text-red-700 rounded-lg md:px-5 md:py-3 md:space-x-3 lg:container">
+                <span class="bg-white px-3 py-1 rounded-full">&excl;</span>
+                <span>Failed to send Whatsapp message to <%= response.to %>.</span>
+            </div>
+        <% } %>
+    <% } %>
+    
     <!-- Flex container -->
     <div class="flex flex-col space-y-5 md:flex-row md:space-y-0 md:space-x-7 md:py-9 lg:container lg:mx-auto">
         <!-- Image -->
@@ -19,3 +35,5 @@
         </div>
     </div>
 </div>
+
+<%- include('./partials/footer.ejs') %>

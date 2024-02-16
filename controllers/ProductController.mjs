@@ -23,7 +23,12 @@ export async function fetchProduct(req, res) {
     else {
         const product = productFound[0];
         res.render("product", {
-            product
+            product,
+            // response: {
+            //     status: "success",
+            //     to: process.env.WHATSAPP_TO,
+
+            // }
         });
     }
 }
@@ -76,15 +81,20 @@ export async function sendWhatsapp(req, res) {
                 ]
             }
         });
-        if(response) res.status(200).json({msg: "Whatsapp message send", response});
-        else res.status(500).json({msg: "Cannot send message", err: err});
-        // sendMessage(product)
-        //     .then(response => {
-        //         res.status(200).json({msg: "Whatsapp message send", response});
-        //     })
-        //     .catch(err => {
-        //         res.status(500).json({msg: "Cannot send message", err: err});
-        //     });
+
+        // if(response) res.status(200).json({msg: "Whatsapp message send", response});
+        // else res.status(500).json({msg: "Cannot send message", err: err});
+        
+        res.render("product", {
+            product,
+            response: {
+                status: response ? "success" : "failure",
+                to: response ? response.contacts[0].input : undefined,
+                messageID: response ? response.messages[0].id : undefined,
+                messageStatus: response ? response.messages[0].message_status : undefined,
+                err
+            }
+        });
 
     }
 }
