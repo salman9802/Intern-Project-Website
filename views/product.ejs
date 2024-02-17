@@ -12,7 +12,10 @@
         <% } else { %>
             <div class="notification-alert w-11/12 mx-auto my-2 px-3 py-2 flex items-center justify-center space-x-1 bg-red-200 text-red-700 rounded-lg md:px-5 md:py-3 md:space-x-3 lg:container">
                 <span class="bg-white px-3 py-1 rounded-full">&excl;</span>
-                <span>Failed to send Whatsapp message to <%= response.to %>.</span>
+                <span>Failed to send Whatsapp message.</span>
+                <% if (response.err) { %>
+                    <script>console.log(JSON.parse(<%= response.err %>));</script>
+                <% } %>
             </div>
         <% } %>
     <% } %>
@@ -23,13 +26,22 @@
         <img src="<%= product.absolute_img_url %>" alt="" class="w-screen md:w-1/2">
         <!-- Product Details -->
         <div class="flex flex-col space-y-5 px-9">
+            <!-- Name -->
             <div class="text-lg text-gray-800 font-semibold tracking-wider md:text-xl lg:text-3xl"><%= product.name %></div>
-            <% for (const line of product.description) { %>
-                <p class="text-gray-800 text-lg"><%= line %></p>
-            <% } %>
-            <p class="text-gray-600 text-lg">&#8377;<%= product.price %></p>
-            <form action="/products/<%= product.slug %>" method="post">
-                <button type="submit" class="px-5 py-3 bg-green-400 text-white rounded-full text-center text-2xl hover:text-green-400 hover:bg-white">Whatsapp Link</button>
+            <!-- Description -->
+            <div class="flex flex-col space-y-2">
+                <% for (const line of product.description) { %>
+                    <p class="text-gray-800 text-lg"><%= line %></p>
+                <% } %>
+            </div>
+            <!-- Price -->
+            <p class="text-gray-600 text-lg">&#8377; <%= product.price.toFixed(2) %></p>
+            <!-- Form -->
+            <form action="/products/<%= product.slug %>" method="post" class="w-1/2 mx-auto flex flex-col space-y-3">
+                <input type="text" name="user_name" id="user_name" placeholder="Name"
+                class="outline-none px-3 py-2 border border-gray-300" />
+                <!-- <button type="submit" class="px-5 py-3 bg-green-400 text-white rounded-full text-center text-2xl hover:text-green-400 hover:bg-white">Whatsapp Link</button> -->
+                <button type="submit" class="w-3/4 mx-auto px-5 py-3 bg-transparent text-black rounded-lg text-center text-lg relative overflow-x-hidden z-10 border border-gray-300 before:inline-block before:absolute before:inset-0 before:bg-black before:-translate-x-full before:transition-transform before:-z-10 hover:before:translate-x-0 hover:text-white">Whatsapp Product</button>
             </form>
             <!-- <a href="" class="px-5 py-3 bg-green-400 text-white rounded-full text-center text-2xl hover:text-green-400 hover:bg-white">Whatsapp Link</a> -->
         </div>

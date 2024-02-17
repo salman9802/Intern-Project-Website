@@ -23,12 +23,7 @@ export async function fetchProduct(req, res) {
     else {
         const product = productFound[0];
         res.render("product", {
-            product,
-            // response: {
-            //     status: "success",
-            //     to: process.env.WHATSAPP_TO,
-
-            // }
+            product
         });
     }
 }
@@ -39,7 +34,7 @@ export async function sendWhatsapp(req, res) {
     });
     if(!productFound) res.sendStatus(404);
     else {
-        const username = "Salman";
+        const userName = req.body.user_name;
         const product = productFound[0];
         const to = process.env.WHATSAPP_TO;
         
@@ -61,7 +56,7 @@ export async function sendWhatsapp(req, res) {
                 parameters: [
                     {
                         type: "text",
-                        text: username // User name
+                        text: userName // User name
                     },
                     {
                         type: "text",
@@ -81,9 +76,6 @@ export async function sendWhatsapp(req, res) {
                 ]
             }
         });
-
-        // if(response) res.status(200).json({msg: "Whatsapp message send", response});
-        // else res.status(500).json({msg: "Cannot send message", err: err});
         
         res.render("product", {
             product,
