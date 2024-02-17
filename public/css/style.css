@@ -638,10 +638,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
 .block {
   display: block;
 }
@@ -694,6 +690,10 @@ video {
   width: 40%;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -708,10 +708,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .-translate-x-full {
@@ -1324,26 +1320,16 @@ video {
 
 .dropdown-link {
   position: relative;
-  z-index: 50;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.dropdown-link > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0px * var(--tw-space-y-reverse));
-}
-
-.dropdown-link {
+  /* @apply flex flex-col space-y-0 items-center relative z-50; */
   /* @apply flex flex-col space-y-5 items-center; */
   /* @apply relative z-50; */
 }
 
 .dropdown-content {
-  position: absolute;
+  /* Spaces not allowed in calc() */
+  visibility: hidden;
   display: flex;
+  min-width: 100%;
   flex-direction: column;
 }
 
@@ -1352,19 +1338,38 @@ video {
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
   --tw-divide-opacity: 1;
-  border-color: rgb(31 41 55 / var(--tw-divide-opacity));
+  border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
 
 .dropdown-content {
+  border-radius: 0.125rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-  /* @apply top-4; */
-  /* z-index: 60; */
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  position: absolute;
+  top: calc(100% + 20px);
+}
+
+.peer\/dropdown:hover ~ .dropdown-content {
+  visibility: visible;
+  opacity: 1;
 }
 
 .dropdown-content > a {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1rem;
+  padding-right: 4rem;
+}
+
+.dropdown-content > a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
