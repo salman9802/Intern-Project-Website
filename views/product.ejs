@@ -13,9 +13,6 @@
             <div class="notification-alert w-11/12 mx-auto my-2 px-3 py-2 flex items-center justify-center space-x-1 bg-red-200 text-red-700 rounded-lg md:px-5 md:py-3 md:space-x-3 lg:container">
                 <span class="bg-white px-3 py-1 rounded-full">&excl;</span>
                 <span>Failed to send Whatsapp message.</span>
-                <% if (response.err) { %>
-                    <script>console.log(JSON.parse(<%= response.err %>));</script>
-                <% } %>
             </div>
         <% } %>
     <% } %>

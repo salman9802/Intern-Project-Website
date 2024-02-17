@@ -3,7 +3,8 @@ dotenv.config();
 
 import ProductModel from "../models/ProductModel.mjs";
 import WhatsappMessage from "../wi/WhatsappMessage.mjs";
-// import sendMessage from "../wi/sendMessage.mjs";
+import WhatsappApiResponseModel from "../models/WhatsappApiResponseModel.mjs";
+
 
 export async function fetchFeaturedProducts() {
     try {
@@ -77,6 +78,12 @@ export async function sendWhatsapp(req, res) {
             }
         });
         
+        // Save api response in MongoDB
+        new WhatsappApiResponseModel({
+            response,
+            error: err?.error
+        }).save();
+
         res.render("product", {
             product,
             response: {
