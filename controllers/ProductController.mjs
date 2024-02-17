@@ -35,20 +35,61 @@ export async function sendWhatsapp(req, res) {
     });
     if(!productFound) res.sendStatus(404);
     else {
-        const userName = req.body.user_name;
         const product = productFound[0];
+        const userName = req.body.user_name;
         const to = process.env.WHATSAPP_TO;
         
         // Send whatsapp message
         const whatsappMessage = new WhatsappMessage();
+        // const [ response, err ] = await whatsappMessage.sendTemplateMessage({
+        //     to,
+        //     messageHeader: {
+        //         type: "header",
+        //         parameters: [
+        //             {
+        //                 type: "text",
+        //                 text: product.name // Product name
+        //             }
+        //         ]
+        //     },
+        //     messageBody: {
+        //         type: "body",
+        //         parameters: [
+        //             {
+        //                 type: "text",
+        //                 text: userName // User name
+        //             },
+        //             {
+        //                 type: "text",
+        //                 text: product.description.join("\\n") // Product Description
+        //             }
+        //         ]
+        //     },
+        //     messageButton: {
+        //         type: "button",
+        //         sub_type: "url", // Button Type
+        //         index: 0, // Button Index
+        //         parameters: [
+        //             {
+        //                 type: "text",
+        //                 text: product.slug 
+        //             }
+        //         ]
+        //     }
+        // });
+
         const [ response, err ] = await whatsappMessage.sendTemplateMessage({
+            template: "test_template_2",
             to,
             messageHeader: {
                 type: "header",
                 parameters: [
                     {
-                        type: "text",
-                        text: product.name // Product name
+                        type: "image",
+                        image: {
+                            link: product.absolute_img_url, // Product image url
+                            // caption: product.name // Product caption
+                        }
                     }
                 ]
             },
@@ -58,6 +99,10 @@ export async function sendWhatsapp(req, res) {
                     {
                         type: "text",
                         text: userName // User name
+                    },
+                    {
+                        type: "text",
+                        text: product.name // Product name
                     },
                     {
                         type: "text",
