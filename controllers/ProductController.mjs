@@ -125,7 +125,7 @@ export async function sendWhatsapp(req, res) {
         
         // Save api response in MongoDB
         new WhatsappApiResponseModel({
-            response,
+            response: response ? response : null,
             error: err?.error
         }).save();
 
