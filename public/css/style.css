@@ -719,14 +719,6 @@ video {
   cursor: pointer;
 }
 
-.snap-x {
-  scroll-snap-type: x var(--tw-scroll-snap-strictness);
-}
-
-.snap-mandatory {
-  --tw-scroll-snap-strictness: mandatory;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -1074,6 +1066,8 @@ video {
   scrollbar-width: none;
 }
 
+/* Hamburger */
+
 .hamburger--open {
   --tw-translate-x: -0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1083,6 +1077,8 @@ video {
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
+/* Banner */
 
 .banner {
   position: absolute;
@@ -1212,9 +1208,7 @@ video {
   display: flex;
 }
 
-/* .demo-image::before {
-    z-index: -999;
-} */
+/* Product Card */
 
 .product-card {
   display: flex;
@@ -1261,6 +1255,8 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+/* Section */
+
 .section {
   position: relative;
   margin-left: auto;
@@ -1304,6 +1300,8 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+/* Header Dropdown */
+
 .dropdown-link {
   position: relative;
 }
@@ -1338,7 +1336,12 @@ video {
   top: calc(100% + 20px);
 }
 
-.peer\/dropdown:hover ~ .dropdown-content {
+.group\/dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.group\/dropdown:focus-within .dropdown-content {
   visibility: visible;
   opacity: 1;
 }
@@ -1354,6 +1357,8 @@ video {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
+
+/* Button */
 
 .primary-btn-bordered {
   position: relative;
@@ -1384,10 +1389,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  content: var(--tw-content);
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  content: var(--tw-content);
+  transition-duration: 500ms;
 }
 
 .primary-btn-bordered {
@@ -1432,10 +1437,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-  content: var(--tw-content);
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  content: var(--tw-content);
+  transition-duration: 500ms;
 }
 
 .primary-btn-full::after {

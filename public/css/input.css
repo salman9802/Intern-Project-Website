@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hamburger */
 .hamburger--open {
     @apply -translate-x-0;
 }
 .hamburger--close {
     @apply -translate-x-full;
 }
-
+/* Banner */
 .banner {
     @apply absolute h-full w-full;
 }
@@ -37,11 +38,7 @@
 .banner-selected .banner-content {
     display: flex;
 }
-
-/* .demo-image::before {
-    z-index: -999;
-} */
-
+/* Product Card */
 .product-card {
     @apply flex flex-col items-center space-y-5 snap-start min-w-[50vw] md:min-w-[33vw] lg:min-w-[25vw];
 }
@@ -54,7 +51,7 @@
 .product-card > .product-price {
     @apply text-gray-600;
 }
-
+/* Section */
 .section {
     @apply relative w-11/12 mx-auto;
 }
@@ -70,7 +67,7 @@
 .section > .section-content {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 flex flex-col space-y-5;
 }
-
+/* Header Dropdown */
 .dropdown-link {
     @apply relative;
 }
@@ -78,22 +75,23 @@
     /* Spaces not allowed in calc() */
     @apply min-w-full flex flex-col divide-y divide-gray-100 bg-white text-gray-800 rounded-sm opacity-0 transition-all duration-500 invisible;
     @apply absolute top-[calc(100%_+_20px)];
-    @apply peer-hover/dropdown:opacity-100 peer-hover/dropdown:visible;
+    @apply group-hover/dropdown:opacity-100 group-hover/dropdown:visible;
+    @apply group-focus-within/dropdown:opacity-100 group-focus-within/dropdown:visible;
 }
 .dropdown-content > a {
     @apply p-4 pr-16 w-max;
     @apply hover:text-gray-400;
 }
-
+/* Button */
 .primary-btn-bordered {
     @apply bg-transparent text-black rounded-lg text-center text-lg relative overflow-x-hidden z-10 border border-gray-300 px-3 py-1;
-    @apply before:inline-block before:absolute before:inset-0 before:bg-black before:-translate-x-full before:transition-transform before:-z-10;
+    @apply before:inline-block before:absolute before:inset-0 before:bg-black before:-translate-x-full before:transition-transform before:-z-10 before:duration-500;
     /* @apply hover:before:translate-x-0 hover:text-white; */
     @apply md:px-5 md:py-3;
 }
 .primary-btn-full {
     @apply bg-transparent text-white rounded-md text-center text-lg relative overflow-x-hidden z-10 border border-gray-300 px-3 py-1;
-    @apply before:inline-block before:absolute before:inset-0 before:bg-gray-200 before:-translate-x-full before:transition-transform before:-z-10;
+    @apply before:inline-block before:absolute before:inset-0 before:bg-gray-200 before:-translate-x-full before:transition-transform before:-z-10 before:duration-500;
     @apply after:inline-block after:absolute after:inset-0 after:bg-black after:-z-20;
     /* @apply hover:before:translate-x-0 hover:text-black; */
     @apply md:px-5 md:py-3;
