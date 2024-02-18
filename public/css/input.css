@@ -54,12 +54,15 @@
 /* Section */
 .section {
     @apply relative w-11/12 mx-auto;
+    /* @apply group/section-img; */
 }
 .section-image-wrapper {
-    @apply relative;
+    @apply relative overflow-hidden;
 }
 .section-image-wrapper > img {
     @apply relative z-20;
+    @apply transition-transform duration-[2s];
+    /* @apply group-hover/section-img:scale-105; */
 }
 .section-image-wrapper > .section-overlay {
     @apply absolute inset-0 bg-black z-30 opacity-40;
