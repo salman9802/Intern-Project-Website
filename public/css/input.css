@@ -73,9 +73,6 @@
 
 .dropdown-link {
     @apply relative;
-    /* @apply flex flex-col space-y-0 items-center relative z-50; */
-    /* @apply flex flex-col space-y-5 items-center; */
-    /* @apply relative z-50; */
 }
 .dropdown-content {
     /* Spaces not allowed in calc() */
@@ -86,4 +83,18 @@
 .dropdown-content > a {
     @apply p-4 pr-16 w-max;
     @apply hover:text-gray-400;
+}
+
+.primary-btn-bordered {
+    @apply bg-transparent text-black rounded-lg text-center text-lg relative overflow-x-hidden z-10 border border-gray-300 px-3 py-1;
+    @apply before:inline-block before:absolute before:inset-0 before:bg-black before:-translate-x-full before:transition-transform before:-z-10;
+    /* @apply hover:before:translate-x-0 hover:text-white; */
+    @apply md:px-5 md:py-3;
+}
+.primary-btn-full {
+    @apply bg-transparent text-white rounded-md text-center text-lg relative overflow-x-hidden z-10 border border-gray-300 px-3 py-1;
+    @apply before:inline-block before:absolute before:inset-0 before:bg-gray-200 before:-translate-x-full before:transition-transform before:-z-10;
+    @apply after:inline-block after:absolute after:inset-0 after:bg-black after:-z-20;
+    /* @apply hover:before:translate-x-0 hover:text-black; */
+    @apply md:px-5 md:py-3;
 }
