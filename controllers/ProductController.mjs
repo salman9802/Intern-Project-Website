@@ -8,7 +8,7 @@ import WhatsappApiResponseModel from "../models/WhatsappApiResponseModel.mjs";
 
 export async function fetchFeaturedProducts() {
     try {
-        const featuredProducts = await ProductModel.find().limit(7);
+        const featuredProducts = await ProductModel.find().limit(8);
         return featuredProducts;
     }catch(err) {
         return [];
