@@ -87,7 +87,7 @@
     @apply bg-transparent text-black rounded-lg text-center text-lg relative overflow-x-hidden z-10 border border-gray-300 px-3 py-1;
     @apply before:inline-block before:absolute before:inset-0 before:bg-black before:-translate-x-full before:transition-transform before:-z-10 before:duration-500;
     /* @apply hover:before:translate-x-0 hover:text-white; */
-    @apply md:px-5 md:py-3;
+    @apply md:px-3 md:py-2 lg:px-5 lg:py-3;
 }
 .primary-btn-full {
     @apply bg-transparent text-white rounded-md text-center text-lg relative overflow-x-hidden z-10 border border-gray-300 px-3 py-1;
