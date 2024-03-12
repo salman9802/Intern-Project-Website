@@ -28,6 +28,13 @@ app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Set url middleware
+app.use((req, res, next) => {
+    // req.locals._url_ = req.url;
+    res.locals._url_ = req.url;
+    next();
+});
+
 // main routes
 app.use("/", defaultRoutes);
 
