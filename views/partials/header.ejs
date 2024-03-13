@@ -64,8 +64,15 @@
         <!-- user + search + cart -->
         <div class="flex space-x-1 px-3 md:space-x-3 md:px-5">
             <img src="/assets/person.svg" alt="" class=" hidden cursor-pointer invert group-hover:invert-0 w-8 md:w-10 md:block">
-            <img src="/assets/search.svg" alt="" class="cursor-pointer invert group-hover:invert-0 w-8 md:w-10">
+            <img src="/assets/search.svg" alt="" class="cursor-pointer invert group-hover:invert-0 w-8 md:w-10" id="header-search-btn">
             <img src="/assets/shopping-bag.svg" alt="" class="cursor-pointer invert group-hover:invert-0 w-8 md:w-10">
         </div>
+
+    </div>
+    <!-- Search Input -->
+    <div class="w-[95vw] bg-white space-between items-center hidden" id="header-search">
+        <img src="/assets/search.svg" alt="" class="cursor-pointer w-8 h-8 m-2">
+        <input type="text" id="header-search-input" placeholder="Search Product..." class="grow p-3 outline-none uppercase">
+        <div id="header-search-cancel" class="cursor-pointer text-3xl m-2 text-gray-500 flex justify-center items-center">&times;</div>
     </div>
 </div>
