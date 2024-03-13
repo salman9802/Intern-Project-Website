@@ -14,30 +14,32 @@
     @apply absolute h-full w-full;
 }
 .banner-img {
-    @apply opacity-0 object-cover object-left;
+    @apply opacity-0 object-cover object-center absolute;
     transition: opacity 1000ms ease-in;
     height: 100%;
     width: 100%;
 }
 .banner-content {
-    @apply hidden p-5 text-center w-3/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex-col space-y-2 md:space-y-7 md:w-1/2 lg:w-1/5;
-}
-.banner-content > h4 {
-    @apply text-white font-semibold uppercase text-sm lg:text-xs;
+    @apply flex bg-white opacity-70 p-5 text-center flex-col space-y-2;
+    @apply w-3/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2; /* center content */
+    @apply md:space-y-5 md:w-1/2 lg:w-1/5; /* responsive styles */
 }
 .banner-content > h2 {
-    @apply text-white text-lg uppercase md:text-3xl lg:text-4xl;
+    @apply text-gray-800 text-xl uppercase md:text-3xl lg:text-4xl;
+}
+.banner-content > h4 {
+    @apply text-gray-500 font-semibold uppercase text-xs;
 }
 .banner-content > button {
     /* @apply w-4/5 mx-auto cursor-pointer text-sm px-3 py-1 bg-white md:px-5 md:py-3; */
     @apply  mx-auto cursor-pointer text-sm px-5 py-1 bg-white md:px-5 md:py-3;
 }
-.banner-selected img {
+.banner-img.banner-selected {
     opacity: 1;
 }
-.banner-selected .banner-content {
+/* .banner-selected .banner-content {
     display: flex;
-}
+} */
 /* Product Card */
 .product-card {
     @apply flex flex-col items-center space-y-5 snap-start min-w-[50vw] md:min-w-[33vw] lg:min-w-[25vw];

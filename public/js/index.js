@@ -1,14 +1,13 @@
 // Banner Animation
-const banner = document.querySelectorAll(".banner");
-
+const bannerImgs = document.querySelectorAll(".banner-img");
 const bannerInterval = setInterval(changeBanner, 4000);
 let i = 0;
 
-banner[i].classList.add("banner-selected");
+bannerImgs[i].classList.add("banner-selected");
 function changeBanner() {
-    banner[i].classList.remove("banner-selected");
-    i = (++i) % banner.length;
-    banner[i].classList.add("banner-selected");
+    bannerImgs[i].classList.remove("banner-selected");
+    i = (++i) % bannerImgs.length;
+    bannerImgs[i].classList.add("banner-selected");
 }
 
 // Featured Products
