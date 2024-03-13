@@ -5,12 +5,8 @@ import axios from "axios";
 import cheerio from "cheerio";
 import got from "got";
 
-class AmazonScrapper {
+class AmazonScraper {
     static url = "https://www.amazon.in/s?k="; /* gives 503 server error */
-    // static httpHeaders = {
-        // "User-Agent": "axios 0.21.1"
-        // 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',
-    // };
 
     // Headers from firefox worked!
     static httpHeaders = {
@@ -62,30 +58,18 @@ class AmazonScrapper {
     }
 
     async saveProducts() {
-        // const url = `${AmazonScrapper.url}${this.product}`;
-        const url = "https://www.amazon.in/s?k=smartphone&crid=11TB0NHSHD7XH&sprefix=smartphone%2Caps%2C204&ref=nb_sb_noss_1";
+        const url = `${AmazonScraper.url}${this.product}`;
         console.log(url);
         try {
             const res = await axios.get(url, {
-                headers: AmazonScrapper.httpHeaders
+                headers: AmazonScraper.httpHeaders
             });
-            // const res = await fetch("https://www.amazon.in/s?k=smartphone&crid=11TB0NHSHD7XH&sprefix=smartphone%2Caps%2C204&ref=nb_sb_noss_1");
-            // const res = got.get("https://www.amazon.in/s?k=smartphone&crid=11TB0NHSHD7XH&sprefix=smartphone%2Caps%2C204&ref=nb_sb_noss_1", AmazonScrapper.httpHeaders);
-            // console.log(res);
-
-
-            // AmazonScrapper.fetchHTML("https://www.amazon.in/s?k=smartphone&crid=11TB0NHSHD7XH&sprefix=smartphone%2Caps%2C204&ref=nb_sb_noss_1", (data, err) => {
-            //     if(err) throw err;
-            //     console.log(data);
-            // });
-            // return;
             
             const html = res.data;
-            console.log(html);
             const $ = cheerio.load(html);
             const products = JSON.parse(new String(fs.readFileSync(this.file)).length) || []; /* load previous file data if any */
             
-            $(AmazonScrapper.productEle).each((index, ele) => {
+            $(AmazonScraper.productEle).each((index, ele) => {
                 const product = $(ele);
                 const productName = product.find("span.a-size-medium.a-color-base.a-text-normal").text();
                 const productImageUrl = product.find("img.s-image").attr("src");
@@ -108,7 +92,7 @@ class AmazonScrapper {
                 if(productCompany) productData["product_company"] = productCompany;
                 products.push(productData);
             });
-            console.log(products);
+            // console.log(products);
 
             fs.appendFileSync(this.file, JSON.stringify(products, null, 2));
             console.log(`Products '${this.category}' saved at '${this.file}'`);
@@ -123,54 +107,44 @@ class AmazonScrapper {
 }
 
 
-const phoneScrapper = new AmazonScrapper({
+/* const phoneScraper = new AmazonScraper({
     product: "Smartphones",
     category: "phone",
     file: "./phones.json"
 });
-await phoneScrapper.saveProducts();
+await phoneScraper.saveProducts(); */
 
-// (async _ => {
-//     await phoneScrapper.saveProducts();
-// });
+/* const acScraper = new AmazonScraper({
+    product: "Air Conditioners",
+    category: "ac",
+    file: "./ac.json"
+});
+await acScraper.saveProducts(); */
 
-/*
-async function fetchProducts(productUrl) {
-    try {
-        const response = await axios.get(productUrl);
-        const html = response.data;
-        const $ = cheerio.load(html);
+/* const tvcraper = new AmazonScraper({
+    product: "Television",
+    category: "tv",
+    file: "./tv.json"
+});
+await tvcraper.saveProducts(); */
 
-        const productClass = "div.a-section > div.puisg-row";
+/* const desktopScraper = new AmazonScraper({
+    product: "Desktops",
+    category: "desktop",
+    file: "./desktop.json"
+});
+await desktopScraper.saveProducts(); */
 
-        const products = JSON.parse(fs.readFileSync("../data/products.json")) || [];
-        $(productClass).each((_, ele) => {
-            const product = $(ele);
-            const productImage = product.find("img.s-image").attr("src");
-            let productCompany = product.find("span.a-size-medium.a-color-base").text();
-            let productName = product.find("span.a-size-medium.a-color-base.a-text-normal").text();
-            // const productPrice = product.find("span.a-offscreen").text();
-            const productPrice = product.find("span.a-price-whole").text();
+/* const laptopScraper = new AmazonScraper({
+    product: "Laptops",
+    category: "laptop",
+    file: "./laptop.json"
+});
+await laptopScraper.saveProducts(); */
 
-            productCompany = productCompany.replace(productName, "");
-
-            const productData = {
-                img: productImage,
-                company: productCompany,
-                name: productName,
-                price: productPrice
-            };
-            products.push(productData);
-        });
-
-        fs.writeFileSync("../data/products.json", JSON.stringify(products, null, 2));
-        console.log("Products written successfully.");
-
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-productUrls.forEach(productUrl => fetchProducts(productUrl));
-// fetchProducts();
-*/
+/* const homeApplianceScraper = new AmazonScraper({
+    product: "Home Appliances",
+    category: "home-appliance",
+    file: "./home-appliance.json"
+});
+await homeApplianceScraper.saveProducts(); */
