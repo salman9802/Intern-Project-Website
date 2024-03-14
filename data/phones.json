@@ -5,111 +5,89 @@
     "name": "Apple iPhone 15 (128 GB) - Black",
     "img_url": "https://m.media-amazon.com/images/I/71657TiFeHL._AC_UY218_.jpg",
     "price": "71,499",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfYXRmOjMwMDE0NTY4MTQ5OTczMjo6MDo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX1W1XY%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1",
+    "product_desc": [
+      " DYNAMIC ISLAND COMES TO IPHONE 15 — Dynamic Island bubbles up alerts and Live Activities — so you don’t miss them while you’re doing something else. You can see who’s calling, track your next ride, check your flight status, and so much more.  ",
+      " INNOVATIVE DESIGN — iPhone 15 features a durable color-infused glass and aluminum design. It’s splash, water, and dust resistant. The Ceramic Shield front is tougher than any smartphone glass. And the 6.1\" Super Retina XDR display is up to 2x brighter in the sun compared to iPhone 14.  ",
+      " 48MP MAIN CAMERA WITH 2X TELEPHOTO — The 48MP Main camera shoots in super-high resolution. So it’s easier than ever to take standout photos with amazing detail. The 2x optical-quality Telephoto lets you frame the perfect close-up.  ",
+      " NEXT-GENERATION PORTRAITS — Capture portraits with dramatically more detail and color. Just tap to shift the focus between subjects — even after you take the shot.  ",
+      " POWERHOUSE A16 BIONIC CHIP — The superfast chip powers advanced features like computational photography, fluid Dynamic Island transitions, and Voice Isolation for phone calls. And A16 Bionic is incredibly efficient to help deliver great all-day battery life.  "
+    ],
     "product_company": "Apple iPhone 15 (128 GB) - Black"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "71,499"
+    "price": "71,499",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfYXRmOjMwMDE0NTY4MTQ5OTczMjo6MDo6&url=%2FApple-iPhone-15-128-GB%2Fdp%2FB0CHX1W1XY%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1",
+    "product_desc": [
+      " DYNAMIC ISLAND COMES TO IPHONE 15 — Dynamic Island bubbles up alerts and Live Activities — so you don’t miss them while you’re doing something else. You can see who’s calling, track your next ride, check your flight status, and so much more.  ",
+      " INNOVATIVE DESIGN — iPhone 15 features a durable color-infused glass and aluminum design. It’s splash, water, and dust resistant. The Ceramic Shield front is tougher than any smartphone glass. And the 6.1\" Super Retina XDR display is up to 2x brighter in the sun compared to iPhone 14.  ",
+      " 48MP MAIN CAMERA WITH 2X TELEPHOTO — The 48MP Main camera shoots in super-high resolution. So it’s easier than ever to take standout photos with amazing detail. The 2x optical-quality Telephoto lets you frame the perfect close-up.  ",
+      " NEXT-GENERATION PORTRAITS — Capture portraits with dramatically more detail and color. Just tap to shift the focus between subjects — even after you take the shot.  ",
+      " POWERHOUSE A16 BIONIC CHIP — The superfast chip powers advanced features like computational photography, fluid Dynamic Island transitions, and Voice Isolation for phone calls. And A16 Bionic is incredibly efficient to help deliver great all-day battery life.  "
+    ]
   },
   {
-    "slug": "Apple-iPhone-15-Pro-(512-GB)---Natural-Titanium",
+    "slug": "Apple-iPhone-15-Pro-(1-TB)---Blue-Titanium",
     "category": "phone",
-    "name": "Apple iPhone 15 Pro (512 GB) - Natural Titanium",
-    "img_url": "https://m.media-amazon.com/images/I/81CgtwSII3L._AC_UY218_.jpg",
-    "price": "1,58,990",
-    "product_company": "Apple iPhone 15 Pro (512 GB) - Natural Titanium"
+    "name": "Apple iPhone 15 Pro (1 TB) - Blue Titanium",
+    "img_url": "https://m.media-amazon.com/images/I/81SigpJN1KL._AC_UY218_.jpg",
+    "price": "1,77,990",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfYXRmOjMwMDE0NTY4MTUwMTYzMjo6MDo6&url=%2FApple-iPhone-15-Pro-TB%2Fdp%2FB0CHX7V9V9%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1",
+    "product_desc": [
+      " FORGED IN TITANIUM — iPhone 15 Pro has a strong and light aerospace-grade titanium design with a textured matte-glass back. It also features a Ceramic Shield front that’s tougher than any smartphone glass. And it’s splash, water, and dust resistant.  ",
+      " ADVANCED DISPLAY — The 6.1” Super Retina XDR display with ProMotion ramps up refresh rates to 120Hz when you need exceptional graphics performance. Dynamic Island bubbles up alerts and Live Notifications. Plus, with Always-On display, your Lock Screen stays glanceable, so you don’t have to tap it to stay in the know.  ",
+      " GAME-CHANGING A17 PRO CHIP — A Pro-class GPU makes mobile games feel so immersive, with rich environments and realistic characters. A17 Pro is also incredibly efficient and helps to deliver amazing all-day battery life.  ",
+      " POWERFUL PRO CAMERA SYSTEM — Get incredible framing flexibility with 7 pro lenses. Capture super high-resolution photos with more color and detail using the 48MP Main camera. And take sharper close-ups from farther away.  ",
+      " CUSTOMIZABLE ACTION BUTTON — Action button is a fast track to your favorite feature. Just set the one you want, like Silent mode, Camera, Voice Memo, Shortcut, and more. Then press and hold to launch the action.  "
+    ],
+    "product_company": "Apple iPhone 15 Pro (1 TB) - Blue Titanium"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "1,58,990"
+    "price": "1,77,990",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfYXRmOjMwMDE0NTY4MTUwMTYzMjo6MDo6&url=%2FApple-iPhone-15-Pro-TB%2Fdp%2FB0CHX7V9V9%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1",
+    "product_desc": [
+      " FORGED IN TITANIUM — iPhone 15 Pro has a strong and light aerospace-grade titanium design with a textured matte-glass back. It also features a Ceramic Shield front that’s tougher than any smartphone glass. And it’s splash, water, and dust resistant.  ",
+      " ADVANCED DISPLAY — The 6.1” Super Retina XDR display with ProMotion ramps up refresh rates to 120Hz when you need exceptional graphics performance. Dynamic Island bubbles up alerts and Live Notifications. Plus, with Always-On display, your Lock Screen stays glanceable, so you don’t have to tap it to stay in the know.  ",
+      " GAME-CHANGING A17 PRO CHIP — A Pro-class GPU makes mobile games feel so immersive, with rich environments and realistic characters. A17 Pro is also incredibly efficient and helps to deliver amazing all-day battery life.  ",
+      " POWERFUL PRO CAMERA SYSTEM — Get incredible framing flexibility with 7 pro lenses. Capture super high-resolution photos with more color and detail using the 48MP Main camera. And take sharper close-ups from farther away.  ",
+      " CUSTOMIZABLE ACTION BUTTON — Action button is a fast track to your favorite feature. Just set the one you want, like Silent mode, Camera, Voice Memo, Shortcut, and more. Then press and hold to launch the action.  "
+    ]
   },
   {
-    "slug": "Redmi-A2-(Sea-Green,-2GB-RAM,-64GB-Storage)",
+    "slug": "realme-narzo-N53-(Feather-Black,-8GB+128GB)-33W-Segment-Fastest-Charging-|-Slimmest-Phone-in-Segment-|-90-Hz-Smooth-Display",
     "category": "phone",
-    "name": "Redmi A2 (Sea Green, 2GB RAM, 64GB Storage)",
-    "img_url": "https://m.media-amazon.com/images/I/81bh6SxXQ+L._AC_UY218_.jpg",
-    "price": "5,299",
-    "product_company": "Redmi A2 (Sea Green, 2GB RAM, 64GB Storage)"
-  },
-  {
-    "slug": "",
-    "category": "phone",
-    "name": "",
-    "price": "5,299"
-  },
-  {
-    "slug": "realme-narzo-N53-(Feather-Gold,-8GB+128GB)-33W-Segment-Fastest-Charging-|-Slimmest-Phone-in-Segment-|-90-Hz-Smooth-Display",
-    "category": "phone",
-    "name": "realme narzo N53 (Feather Gold, 8GB+128GB) 33W Segment Fastest Charging | Slimmest Phone in Segment | 90 Hz Smooth Display",
-    "img_url": "https://m.media-amazon.com/images/I/71dEY4Neo3L._AC_UY218_.jpg",
+    "name": "realme narzo N53 (Feather Black, 8GB+128GB) 33W Segment Fastest Charging | Slimmest Phone in Segment | 90 Hz Smooth Display",
+    "img_url": "https://m.media-amazon.com/images/I/71DSxfKzkJL._AC_UY218_.jpg",
     "price": "8,999",
-    "product_company": "realme narzo N53 (Feather Gold, 8GB+128GB) 33W Segment Fastest Charging | Slimmest Phone in Segment | 90 Hz Smooth Display"
+    "product_url": "http://www.amazon.in//realme-Feather-Segment-Charging-Slimmest/dp/B0CKN56PQ8/ref=sr_1_3?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-3",
+    "product_desc": [
+      " Enjoy smooth multitasking and effortless app switching with the powerful 8GB dynamic RAM. Store all your favorite apps, photos, and files with the generous 128 GB ROM  ",
+      " Experience lightning-fast charging with the 33W SUPERVOOC technology, getting your device ready in no time. Say goodbye to long charging times and stay powered up for longer durations.  ",
+      " The slim and sleek 7.49mm design adds a touch of elegance to your device, making it comfortable to hold and carry. The feather gold design enhances the visual appeal, giving your phone a premium and luxurious look.  ",
+      " Capture stunning, detailed photos with the high-resolution 50MP AI camera, bringing your memories to life.The AI-powered camera technology ensures intelligent scene recognition and enhances your photography skills.  ",
+      " Stay connected and productive for extended periods with the massive 5000mAh battery, eliminating the need for frequent recharging. Enjoy long hours of entertainment, gaming, and browsing without worrying about running out of battery power.  "
+    ],
+    "product_company": "realme narzo N53 (Feather Black, 8GB+128GB) 33W Segment Fastest Charging | Slimmest Phone in Segment | 90 Hz Smooth Display"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "8,999"
-  },
-  {
-    "slug": "Redmi-A2-(Aqua-Blue,-2GB-RAM,-64GB-Storage)",
-    "category": "phone",
-    "name": "Redmi A2 (Aqua Blue, 2GB RAM, 64GB Storage)",
-    "img_url": "https://m.media-amazon.com/images/I/81RR0TAz+5L._AC_UY218_.jpg",
-    "price": "5,299",
-    "product_company": "Redmi A2 (Aqua Blue, 2GB RAM, 64GB Storage)"
-  },
-  {
-    "slug": "",
-    "category": "phone",
-    "name": "",
-    "price": "5,299"
-  },
-  {
-    "slug": "Redmi-13C-5G-(Starlight-Black,-4GB-RAM,-128GB-Storage)-|-MediaTek-Dimensity-6100+-5G-|-90Hz-Display",
-    "category": "phone",
-    "name": "Redmi 13C 5G (Starlight Black, 4GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display",
-    "img_url": "https://m.media-amazon.com/images/I/81L6069AwHL._AC_UL640_QL65_.jpg",
-    "price": "10,999",
-    "product_company": "Redmi 13C 5G (Starlight Black, 4GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display"
-  },
-  {
-    "slug": "",
-    "category": "phone",
-    "name": "",
-    "price": "10,999"
-  },
-  {
-    "slug": "realme-narzo-60X-5G（Nebula-Purple-6GB,128GB-Storage-）-Up-to-2TB-External-Memory-|-50-MP-AI-Primary-Camera-|-Segments-only-33W-Supervooc-Charge",
-    "category": "phone",
-    "name": "realme narzo 60X 5G（Nebula Purple 6GB,128GB Storage ） Up to 2TB External Memory | 50 MP AI Primary Camera | Segments only 33W Supervooc Charge",
-    "img_url": "https://m.media-amazon.com/images/I/818UhQ1kpdL._AC_UY218_.jpg",
-    "price": "12,499",
-    "product_company": "realme narzo 60X 5G（Nebula Purple 6GB,128GB Storage ） Up to 2TB External Memory | 50 MP AI Primary Camera | Segments only 33W Supervooc Charge"
-  },
-  {
-    "slug": "",
-    "category": "phone",
-    "name": "",
-    "price": "12,499"
-  },
-  {
-    "slug": "POCO-C51-(Power-Black,-6GB-RAM,-128GB-Storage)",
-    "category": "phone",
-    "name": "POCO C51 (Power Black, 6GB RAM, 128GB Storage)",
-    "img_url": "https://m.media-amazon.com/images/I/61NJ8pnt8FL._AC_UY218_.jpg",
-    "price": "5,999",
-    "product_company": "POCO C51 (Power Black, 6GB RAM, 128GB Storage)"
-  },
-  {
-    "slug": "",
-    "category": "phone",
-    "name": "",
-    "price": "5,999"
+    "price": "8,999",
+    "product_url": "http://www.amazon.in//realme-Feather-Segment-Charging-Slimmest/dp/B0CKN56PQ8/ref=sr_1_3?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-3",
+    "product_desc": [
+      " Enjoy smooth multitasking and effortless app switching with the powerful 8GB dynamic RAM. Store all your favorite apps, photos, and files with the generous 128 GB ROM  ",
+      " Experience lightning-fast charging with the 33W SUPERVOOC technology, getting your device ready in no time. Say goodbye to long charging times and stay powered up for longer durations.  ",
+      " The slim and sleek 7.49mm design adds a touch of elegance to your device, making it comfortable to hold and carry. The feather gold design enhances the visual appeal, giving your phone a premium and luxurious look.  ",
+      " Capture stunning, detailed photos with the high-resolution 50MP AI camera, bringing your memories to life.The AI-powered camera technology ensures intelligent scene recognition and enhances your photography skills.  ",
+      " Stay connected and productive for extended periods with the massive 5000mAh battery, eliminating the need for frequent recharging. Enjoy long hours of entertainment, gaming, and browsing without worrying about running out of battery power.  "
+    ]
   },
   {
     "slug": "Samsung-Galaxy-M04-Light-Green,-4GB-RAM,-128GB-Storage-|-Upto-8GB-RAM-with-RAM-Plus-|-MediaTek-Helio-P35-Octa-core-Processor-|-5000-mAh-Battery-|-13MP-Dual-Camera",
@@ -117,139 +95,351 @@
     "name": "Samsung Galaxy M04 Light Green, 4GB RAM, 128GB Storage | Upto 8GB RAM with RAM Plus | MediaTek Helio P35 Octa-core Processor | 5000 mAh Battery | 13MP Dual Camera",
     "img_url": "https://m.media-amazon.com/images/I/813sVzTfvaL._AC_UY218_.jpg",
     "price": "6,999",
+    "product_url": "http://www.amazon.in//Samsung-Storage-MediaTek-Octa-core-Processor/dp/B0BMGC6LHP/ref=sr_1_4?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-4",
+    "product_desc": [
+      " Powerful MediaTek Helio P35 Octa Core 2.3GHz with Android 12,One UI Core 4.1  ",
+      " 13MP+2MP Dual camera setup- True 13MP (F2.2) main camera + 2MP (F2.4) | 5MP (F2.2) front came  ",
+      " 16.55 centimeters (6.5-inch) LCD, HD+ resolution with 720 x 1600 pixels resolution, 269 PPI with 16M color  ",
+      " 5000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase  "
+    ],
     "product_company": "Samsung Galaxy M04 Light Green, 4GB RAM, 128GB Storage | Upto 8GB RAM with RAM Plus | MediaTek Helio P35 Octa-core Processor | 5000 mAh Battery | 13MP Dual Camera"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "6,999"
+    "price": "6,999",
+    "product_url": "http://www.amazon.in//Samsung-Storage-MediaTek-Octa-core-Processor/dp/B0BMGC6LHP/ref=sr_1_4?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-4",
+    "product_desc": [
+      " Powerful MediaTek Helio P35 Octa Core 2.3GHz with Android 12,One UI Core 4.1  ",
+      " 13MP+2MP Dual camera setup- True 13MP (F2.2) main camera + 2MP (F2.4) | 5MP (F2.2) front came  ",
+      " 16.55 centimeters (6.5-inch) LCD, HD+ resolution with 720 x 1600 pixels resolution, 269 PPI with 16M color  ",
+      " 5000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase  "
+    ]
   },
   {
-    "slug": "Samsung-Galaxy-A15-5G-(Blue,-8GB,-128GB-Storage)-|-50-MP-Main-Camera-|-Android-14-with-One-UI-6.0-|-16GB-Expandable-RAM-|-MediaTek-Dimensity-6100+-|-5000-mAh-Battery",
+    "slug": "POCO-C51-(Power-Black,-6GB-RAM,-128GB-Storage)",
     "category": "phone",
-    "name": "Samsung Galaxy A15 5G (Blue, 8GB, 128GB Storage) | 50 MP Main Camera | Android 14 with One UI 6.0 | 16GB Expandable RAM | MediaTek Dimensity 6100+ | 5000 mAh Battery",
-    "img_url": "https://m.media-amazon.com/images/I/71+0MKV37HL._AC_UY218_.jpg",
-    "price": "19,499",
-    "product_company": "Samsung Galaxy A15 5G (Blue, 8GB, 128GB Storage) | 50 MP Main Camera | Android 14 with One UI 6.0 | 16GB Expandable RAM | MediaTek Dimensity 6100+ | 5000 mAh Battery"
+    "name": "POCO C51 (Power Black, 6GB RAM, 128GB Storage)",
+    "img_url": "https://m.media-amazon.com/images/I/61NJ8pnt8FL._AC_UY218_.jpg",
+    "price": "5,999",
+    "product_url": "http://www.amazon.in//POCO-Power-Black-128GB-Storage/dp/B0CKJ3XLLM/ref=sr_1_5?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-5",
+    "product_desc": [
+      " Processor: Powerful MediaTek G36 octa-core CPU ; clocked at up to 2.2 GHz | 11GB of RAM including 5GB virtual | Android 13 Go Edition| 6.52\" large HD+ Scratch Resistant Display | 8MP AI Dual camera |Rear fingerprint | 5000mAh Battery  ",
+      " 6.52\" large HD+ Scratch Resistant Display, 400nits in High Brightness mode, 120 Hz touch sampling rate  ",
+      " 8MP AI dual camera with Primary sensor of f/2.0 with the following modes: HDR Mode, Photo Mode, Video Mode, Portrait Mode, Short Video, Timelapse, Tilt Shift Mode  "
+    ],
+    "product_company": "POCO C51 (Power Black, 6GB RAM, 128GB Storage)"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "19,499"
+    "price": "5,999",
+    "product_url": "http://www.amazon.in//POCO-Power-Black-128GB-Storage/dp/B0CKJ3XLLM/ref=sr_1_5?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-5",
+    "product_desc": [
+      " Processor: Powerful MediaTek G36 octa-core CPU ; clocked at up to 2.2 GHz | 11GB of RAM including 5GB virtual | Android 13 Go Edition| 6.52\" large HD+ Scratch Resistant Display | 8MP AI Dual camera |Rear fingerprint | 5000mAh Battery  ",
+      " 6.52\" large HD+ Scratch Resistant Display, 400nits in High Brightness mode, 120 Hz touch sampling rate  ",
+      " 8MP AI dual camera with Primary sensor of f/2.0 with the following modes: HDR Mode, Photo Mode, Video Mode, Portrait Mode, Short Video, Timelapse, Tilt Shift Mode  "
+    ]
+  },
+  {
+    "slug": "Redmi-A2-(Aqua-Blue,-2GB-RAM,-64GB-Storage)",
+    "category": "phone",
+    "name": "Redmi A2 (Aqua Blue, 2GB RAM, 64GB Storage)",
+    "img_url": "https://m.media-amazon.com/images/I/81RR0TAz+5L._AC_UY218_.jpg",
+    "price": "5,299",
+    "product_url": "http://www.amazon.in//Redmi-Aqua-Blue-64GB-Storage/dp/B0C74LZSQB/ref=sr_1_6?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-6",
+    "product_desc": [
+      " Processor: High performance MediaTek Helio G36,upto 2.2GHz; | Upto 4GB RAM including 2GB Virtual RAM | 64GB Storage  ",
+      " Display: Large 16.5 cm HD+ display with Scratch resistant glass | 400nits peak brightness | 120Hz Touch sampling Rate  ",
+      " Camera: 8MP Dual camera with Portrait mode | 5MP Front camera  ",
+      " 5000mAh(typ) battery with 10W charger in-box  ",
+      " Expandable Storage to upto 1TB with Dedicated MicroSD card Slot | Dual SIM (nano+nano) dual standby (4G+4G)  "
+    ],
+    "product_company": "Redmi A2 (Aqua Blue, 2GB RAM, 64GB Storage)"
+  },
+  {
+    "slug": "",
+    "category": "phone",
+    "name": "",
+    "price": "5,299",
+    "product_url": "http://www.amazon.in//Redmi-Aqua-Blue-64GB-Storage/dp/B0C74LZSQB/ref=sr_1_6?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-6",
+    "product_desc": [
+      " Processor: High performance MediaTek Helio G36,upto 2.2GHz; | Upto 4GB RAM including 2GB Virtual RAM | 64GB Storage  ",
+      " Display: Large 16.5 cm HD+ display with Scratch resistant glass | 400nits peak brightness | 120Hz Touch sampling Rate  ",
+      " Camera: 8MP Dual camera with Portrait mode | 5MP Front camera  ",
+      " 5000mAh(typ) battery with 10W charger in-box  ",
+      " Expandable Storage to upto 1TB with Dedicated MicroSD card Slot | Dual SIM (nano+nano) dual standby (4G+4G)  "
+    ]
+  },
+  {
+    "slug": "Samsung-Galaxy-M34-5G-(Waterfall-Blue,8GB,128GB)|120Hz-sAMOLED-Display|50MP-Triple-No-Shake-Cam|6000-mAh-Battery|4-Gen-OS-Upgrade-&-5-Year-Security-Update|16GB-RAM-with-RAM+|Android-13|Without-Charger",
+    "category": "phone",
+    "name": "Samsung Galaxy M34 5G (Waterfall Blue,8GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake Cam|6000 mAh Battery|4 Gen OS Upgrade & 5 Year Security Update|16GB RAM with RAM+|Android 13|Without Charger",
+    "img_url": "https://m.media-amazon.com/images/I/91L9EF-OEGL._AC_UY218_.jpg",
+    "price": "17,999",
+    "product_url": "http://www.amazon.in//Samsung-Waterfall-sAMOLED-Display-Security/dp/B0C7C2NBY2/ref=sr_1_7?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-7",
+    "product_desc": [
+      " 16.42 Centimeters (6.5-Inch) Super AMOLED Display, FHD+ Resolution, 1080 x 2340 Pixels Protected by Corning Gorilla Glass 5  ",
+      " 50MP+8MP+2MP Triple Camera Setup - True 50MP No Shake Cam (F1.8) Main Camera + 8MP (F2.2) + 2MP (F2.4)| 13MP (F2.0) Front Camera  ",
+      " 6000mAH Lithium-ion battery, 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories including batteries from the date of purchase  ",
+      " 4 Generations of OS Upgrades and 5 Years of Security Updates  ",
+      " Exynos 1280 Octa Core 2.4GHz with the 12 Band Support for a True 5G Experience  "
+    ],
+    "product_company": "Samsung Galaxy M34 5G (Waterfall Blue,8GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake Cam|6000 mAh Battery|4 Gen OS Upgrade & 5 Year Security Update|16GB RAM with RAM+|Android 13|Without Charger"
+  },
+  {
+    "slug": "",
+    "category": "phone",
+    "name": "",
+    "price": "17,999",
+    "product_url": "http://www.amazon.in//Samsung-Waterfall-sAMOLED-Display-Security/dp/B0C7C2NBY2/ref=sr_1_7?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-7",
+    "product_desc": [
+      " 16.42 Centimeters (6.5-Inch) Super AMOLED Display, FHD+ Resolution, 1080 x 2340 Pixels Protected by Corning Gorilla Glass 5  ",
+      " 50MP+8MP+2MP Triple Camera Setup - True 50MP No Shake Cam (F1.8) Main Camera + 8MP (F2.2) + 2MP (F2.4)| 13MP (F2.0) Front Camera  ",
+      " 6000mAH Lithium-ion battery, 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories including batteries from the date of purchase  ",
+      " 4 Generations of OS Upgrades and 5 Years of Security Updates  ",
+      " Exynos 1280 Octa Core 2.4GHz with the 12 Band Support for a True 5G Experience  "
+    ]
+  },
+  {
+    "slug": "Redmi-A2-(Sea-Green,-2GB-RAM,-64GB-Storage)",
+    "category": "phone",
+    "name": "Redmi A2 (Sea Green, 2GB RAM, 64GB Storage)",
+    "img_url": "https://m.media-amazon.com/images/I/81bh6SxXQ+L._AC_UY218_.jpg",
+    "price": "5,299",
+    "product_url": "http://www.amazon.in//Redmi-Sea-Green-64GB-Storage/dp/B0C74PD9VG/ref=sr_1_8?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-8",
+    "product_desc": [
+      " Processor: High performance MediaTek Helio G36,upto 2.2GHz; | Upto 4GB RAM including 2GB Virtual RAM | 64GB Storage  ",
+      " Display: Large 16.5 cm HD+ display with Scratch resistant glass | 400nits peak brightness | 120Hz Touch sampling Rate  ",
+      " Camera: 8MP Dual camera with Portrait mode | 5MP Front camera  ",
+      " 5000mAh(typ) battery with 10W charger in-box  ",
+      " Expandable Storage to upto 1TB with Dedicated MicroSD card Slot | Dual SIM (nano+nano) dual standby (4G+4G)  "
+    ],
+    "product_company": "Redmi A2 (Sea Green, 2GB RAM, 64GB Storage)"
+  },
+  {
+    "slug": "",
+    "category": "phone",
+    "name": "",
+    "price": "5,299",
+    "product_url": "http://www.amazon.in//Redmi-Sea-Green-64GB-Storage/dp/B0C74PD9VG/ref=sr_1_8?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-8",
+    "product_desc": [
+      " Processor: High performance MediaTek Helio G36,upto 2.2GHz; | Upto 4GB RAM including 2GB Virtual RAM | 64GB Storage  ",
+      " Display: Large 16.5 cm HD+ display with Scratch resistant glass | 400nits peak brightness | 120Hz Touch sampling Rate  ",
+      " Camera: 8MP Dual camera with Portrait mode | 5MP Front camera  ",
+      " 5000mAh(typ) battery with 10W charger in-box  ",
+      " Expandable Storage to upto 1TB with Dedicated MicroSD card Slot | Dual SIM (nano+nano) dual standby (4G+4G)  "
+    ]
   },
   {
     "slug": "Samsung-Galaxy-M04-Light-Green,-4GB-RAM,-64GB-Storage-|-Upto-8GB-RAM-with-RAM-Plus-|-MediaTek-Helio-P35-Octa-core-Processor-|-5000-mAh-Battery-|-13MP-Dual-Camera",
     "category": "phone",
     "name": "Samsung Galaxy M04 Light Green, 4GB RAM, 64GB Storage | Upto 8GB RAM with RAM Plus | MediaTek Helio P35 Octa-core Processor | 5000 mAh Battery | 13MP Dual Camera",
     "img_url": "https://m.media-amazon.com/images/I/813sVzTfvaL._AC_UY218_.jpg",
-    "price": "7,545",
+    "price": "7,319",
+    "product_url": "http://www.amazon.in//Samsung-Storage-MediaTek-Octa-core-Processor/dp/B0BMGB2TPR/ref=sr_1_9?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-9",
+    "product_desc": [
+      " Powerful MediaTek Helio P35 Octa Core 2.3GHz with Android 12,One UI Core 4.1  ",
+      " 13MP+2MP Dual camera setup- True 13MP (F2.2) main camera + 2MP (F2.4) | 5MP (F2.2) front came  ",
+      " 16.55 centimeters (6.5-inch) LCD, HD+ resolution with 720 x 1600 pixels resolution, 269 PPI with 16M color  ",
+      " 5000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase  "
+    ],
     "product_company": "Samsung Galaxy M04 Light Green, 4GB RAM, 64GB Storage | Upto 8GB RAM with RAM Plus | MediaTek Helio P35 Octa-core Processor | 5000 mAh Battery | 13MP Dual Camera"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "7,545"
+    "price": "7,319",
+    "product_url": "http://www.amazon.in//Samsung-Storage-MediaTek-Octa-core-Processor/dp/B0BMGB2TPR/ref=sr_1_9?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-9",
+    "product_desc": [
+      " Powerful MediaTek Helio P35 Octa Core 2.3GHz with Android 12,One UI Core 4.1  ",
+      " 13MP+2MP Dual camera setup- True 13MP (F2.2) main camera + 2MP (F2.4) | 5MP (F2.2) front came  ",
+      " 16.55 centimeters (6.5-inch) LCD, HD+ resolution with 720 x 1600 pixels resolution, 269 PPI with 16M color  ",
+      " 5000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase  "
+    ]
   },
   {
-    "slug": "Apple-iPhone-14-Plus-(128-GB)---Midnight",
+    "slug": "Samsung-Galaxy-M34-5G-(Midnight-Blue,8GB,128GB)|120Hz-sAMOLED-Display|50MP-Triple-No-Shake-Cam|6000-mAh-Battery|4-Gen-OS-Upgrade-&-5-Year-Security-Update|16GB-RAM-with-RAM+|Android-13|Without-Charger",
     "category": "phone",
-    "name": "Apple iPhone 14 Plus (128 GB) - Midnight",
-    "img_url": "https://m.media-amazon.com/images/I/61B0+qQriPL._AC_UY218_.jpg",
-    "price": "66,999",
-    "product_company": "Apple iPhone 14 Plus (128 GB) - Midnight"
-  },
-  {
-    "slug": "",
-    "category": "phone",
-    "name": "",
-    "price": "66,999"
-  },
-  {
-    "slug": "Redmi-13C-5G-(Starlight-Black,-4GB-RAM,-128GB-Storage)-|-MediaTek-Dimensity-6100+-5G-|-90Hz-Display",
-    "category": "phone",
-    "name": "Redmi 13C 5G (Starlight Black, 4GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display",
-    "img_url": "https://m.media-amazon.com/images/I/81L6069AwHL._AC_UY218_.jpg",
-    "price": "10,999",
-    "product_company": "Redmi 13C 5G (Starlight Black, 4GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display"
-  },
-  {
-    "slug": "",
-    "category": "phone",
-    "name": "",
-    "price": "10,999"
-  },
-  {
-    "slug": "Lava-Blaze-5G-(Glass-Blue,-8GB-RAM,-UFS-2.2-128GB-Storage)-|-5G-Ready-|-50MP-AI-Triple-Camera-|-Upto-16GB-Expandable-RAM-|-Charger-Included-|-Clean-Android-(No-Bloatware)",
-    "category": "phone",
-    "name": "Lava Blaze 5G (Glass Blue, 8GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 16GB Expandable RAM | Charger Included | Clean Android (No Bloatware)",
-    "img_url": "https://m.media-amazon.com/images/I/51CxCrd5-sL._AC_UY218_.jpg",
-    "price": "9,999",
-    "product_company": "Lava Blaze 5G (Glass Blue, 8GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 16GB Expandable RAM | Charger Included | Clean Android (No Bloatware)"
+    "name": "Samsung Galaxy M34 5G (Midnight Blue,8GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake Cam|6000 mAh Battery|4 Gen OS Upgrade & 5 Year Security Update|16GB RAM with RAM+|Android 13|Without Charger",
+    "img_url": "https://m.media-amazon.com/images/I/91fonhAtoAL._AC_UY218_.jpg",
+    "price": "17,999",
+    "product_url": "http://www.amazon.in//Samsung-Midnight-sAMOLED-Display-Security/dp/B0C7C2FCY5/ref=sr_1_10?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-10",
+    "product_desc": [
+      " 16.42 Centimeters (6.5-Inch) Super AMOLED Display, FHD+ Resolution, 1080 x 2340 Pixels Protected by Corning Gorilla Glass 5  ",
+      " 50MP+8MP+2MP Triple Camera Setup - True 50MP No Shake Cam (F1.8) Main Camera + 8MP (F2.2) + 2MP (F2.4)| 13MP (F2.0) Front Camera  ",
+      " 6000mAH Lithium-ion battery, 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories including batteries from the date of purchase  ",
+      " 4 Generations of OS Upgrades and 5 Years of Security Updates  ",
+      " Exynos 1280 Octa Core 2.4GHz with the 12 Band Support for a True 5G Experience  "
+    ],
+    "product_company": "Samsung Galaxy M34 5G (Midnight Blue,8GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake Cam|6000 mAh Battery|4 Gen OS Upgrade & 5 Year Security Update|16GB RAM with RAM+|Android 13|Without Charger"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "9,999"
+    "price": "17,999",
+    "product_url": "http://www.amazon.in//Samsung-Midnight-sAMOLED-Display-Security/dp/B0C7C2FCY5/ref=sr_1_10?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-10",
+    "product_desc": [
+      " 16.42 Centimeters (6.5-Inch) Super AMOLED Display, FHD+ Resolution, 1080 x 2340 Pixels Protected by Corning Gorilla Glass 5  ",
+      " 50MP+8MP+2MP Triple Camera Setup - True 50MP No Shake Cam (F1.8) Main Camera + 8MP (F2.2) + 2MP (F2.4)| 13MP (F2.0) Front Camera  ",
+      " 6000mAH Lithium-ion battery, 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories including batteries from the date of purchase  ",
+      " 4 Generations of OS Upgrades and 5 Years of Security Updates  ",
+      " Exynos 1280 Octa Core 2.4GHz with the 12 Band Support for a True 5G Experience  "
+    ]
   },
   {
-    "slug": "Redmi-13C-(Starfrost-White,-4GB-RAM,-128GB-Storage)-|-Powered-by-4G-MediaTek-Helio-G85-|-90Hz-Display-|-50MP-AI-Triple-Camera",
+    "slug": "Apple-iPhone-15-Plus-(128-GB)---Green",
     "category": "phone",
-    "name": "Redmi 13C (Starfrost White, 4GB RAM, 128GB Storage) | Powered by 4G MediaTek Helio G85 | 90Hz Display | 50MP AI Triple Camera",
-    "img_url": "https://m.media-amazon.com/images/I/71scmEdSC2L._AC_UY218_.jpg",
-    "price": "7,799",
-    "product_company": "Redmi 13C (Starfrost White, 4GB RAM, 128GB Storage) | Powered by 4G MediaTek Helio G85 | 90Hz Display | 50MP AI Triple Camera"
-  },
-  {
-    "slug": "",
-    "category": "phone",
-    "name": "",
-    "price": "7,799"
-  },
-  {
-    "slug": "Samsung-Galaxy-A34-5G-(Awesome-Silver,-8GB,-128GB-Storage)-|-48-MP-No-Shake-Cam-(OIS)-|-IP67-|-Gorilla-Glass-5-|-Voice-Focus-|-Without-Charger",
-    "category": "phone",
-    "name": "Samsung Galaxy A34 5G (Awesome Silver, 8GB, 128GB Storage) | 48 MP No Shake Cam (OIS) | IP67 | Gorilla Glass 5 | Voice Focus | Without Charger",
-    "img_url": "https://m.media-amazon.com/images/I/71Hlw9Dsf1L._AC_UY218_.jpg",
-    "price": "24,499",
-    "product_company": "Samsung Galaxy A34 5G (Awesome Silver, 8GB, 128GB Storage) | 48 MP No Shake Cam (OIS) | IP67 | Gorilla Glass 5 | Voice Focus | Without Charger"
-  },
-  {
-    "slug": "",
-    "category": "phone",
-    "name": "",
-    "price": "24,499"
-  },
-  {
-    "slug": "realme-narzo-60X-5G（Stellar-Green,-4GB,-128GB-Storage）-Up-to-2TB-External-Memory-|-50-MP-AI-Primary-Camera-|-Segments-only-33W-Supervooc-Charge",
-    "category": "phone",
-    "name": "realme narzo 60X 5G（Stellar Green, 4GB, 128GB Storage） Up to 2TB External Memory | 50 MP AI Primary Camera | Segments only 33W Supervooc Charge",
-    "img_url": "https://m.media-amazon.com/images/I/81WimZLWH1L._AC_UY218_.jpg",
-    "price": "11,499",
-    "product_company": "realme narzo 60X 5G（Stellar Green, 4GB, 128GB Storage） Up to 2TB External Memory | 50 MP AI Primary Camera | Segments only 33W Supervooc Charge"
+    "name": "Apple iPhone 15 Plus (128 GB) - Green",
+    "img_url": "https://m.media-amazon.com/images/I/71ZP6U9sWTL._AC_UY218_.jpg",
+    "price": "80,999",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfbXRmOjMwMDE0NTY4MTUwNDQzMjo6MDo6&url=%2FApple-iPhone-15-Plus-128%2Fdp%2FB0CHWZCY43%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1",
+    "product_desc": [
+      " DYNAMIC ISLAND COMES TO IPHONE 15 — Dynamic Island bubbles up alerts and Live Activities — so you don’t miss them while you’re doing something else. You can see who’s calling, track your next ride, check your flight status, and so much more.  ",
+      " INNOVATIVE DESIGN — iPhone 15 Plus features a durable color-infused glass and aluminum design. It’s splash, water, and dust resistant. The Ceramic Shield front is tougher than any smartphone glass. And the 6.7\" Super Retina XDR display is up to 2x brighter in the sun compared to iPhone 14.  ",
+      " 48MP MAIN CAMERA WITH 2X TELEPHOTO — The 48MP Main camera shoots in super-high resolution. So it’s easier than ever to take standout photos with amazing detail. The 2x optical-quality Telephoto lets you frame the perfect close-up.  ",
+      " NEXT-GENERATION PORTRAITS — Capture portraits with dramatically more detail and color. Just tap to shift the focus between subjects — even after you take the shot.  ",
+      " POWERHOUSE A16 BIONIC CHIP — The superfast chip powers advanced features like computational photography, fluid Dynamic Island transitions, and Voice Isolation for phone calls. And A16 Bionic is incredibly efficient to help deliver great all-day battery life.  "
+    ],
+    "product_company": "Apple iPhone 15 Plus (128 GB) - Green"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "11,499"
+    "price": "80,999",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfbXRmOjMwMDE0NTY4MTUwNDQzMjo6MDo6&url=%2FApple-iPhone-15-Plus-128%2Fdp%2FB0CHWZCY43%2Fref%3Dsr_1_11_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-11-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1",
+    "product_desc": [
+      " DYNAMIC ISLAND COMES TO IPHONE 15 — Dynamic Island bubbles up alerts and Live Activities — so you don’t miss them while you’re doing something else. You can see who’s calling, track your next ride, check your flight status, and so much more.  ",
+      " INNOVATIVE DESIGN — iPhone 15 Plus features a durable color-infused glass and aluminum design. It’s splash, water, and dust resistant. The Ceramic Shield front is tougher than any smartphone glass. And the 6.7\" Super Retina XDR display is up to 2x brighter in the sun compared to iPhone 14.  ",
+      " 48MP MAIN CAMERA WITH 2X TELEPHOTO — The 48MP Main camera shoots in super-high resolution. So it’s easier than ever to take standout photos with amazing detail. The 2x optical-quality Telephoto lets you frame the perfect close-up.  ",
+      " NEXT-GENERATION PORTRAITS — Capture portraits with dramatically more detail and color. Just tap to shift the focus between subjects — even after you take the shot.  ",
+      " POWERHOUSE A16 BIONIC CHIP — The superfast chip powers advanced features like computational photography, fluid Dynamic Island transitions, and Voice Isolation for phone calls. And A16 Bionic is incredibly efficient to help deliver great all-day battery life.  "
+    ]
   },
   {
-    "slug": "Vivo-T2x-5G-(Marine-Blue,-128-GB)-(6-GB-RAM)",
+    "slug": "Apple-iPhone-15-Pro-Max-(256-GB)---Blue-Titanium",
     "category": "phone",
-    "name": "Vivo T2x 5G (Marine Blue, 128 GB) (6 GB RAM)",
-    "img_url": "https://m.media-amazon.com/images/I/71q-0gZcl6L._AC_UY218_.jpg",
-    "price": "12,999",
-    "product_company": "Vivo T2x 5G (Marine Blue, 128 GB) (6 GB RAM)"
+    "name": "Apple iPhone 15 Pro Max (256 GB) - Blue Titanium",
+    "img_url": "https://m.media-amazon.com/images/I/81fxjeu8fdL._AC_UY218_.jpg",
+    "price": "1,48,900",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfbXRmOjMwMDE0NTY4MTUwNTIzMjo6MDo6&url=%2FApple-iPhone-Pro-Max-256%2Fdp%2FB0CHX1K2ZC%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1",
+    "product_desc": [
+      " FORGED IN TITANIUM — iPhone 15 Pro Max has a strong and light aerospace-grade titanium design with a textured matte-glass back. It also features a Ceramic Shield front that’s tougher than any smartphone glass. And it’s splash, water, and dust resistant.  ",
+      " ADVANCED DISPLAY — The 6.7” Super Retina XDR display with ProMotion ramps up refresh rates to 120Hz when you need exceptional graphics performance. Dynamic Island bubbles up alerts and Live Notifications. Plus, with Always-On display, your Lock Screen stays glanceable, so you don’t have to tap it to stay in the know.  ",
+      " GAME-CHANGING A17 PRO CHIP — A Pro-class GPU makes mobile games feel so immersive, with rich environments and realistic characters. A17 Pro is also incredibly efficient and helps to deliver amazing all-day battery life.  ",
+      " POWERFUL PRO CAMERA SYSTEM — Get incredible framing flexibility with 7 pro lenses. Capture super high-resolution photos with more color and detail using the 48MP Main camera. And take sharper close-ups from farther away with the 5x Telephoto camera on iPhone 15 Pro Max.  ",
+      " CUSTOMIZABLE ACTION BUTTON — Action button is a fast track to your favorite feature. Just set the one you want, like Silent mode, Camera, Voice Memo, Shortcut, and more. Then press and hold to launch the action.  "
+    ],
+    "product_company": "Apple iPhone 15 Pro Max (256 GB) - Blue Titanium"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "12,999"
+    "price": "1,48,900",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfbXRmOjMwMDE0NTY4MTUwNTIzMjo6MDo6&url=%2FApple-iPhone-Pro-Max-256%2Fdp%2FB0CHX1K2ZC%2Fref%3Dsr_1_12_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-12-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1",
+    "product_desc": [
+      " FORGED IN TITANIUM — iPhone 15 Pro Max has a strong and light aerospace-grade titanium design with a textured matte-glass back. It also features a Ceramic Shield front that’s tougher than any smartphone glass. And it’s splash, water, and dust resistant.  ",
+      " ADVANCED DISPLAY — The 6.7” Super Retina XDR display with ProMotion ramps up refresh rates to 120Hz when you need exceptional graphics performance. Dynamic Island bubbles up alerts and Live Notifications. Plus, with Always-On display, your Lock Screen stays glanceable, so you don’t have to tap it to stay in the know.  ",
+      " GAME-CHANGING A17 PRO CHIP — A Pro-class GPU makes mobile games feel so immersive, with rich environments and realistic characters. A17 Pro is also incredibly efficient and helps to deliver amazing all-day battery life.  ",
+      " POWERFUL PRO CAMERA SYSTEM — Get incredible framing flexibility with 7 pro lenses. Capture super high-resolution photos with more color and detail using the 48MP Main camera. And take sharper close-ups from farther away with the 5x Telephoto camera on iPhone 15 Pro Max.  ",
+      " CUSTOMIZABLE ACTION BUTTON — Action button is a fast track to your favorite feature. Just set the one you want, like Silent mode, Camera, Voice Memo, Shortcut, and more. Then press and hold to launch the action.  "
+    ]
+  },
+  {
+    "slug": "realme-narzo-N53-(Feather-Black,-4GB+64GB)-33W-Segment-Fastest-Charging-|-Slim-Smartphone-|-90-Hz-Smooth-Display",
+    "category": "phone",
+    "name": "realme narzo N53 (Feather Black, 4GB+64GB) 33W Segment Fastest Charging | Slim Smartphone | 90 Hz Smooth Display",
+    "img_url": "https://m.media-amazon.com/images/I/71DSxfKzkJL._AC_UY218_.jpg",
+    "price": "7,499",
+    "product_url": "http://www.amazon.in//realme-Feather-Segment-Charging-Slimmest/dp/B0C45VWDWJ/ref=sr_1_13?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-13",
+    "product_desc": [
+      " Enjoy smooth multitasking and effortless app switching with the powerful 8GB dynamic RAM. Store all your favorite apps, photos, and files with the generous 64GB ROM  ",
+      " Experience lightning-fast charging with the 33W SUPERVOOC technology, getting your device ready in no time. Say goodbye to long charging times and stay powered up for longer durations  ",
+      " The slim and sleek 7.49mm design adds a touch of elegance to your device, making it comfortable to hold and carry. The feather gold design enhances the visual appeal, giving your phone a premium and luxurious look.  ",
+      " Capture stunning, detailed photos with the high-resolution 50MP AI camera, bringing your memories to life.The AI-powered camera technology ensures intelligent scene recognition and enhances your photography skills.  ",
+      " Stay connected and productive for extended periods with the massive 5000mAh battery, eliminating the need for frequent recharging. Enjoy long hours of entertainment, gaming, and browsing without worrying about running out of battery power.  "
+    ],
+    "product_company": "realme narzo N53 (Feather Black, 4GB+64GB) 33W Segment Fastest Charging | Slim Smartphone | 90 Hz Smooth Display"
+  },
+  {
+    "slug": "",
+    "category": "phone",
+    "name": "",
+    "price": "7,499",
+    "product_url": "http://www.amazon.in//realme-Feather-Segment-Charging-Slimmest/dp/B0C45VWDWJ/ref=sr_1_13?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-13",
+    "product_desc": [
+      " Enjoy smooth multitasking and effortless app switching with the powerful 8GB dynamic RAM. Store all your favorite apps, photos, and files with the generous 64GB ROM  ",
+      " Experience lightning-fast charging with the 33W SUPERVOOC technology, getting your device ready in no time. Say goodbye to long charging times and stay powered up for longer durations  ",
+      " The slim and sleek 7.49mm design adds a touch of elegance to your device, making it comfortable to hold and carry. The feather gold design enhances the visual appeal, giving your phone a premium and luxurious look.  ",
+      " Capture stunning, detailed photos with the high-resolution 50MP AI camera, bringing your memories to life.The AI-powered camera technology ensures intelligent scene recognition and enhances your photography skills.  ",
+      " Stay connected and productive for extended periods with the massive 5000mAh battery, eliminating the need for frequent recharging. Enjoy long hours of entertainment, gaming, and browsing without worrying about running out of battery power.  "
+    ]
+  },
+  {
+    "slug": "realme-narzo-N53-(Feather-Gold,-8GB+128GB)-33W-Segment-Fastest-Charging-|-Slimmest-Phone-in-Segment-|-90-Hz-Smooth-Display",
+    "category": "phone",
+    "name": "realme narzo N53 (Feather Gold, 8GB+128GB) 33W Segment Fastest Charging | Slimmest Phone in Segment | 90 Hz Smooth Display",
+    "img_url": "https://m.media-amazon.com/images/I/71dEY4Neo3L._AC_UY218_.jpg",
+    "price": "8,999",
+    "product_url": "http://www.amazon.in//realme-Feather-Segment-Charging-Slimmest/dp/B0CKN5LGDW/ref=sr_1_14?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-14",
+    "product_desc": [
+      " Enjoy smooth multitasking and effortless app switching with the powerful 8GB dynamic RAM. Store all your favorite apps, photos, and files with the generous 128 GB ROM  ",
+      " Experience lightning-fast charging with the 33W SUPERVOOC technology, getting your device ready in no time. Say goodbye to long charging times and stay powered up for longer durations.  ",
+      " The slim and sleek 7.49mm design adds a touch of elegance to your device, making it comfortable to hold and carry. The feather gold design enhances the visual appeal, giving your phone a premium and luxurious look.  ",
+      " Capture stunning, detailed photos with the high-resolution 50MP AI camera, bringing your memories to life.The AI-powered camera technology ensures intelligent scene recognition and enhances your photography skills.  ",
+      " Stay connected and productive for extended periods with the massive 5000mAh battery, eliminating the need for frequent recharging. Enjoy long hours of entertainment, gaming, and browsing without worrying about running out of battery power.  "
+    ],
+    "product_company": "realme narzo N53 (Feather Gold, 8GB+128GB) 33W Segment Fastest Charging | Slimmest Phone in Segment | 90 Hz Smooth Display"
+  },
+  {
+    "slug": "",
+    "category": "phone",
+    "name": "",
+    "price": "8,999",
+    "product_url": "http://www.amazon.in//realme-Feather-Segment-Charging-Slimmest/dp/B0CKN5LGDW/ref=sr_1_14?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-14",
+    "product_desc": [
+      " Enjoy smooth multitasking and effortless app switching with the powerful 8GB dynamic RAM. Store all your favorite apps, photos, and files with the generous 128 GB ROM  ",
+      " Experience lightning-fast charging with the 33W SUPERVOOC technology, getting your device ready in no time. Say goodbye to long charging times and stay powered up for longer durations.  ",
+      " The slim and sleek 7.49mm design adds a touch of elegance to your device, making it comfortable to hold and carry. The feather gold design enhances the visual appeal, giving your phone a premium and luxurious look.  ",
+      " Capture stunning, detailed photos with the high-resolution 50MP AI camera, bringing your memories to life.The AI-powered camera technology ensures intelligent scene recognition and enhances your photography skills.  ",
+      " Stay connected and productive for extended periods with the massive 5000mAh battery, eliminating the need for frequent recharging. Enjoy long hours of entertainment, gaming, and browsing without worrying about running out of battery power.  "
+    ]
+  },
+  {
+    "slug": "Redmi-Note-13-5G-(Stealth-Black,-12GB-RAM,-256GB-Storage)-|-Bezel-Less-120Hz-AMOLED-|-7.6mm-Slimmest-Note-Ever",
+    "category": "phone",
+    "name": "Redmi Note 13 5G (Stealth Black, 12GB RAM, 256GB Storage) | Bezel-Less 120Hz AMOLED | 7.6mm Slimmest Note Ever",
+    "img_url": "https://m.media-amazon.com/images/I/71NnrsYP63L._AC_UY218_.jpg",
+    "price": "21,999",
+    "product_url": "http://www.amazon.in//Redmi-Stealth-Storage-Dimensity-Slimmest/dp/B0CQPFZ2MF/ref=sr_1_15?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-15",
+    "product_desc": [
+      " Display: 6.67\" FHD+ pOLED (1080x2400) Ultra-narrow bezels Display with 120Hz Refresh rate; 1000nits peak brightness; Corning Gorilla Glass 5 Display Protection  ",
+      " Processor:Mediatek Dimensity 6080 6nm Octa-core 5G processor for high performance ; Up to 2.4GHz; Upto 20GB RAM including 8GB Virtual RAM  ",
+      " Camera: 108MP 3X in-sensor zoom AI Triple Camera with 8MP Ultra Wide sensor and 2MP Macro camera| 16MP Front camera  ",
+      " Battery: 5000 mAh large battery with 33W fast charger in-box and Type-C connectivity  ",
+      " Memory, Storage & SIM: 12GB RAM | 128GB UFS 2.2| Dual SIM (nano+nano) 5G  "
+    ],
+    "product_company": "Redmi Note 13 5G (Stealth Black, 12GB RAM, 256GB Storage) | Bezel-Less 120Hz AMOLED | 7.6mm Slimmest Note Ever"
+  },
+  {
+    "slug": "",
+    "category": "phone",
+    "name": "",
+    "price": "21,999",
+    "product_url": "http://www.amazon.in//Redmi-Stealth-Storage-Dimensity-Slimmest/dp/B0CQPFZ2MF/ref=sr_1_15?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-15",
+    "product_desc": [
+      " Display: 6.67\" FHD+ pOLED (1080x2400) Ultra-narrow bezels Display with 120Hz Refresh rate; 1000nits peak brightness; Corning Gorilla Glass 5 Display Protection  ",
+      " Processor:Mediatek Dimensity 6080 6nm Octa-core 5G processor for high performance ; Up to 2.4GHz; Upto 20GB RAM including 8GB Virtual RAM  ",
+      " Camera: 108MP 3X in-sensor zoom AI Triple Camera with 8MP Ultra Wide sensor and 2MP Macro camera| 16MP Front camera  ",
+      " Battery: 5000 mAh large battery with 33W fast charger in-box and Type-C connectivity  ",
+      " Memory, Storage & SIM: 12GB RAM | 128GB UFS 2.2| Dual SIM (nano+nano) 5G  "
+    ]
   },
   {
     "slug": "Redmi-13C-(Stardust-Black,-6GB-RAM,-128GB-Storage)-|-Powered-by-4G-MediaTek-Helio-G85-|-90Hz-Display-|-50MP-AI-Triple-Camera",
@@ -257,82 +447,204 @@
     "name": "Redmi 13C (Stardust Black, 6GB RAM, 128GB Storage) | Powered by 4G MediaTek Helio G85 | 90Hz Display | 50MP AI Triple Camera",
     "img_url": "https://m.media-amazon.com/images/I/71d1ytcCntL._AC_UY218_.jpg",
     "price": "8,799",
+    "product_url": "http://www.amazon.in//Stardust-Storage-Powered-MediaTek-Display/dp/B0CMTW9MVK/ref=sr_1_16?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-16",
+    "product_desc": [
+      " Processor: High performance MediaTek G85 ; Enhance gaming with 1GHz GPU | 12GB of RAM including 6GB virtual | 6.74\" HD+ 90Hz display with Corning Gorilla Glass 3 Protection | 50MP AI Triple camera |Fast Side fingerprint | 5000mAh Battery  ",
+      " 6.74\" HD+ 90Hz display with Corning Gorilla Glass 3 Protection, 600nits in High Brightness mode  ",
+      " 50MP AI Triple camera with Primary sensor of f/1.8 (4-in-1 super pixel) with the following modes: Photo | Portrait | Night | Video | 50MP mode | Time-lapse | Classic film filters | Frame | HDR | Google lens | Voice Shutter  "
+    ],
     "product_company": "Redmi 13C (Stardust Black, 6GB RAM, 128GB Storage) | Powered by 4G MediaTek Helio G85 | 90Hz Display | 50MP AI Triple Camera"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "8,799"
+    "price": "8,799",
+    "product_url": "http://www.amazon.in//Stardust-Storage-Powered-MediaTek-Display/dp/B0CMTW9MVK/ref=sr_1_16?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-16",
+    "product_desc": [
+      " Processor: High performance MediaTek G85 ; Enhance gaming with 1GHz GPU | 12GB of RAM including 6GB virtual | 6.74\" HD+ 90Hz display with Corning Gorilla Glass 3 Protection | 50MP AI Triple camera |Fast Side fingerprint | 5000mAh Battery  ",
+      " 6.74\" HD+ 90Hz display with Corning Gorilla Glass 3 Protection, 600nits in High Brightness mode  ",
+      " 50MP AI Triple camera with Primary sensor of f/1.8 (4-in-1 super pixel) with the following modes: Photo | Portrait | Night | Video | 50MP mode | Time-lapse | Classic film filters | Frame | HDR | Google lens | Voice Shutter  "
+    ]
   },
   {
-    "slug": "Motorola-G34-5G-(Charcoal-Black,-8GB-RAM,-128GB-Storage)",
+    "slug": "POCO-C55-(Cool-Blue,-6GB-RAM,-128GB-Storage)",
     "category": "phone",
-    "name": "Motorola G34 5G (Charcoal Black, 8GB RAM, 128GB Storage)",
-    "img_url": "https://m.media-amazon.com/images/I/71H6j2akjxL._AC_UY218_.jpg",
-    "price": "13,238",
-    "product_company": "Motorola G34 5G (Charcoal Black, 8GB RAM, 128GB Storage)"
-  },
-  {
-    "slug": "",
-    "category": "phone",
-    "name": "",
-    "price": "13,238"
-  },
-  {
-    "slug": "Redmi-13C-5G-(Starlight-Black,-6GB-RAM,-128GB-Storage)-|-MediaTek-Dimensity-6100+-5G-|-90Hz-Display",
-    "category": "phone",
-    "name": "Redmi 13C 5G (Starlight Black, 6GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display",
-    "img_url": "https://m.media-amazon.com/images/I/81L6069AwHL._AC_UY218_.jpg",
-    "price": "12,499",
-    "product_company": "Redmi 13C 5G (Starlight Black, 6GB RAM, 128GB Storage) | MediaTek Dimensity 6100+ 5G | 90Hz Display"
-  },
-  {
-    "slug": "",
-    "category": "phone",
-    "name": "",
-    "price": "12,499"
-  },
-  {
-    "slug": "itel-A70-|-12GB*-RAM-+-128GB-ROM|-13MP-Dual-Rear-Camera-&-8MP-Front-Camera-|-5000mAh-Battery-with-Type-C-Charging-|-Dynamic-Bar-|-Side-Fingerprint-Sensor-|-Octa-Core-Processor-|-Field-Green",
-    "category": "phone",
-    "name": "itel A70 | 12GB* RAM + 128GB ROM| 13MP Dual Rear Camera & 8MP Front Camera | 5000mAh Battery with Type-C Charging | Dynamic Bar | Side Fingerprint Sensor | Octa-Core Processor | Field Green",
-    "img_url": "https://m.media-amazon.com/images/I/71BiGP4u5JL._AC_UY218_.jpg",
-    "price": "6,799",
-    "product_company": "itel A70 | 12GB* RAM + 128GB ROM| 13MP Dual Rear Camera & 8MP Front Camera | 5000mAh Battery with Type-C Charging | Dynamic Bar | Side Fingerprint Sensor | Octa-Core Processor | Field Green"
+    "name": "POCO C55 (Cool Blue, 6GB RAM, 128GB Storage)",
+    "img_url": "https://m.media-amazon.com/images/I/51pK-S3ssPL._AC_UY218_.jpg",
+    "price": "6,499",
+    "product_url": "http://www.amazon.in//POCO-C55-Cool-Blue-128/dp/B0BX9WNP7W/ref=sr_1_17?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-17",
+    "product_desc": [
+      " Processor: High performance MediaTek G85 ; Enhance gaming with 1GHz GPU | 11GB of RAM including 5GB virtual | 6.71\" HD+ Large Display, Scratch Resistant Display with Oleophobic Coating| 50MP AI Dual camera |Fast Rear fingerprint | 5000mAh Battery | Premium Leather-like stich design | IP52 Protection  ",
+      " 6.71\" HD+ Large display , 120 Hz touch sampling rate, Scratch Resistant Display with Oleophobic Coating  ",
+      " 50MP AI Dual camera with Primary sensor of f/1.8 Aperture, 1.28um (4-in-1 Super Pixel) with the following modes: Photo | Portrait | Night | Video | 50MP mode | Time-lapse | filters | Movie Frame | HDR | Voice Shutter | Doccumen Mode | Tilt Shift | Timed Burst  "
+    ],
+    "product_company": "POCO C55 (Cool Blue, 6GB RAM, 128GB Storage)"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "6,799"
+    "price": "6,499",
+    "product_url": "http://www.amazon.in//POCO-C55-Cool-Blue-128/dp/B0BX9WNP7W/ref=sr_1_17?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-17",
+    "product_desc": [
+      " Processor: High performance MediaTek G85 ; Enhance gaming with 1GHz GPU | 11GB of RAM including 5GB virtual | 6.71\" HD+ Large Display, Scratch Resistant Display with Oleophobic Coating| 50MP AI Dual camera |Fast Rear fingerprint | 5000mAh Battery | Premium Leather-like stich design | IP52 Protection  ",
+      " 6.71\" HD+ Large display , 120 Hz touch sampling rate, Scratch Resistant Display with Oleophobic Coating  ",
+      " 50MP AI Dual camera with Primary sensor of f/1.8 Aperture, 1.28um (4-in-1 Super Pixel) with the following modes: Photo | Portrait | Night | Video | 50MP mode | Time-lapse | filters | Movie Frame | HDR | Voice Shutter | Doccumen Mode | Tilt Shift | Timed Burst  "
+    ]
   },
   {
-    "slug": "Samsung-Galaxy-S24-Ultra-5G-AI-Smartphone-(Titanium-Black,-12GB,-512GB-Storage)",
+    "slug": "Samsung-Galaxy-F04-4GB-64GB-Jade-Purple",
     "category": "phone",
-    "name": "Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Black, 12GB, 512GB Storage)",
-    "img_url": "https://m.media-amazon.com/images/I/71CXhVhpM0L._AC_UY218_.jpg",
-    "price": "1,39,999",
-    "product_company": "Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Black, 12GB, 512GB Storage)"
+    "name": "Samsung Galaxy F04 4GB 64GB Jade Purple",
+    "img_url": "https://m.media-amazon.com/images/I/71FRexY9q6L._AC_UY218_.jpg",
+    "price": "6,600",
+    "product_url": "http://www.amazon.in//Samsung-Galaxy-64GB-Jade-Purple/dp/B0BZMJXYB5/ref=sr_1_18?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-18",
+    "product_desc": [
+      " 4 GB RAM | 64 GB ROM | Expandable Upto 1 TB  ",
+      " 16.51 cm (6.5 inch) HD Display  ",
+      " 13MP + 2MP | 5MP Front Camera  ",
+      " 5000 mAh Lithium-Ion Battery  ",
+      " Mediatek Helio P35 Processor  "
+    ],
+    "product_company": "Samsung Galaxy F04 4GB 64GB Jade Purple"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "1,39,999"
+    "price": "6,600",
+    "product_url": "http://www.amazon.in//Samsung-Galaxy-64GB-Jade-Purple/dp/B0BZMJXYB5/ref=sr_1_18?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-18",
+    "product_desc": [
+      " 4 GB RAM | 64 GB ROM | Expandable Upto 1 TB  ",
+      " 16.51 cm (6.5 inch) HD Display  ",
+      " 13MP + 2MP | 5MP Front Camera  ",
+      " 5000 mAh Lithium-Ion Battery  ",
+      " Mediatek Helio P35 Processor  "
+    ]
   },
   {
-    "slug": "TECNO-Spark-20C-|-Mystery-White,-(16GB*+128GB)-|-50MP-Main-Camera-+-8MP-Selfie|-90Hz-Dot-in-Display-with-Dynamic-Port-&-Dual-Speakers-with-DTS-|-5000mAh-Battery-|18W-Type-C-|-Helio-G36-Processor",
+    "slug": "Redmi-13C-(Starshine-Green,-6GB-RAM,-128GB-Storage)-|-Powered-by-4G-MediaTek-Helio-G85-|-90Hz-Display-|-50MP-AI-Triple-Camera",
     "category": "phone",
-    "name": "TECNO Spark 20C | Mystery White, (16GB*+128GB) | 50MP Main Camera + 8MP Selfie| 90Hz Dot-in Display with Dynamic Port & Dual Speakers with DTS | 5000mAh Battery |18W Type-C | Helio G36 Processor",
-    "img_url": "https://m.media-amazon.com/images/I/61iI4i1KmqL._AC_UL640_QL65_.jpg",
-    "price": "8,999",
-    "product_company": "TECNO Spark 20C | Mystery White, (16GB*+128GB) | 50MP Main Camera + 8MP Selfie| 90Hz Dot-in Display with Dynamic Port & Dual Speakers with DTS | 5000mAh Battery |18W Type-C | Helio G36 Processor"
+    "name": "Redmi 13C (Starshine Green, 6GB RAM, 128GB Storage) | Powered by 4G MediaTek Helio G85 | 90Hz Display | 50MP AI Triple Camera",
+    "img_url": "https://m.media-amazon.com/images/I/71hj88T5aBL._AC_UY218_.jpg",
+    "price": "8,799",
+    "product_url": "http://www.amazon.in//Starshine-Storage-Powered-MediaTek-Display/dp/B0CMTWJ5RV/ref=sr_1_19?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-19",
+    "product_desc": [
+      " Processor: High performance MediaTek G85 ; Enhance gaming with 1GHz GPU | 12GB of RAM including 6GB virtual | 6.74\" HD+ 90Hz display with Corning Gorilla Glass 3 Protection | 50MP AI Triple camera |Fast Side fingerprint | 5000mAh Battery  ",
+      " 6.74\" HD+ 90Hz display with Corning Gorilla Glass 3 Protection, 600nits in High Brightness mode  ",
+      " 50MP AI Triple camera with Primary sensor of f/1.8 (4-in-1 super pixel) with the following modes: Photo | Portrait | Night | Video | 50MP mode | Time-lapse | Classic film filters | Frame | HDR | Google lens | Voice Shutter  "
+    ],
+    "product_company": "Redmi 13C (Starshine Green, 6GB RAM, 128GB Storage) | Powered by 4G MediaTek Helio G85 | 90Hz Display | 50MP AI Triple Camera"
   },
   {
     "slug": "",
     "category": "phone",
     "name": "",
-    "price": "8,999"
+    "price": "8,799",
+    "product_url": "http://www.amazon.in//Starshine-Storage-Powered-MediaTek-Display/dp/B0CMTWJ5RV/ref=sr_1_19?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-19",
+    "product_desc": [
+      " Processor: High performance MediaTek G85 ; Enhance gaming with 1GHz GPU | 12GB of RAM including 6GB virtual | 6.74\" HD+ 90Hz display with Corning Gorilla Glass 3 Protection | 50MP AI Triple camera |Fast Side fingerprint | 5000mAh Battery  ",
+      " 6.74\" HD+ 90Hz display with Corning Gorilla Glass 3 Protection, 600nits in High Brightness mode  ",
+      " 50MP AI Triple camera with Primary sensor of f/1.8 (4-in-1 super pixel) with the following modes: Photo | Portrait | Night | Video | 50MP mode | Time-lapse | Classic film filters | Frame | HDR | Google lens | Voice Shutter  "
+    ]
+  },
+  {
+    "slug": "Samsung-Galaxy-M34-5G-(Waterfall-Blue,6GB,128GB)|120Hz-sAMOLED-Display|50MP-Triple-No-Shake-Cam|6000-mAh-Battery|4-Gen-OS-Upgrade-&-5-Year-Security-Update|12GB-RAM-with-RAM+|Android-13|Without-Charger",
+    "category": "phone",
+    "name": "Samsung Galaxy M34 5G (Waterfall Blue,6GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake Cam|6000 mAh Battery|4 Gen OS Upgrade & 5 Year Security Update|12GB RAM with RAM+|Android 13|Without Charger",
+    "img_url": "https://m.media-amazon.com/images/I/91L9EF-OEGL._AC_UY218_.jpg",
+    "price": "15,999",
+    "product_url": "http://www.amazon.in//Samsung-Waterfall-sAMOLED-Display-Security/dp/B0C7C28GKF/ref=sr_1_20?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-20",
+    "product_desc": [
+      " 16.42 Centimeters (6.5-Inch) Super AMOLED Display, FHD+ Resolution, 1080 x 2340 Pixels Protected by Corning Gorilla Glass 5  ",
+      " 50MP+8MP+2MP Triple Camera Setup - True 50MP No Shake Cam (F1.8) Main Camera + 8MP (F2.2) + 2MP (F2.4)| 13MP (F2.0) Front Camera  ",
+      " 6000mAH Lithium-ion battery, 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories including batteries from the date of purchase  ",
+      " 4 Generations of OS Upgrades and 5 Years of Security Updates  ",
+      " Exynos 1280 Octa Core 2.4GHz with the 12 Band Support for a True 5G Experience  "
+    ],
+    "product_company": "Samsung Galaxy M34 5G (Waterfall Blue,6GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake Cam|6000 mAh Battery|4 Gen OS Upgrade & 5 Year Security Update|12GB RAM with RAM+|Android 13|Without Charger"
+  },
+  {
+    "slug": "",
+    "category": "phone",
+    "name": "",
+    "price": "15,999",
+    "product_url": "http://www.amazon.in//Samsung-Waterfall-sAMOLED-Display-Security/dp/B0C7C28GKF/ref=sr_1_20?dib=eyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E&dib_tag=se&keywords=Smartphones&qid=1710384994&sr=8-20",
+    "product_desc": [
+      " 16.42 Centimeters (6.5-Inch) Super AMOLED Display, FHD+ Resolution, 1080 x 2340 Pixels Protected by Corning Gorilla Glass 5  ",
+      " 50MP+8MP+2MP Triple Camera Setup - True 50MP No Shake Cam (F1.8) Main Camera + 8MP (F2.2) + 2MP (F2.4)| 13MP (F2.0) Front Camera  ",
+      " 6000mAH Lithium-ion battery, 1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories including batteries from the date of purchase  ",
+      " 4 Generations of OS Upgrades and 5 Years of Security Updates  ",
+      " Exynos 1280 Octa Core 2.4GHz with the 12 Band Support for a True 5G Experience  "
+    ]
+  },
+  {
+    "slug": "Apple-iPhone-13-(128GB)---Pink",
+    "category": "phone",
+    "name": "Apple iPhone 13 (128GB) - Pink",
+    "img_url": "https://m.media-amazon.com/images/I/61l9ppRIiqL._AC_UY218_.jpg",
+    "price": "52,499",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfYnRmOjIwMDc5NjgyODUxMjAzOjowOjo&url=%2FApple-iPhone-13-128GB-Pink%2Fdp%2FB09G9FPGTN%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1",
+    "product_desc": [
+      " 15 cm (6.1-inch) Super Retina XDR display  ",
+      " Cinematic mode adds shallow depth of field and shifts focus automatically in your videos  ",
+      " Advanced dual-camera system with 12MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording  ",
+      " 12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording  ",
+      " A15 Bionic chip for lightning-fast performance  "
+    ],
+    "product_company": "Apple iPhone 13 (128GB) - Pink"
+  },
+  {
+    "slug": "",
+    "category": "phone",
+    "name": "",
+    "price": "52,499",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfYnRmOjIwMDc5NjgyODUxMjAzOjowOjo&url=%2FApple-iPhone-13-128GB-Pink%2Fdp%2FB09G9FPGTN%2Fref%3Dsr_1_21_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-21-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1",
+    "product_desc": [
+      " 15 cm (6.1-inch) Super Retina XDR display  ",
+      " Cinematic mode adds shallow depth of field and shifts focus automatically in your videos  ",
+      " Advanced dual-camera system with 12MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording  ",
+      " 12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording  ",
+      " A15 Bionic chip for lightning-fast performance  "
+    ]
+  },
+  {
+    "slug": "Apple-iPhone-14-Plus-(128-GB)---Midnight",
+    "category": "phone",
+    "name": "Apple iPhone 14 Plus (128 GB) - Midnight",
+    "img_url": "https://m.media-amazon.com/images/I/61B0+qQriPL._AC_UY218_.jpg",
+    "price": "66,999",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfYnRmOjIwMTExMjExMjQzNzk4OjowOjo&url=%2FApple-iPhone-Plus-128GB-Midnight%2Fdp%2FB0BDJKL7KM%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1",
+    "product_desc": [
+      " 16.95 cm (6.7-inch) Super Retina XDR display  ",
+      " Advanced camera system for better photos in any light  ",
+      " Cinematic mode now in 4K Dolby Vision up to 30 fps  ",
+      " Action mode for smooth, steady, handheld videos  ",
+      " Vital safety technology — Crash Detection calls for help when you can’t  ",
+      " All-day battery life and up to 26 hours of video playback  ",
+      " Industry-leading durability features with Ceramic Shield and water resistance  ",
+      "A15 Bionic chip with 5-core GPU for lightning-fast performance. Superfast 5G cellular",
+      "iOS 16 offers even more ways to personalise, communicate and share"
+    ],
+    "product_company": "Apple iPhone 14 Plus (128 GB) - Midnight"
+  },
+  {
+    "slug": "",
+    "category": "phone",
+    "name": "",
+    "price": "66,999",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxNTAyODQ3Nzg5NDY3MDczOjE3MTAzODQ5OTQ6c3BfYnRmOjIwMTExMjExMjQzNzk4OjowOjo&url=%2FApple-iPhone-Plus-128GB-Midnight%2Fdp%2FB0BDJKL7KM%2Fref%3Dsr_1_22_sspa%3Fdib%3DeyJ2IjoiMSJ9.fTMXjspoEh5ZrJEBKZYkZN77SEKOEva-7P8IBhJ-dquqRo4KILkBAgDtv1qZJeLIiMDQMK8tn2_TSOxN9GLcEYvXE1ugNoVs69o9KRsaCQBOmNVf9miK_1WevvQ0NcXZDa1E23-03SRzEJ1dcy9Mz_l8HvdnSQ4E8R9C8JlQ8VwpYhc_N4nCM76feHCAukIyrfnC2C4XLuj9-3nOD8oWGI0vYD6bZPpYL8Qvlgkqs4k.sygRqJ2G5DhQYCZxv3ru-qsStGhDopjVZB8paSetB7E%26dib_tag%3Dse%26keywords%3DSmartphones%26qid%3D1710384994%26sr%3D8-22-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9idGY%26psc%3D1",
+    "product_desc": [
+      " 16.95 cm (6.7-inch) Super Retina XDR display  ",
+      " Advanced camera system for better photos in any light  ",
+      " Cinematic mode now in 4K Dolby Vision up to 30 fps  ",
+      " Action mode for smooth, steady, handheld videos  ",
+      " Vital safety technology — Crash Detection calls for help when you can’t  ",
+      " All-day battery life and up to 26 hours of video playback  ",
+      " Industry-leading durability features with Ceramic Shield and water resistance  ",
+      "A15 Bionic chip with 5-core GPU for lightning-fast performance. Superfast 5G cellular",
+      "iOS 16 offers even more ways to personalise, communicate and share"
+    ]
   }
 ]

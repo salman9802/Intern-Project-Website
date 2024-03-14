@@ -5,224 +5,61 @@
     "name": "Xiaomi 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)",
     "img_url": "https://m.media-amazon.com/images/I/71L+JnVXFTL._AC_UY218_.jpg",
     "price": "25,999",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxMTM4MDI2MDgzODc0MDczOjE3MTAzODYxODY6c3BfYXRmOjMwMDEwODQyNzQ4NTczMjo6MDo6&url=%2FXiaomi-inches-Ultra-Google-L43M8-A2IN%2Fdp%2FB0CH33945T%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.0Ur0O6x7LR7eudu2CXnL_9bOs9TRYEys0BcwQzt0bymRkvrkayk32G5qGtQlLXkQNwG_3w7WVh3AcSKuX8aMR4DwafYiMcI2JrArZ1EsoB-C4c6zY19G-dJi-u7hG-fLXx14iJBGmZiaEfO159TRzHdC7r5qQlRV-GuEurDmhEBJQvmX8HwqQx6bysmsZyZ2sLx4KLUnvSOdMyog8X6UF2axKIxscVTmVCOGzoXAtrw.9HQBCDcLnZBvcXihEAII795KvZQ6rkvflGGPfLovOlA%26dib_tag%3Dse%26keywords%3DTelevision%26qid%3D1710386186%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1",
+    "product_desc": [
+      " Resolution : 4K Ultra HD (3840 x 2160) | Refresh Rate : 60 Hertz | Viewing angle : 178 degrees  ",
+      " Connectivity: Dual Band Wi-Fi | Connectivity: 3 HDMI ports to connect set top box, Blu-ray speakers or gaming console | 2 USB ports to connect hard drives or other USB devices| Optical port| AV port| Ethernet port | 3.5 mm jack | Bluetooth 5.0  ",
+      " Sound: 30 Watts Output | Dolby Audio | DTS-X | DTS Virtual: X  ",
+      " Smart TV Features: Google TV, Built-In WiFi, Chromecast built-in, 2GB RAM, 8GB ROM, Supported Apps: Netflix, Prime Video, YouTube, Zee5, etc., MEMC Engine , eARC (Dolby Atmos Pass-through), ALLM (Auto Low Latency Mode), and Google Assistant Operation  ",
+      " Display: 4K Dolby Vision | HDR 10 | HLG | Reality Flow MEMC | Vivid Picture Engine | Wide Colour Gamut- DCI-P3 94% (typ)  "
+    ],
     "product_company": "Xiaomi 108 cm (43 inches) X Series 4K Ultra HD Smart Google TV L43M8-A2IN (Black)"
   },
   {
     "slug": "",
     "category": "tv",
     "name": "",
-    "price": "25,999"
+    "price": "25,999",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxMTM4MDI2MDgzODc0MDczOjE3MTAzODYxODY6c3BfYXRmOjMwMDEwODQyNzQ4NTczMjo6MDo6&url=%2FXiaomi-inches-Ultra-Google-L43M8-A2IN%2Fdp%2FB0CH33945T%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.0Ur0O6x7LR7eudu2CXnL_9bOs9TRYEys0BcwQzt0bymRkvrkayk32G5qGtQlLXkQNwG_3w7WVh3AcSKuX8aMR4DwafYiMcI2JrArZ1EsoB-C4c6zY19G-dJi-u7hG-fLXx14iJBGmZiaEfO159TRzHdC7r5qQlRV-GuEurDmhEBJQvmX8HwqQx6bysmsZyZ2sLx4KLUnvSOdMyog8X6UF2axKIxscVTmVCOGzoXAtrw.9HQBCDcLnZBvcXihEAII795KvZQ6rkvflGGPfLovOlA%26dib_tag%3Dse%26keywords%3DTelevision%26qid%3D1710386186%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1",
+    "product_desc": [
+      " Resolution : 4K Ultra HD (3840 x 2160) | Refresh Rate : 60 Hertz | Viewing angle : 178 degrees  ",
+      " Connectivity: Dual Band Wi-Fi | Connectivity: 3 HDMI ports to connect set top box, Blu-ray speakers or gaming console | 2 USB ports to connect hard drives or other USB devices| Optical port| AV port| Ethernet port | 3.5 mm jack | Bluetooth 5.0  ",
+      " Sound: 30 Watts Output | Dolby Audio | DTS-X | DTS Virtual: X  ",
+      " Smart TV Features: Google TV, Built-In WiFi, Chromecast built-in, 2GB RAM, 8GB ROM, Supported Apps: Netflix, Prime Video, YouTube, Zee5, etc., MEMC Engine , eARC (Dolby Atmos Pass-through), ALLM (Auto Low Latency Mode), and Google Assistant Operation  ",
+      " Display: 4K Dolby Vision | HDR 10 | HLG | Reality Flow MEMC | Vivid Picture Engine | Wide Colour Gamut- DCI-P3 94% (typ)  "
+    ]
   },
   {
-    "slug": "Acer-80-cm-(32-inches)-Advanced-I-Series-HD-Ready-Smart-LED-Google-TV-AR32GR2841HDFL-(Black)",
+    "slug": "Xiaomi-125-cm-(50-inches)-X-Pro-4K-Dolby-Vision-IQ-Series-Smart-Google-TV-L50M8-5XIN-(Black)",
     "category": "tv",
-    "name": "Acer 80 cm (32 inches) Advanced I Series HD Ready Smart LED Google TV AR32GR2841HDFL (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/511DmhAgHAL._AC_UY218_.jpg",
-    "price": "11,990",
-    "product_company": "Acer 80 cm (32 inches) Advanced I Series HD Ready Smart LED Google TV AR32GR2841HDFL (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "11,990"
-  },
-  {
-    "slug": "MI-80-cm-(32-inches)-A-Series-HD-Ready-Smart-Google-TV-L32M8-5AIN-(Black)",
-    "category": "tv",
-    "name": "MI 80 cm (32 inches) A Series HD Ready Smart Google TV L32M8-5AIN (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/713A5VksK6L._AC_UY218_.jpg",
-    "price": "12,490",
-    "product_company": "MI 80 cm (32 inches) A Series HD Ready Smart Google TV L32M8-5AIN (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "12,490"
-  },
-  {
-    "slug": "VW-80-cm-(32-inches)-Frameless-Series-HD-Ready-Android-Smart-LED-TV-VW32S-(Black)",
-    "category": "tv",
-    "name": "VW 80 cm (32 inches) Frameless Series HD Ready Android Smart LED TV VW32S (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/717oSOB4hCL._AC_UY218_.jpg",
-    "price": "7,499",
-    "product_company": "VW 80 cm (32 inches) Frameless Series HD Ready Android Smart LED TV VW32S (Black)"
+    "name": "Xiaomi 125 cm (50 inches) X Pro 4K Dolby Vision IQ Series Smart Google TV L50M8-5XIN (Black)",
+    "img_url": "https://m.media-amazon.com/images/I/71Ey2FZp4tL._AC_UY218_.jpg",
+    "price": "41,999",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxMTM4MDI2MDgzODc0MDczOjE3MTAzODYxODY6c3BfYXRmOjMwMDA3Njc5NDE2NzIzMjo6MDo6&url=%2FXiaomi-inches-Vision-Google-L50M8-5XIN%2Fdp%2FB0CG5STP81%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.0Ur0O6x7LR7eudu2CXnL_9bOs9TRYEys0BcwQzt0bymRkvrkayk32G5qGtQlLXkQNwG_3w7WVh3AcSKuX8aMR4DwafYiMcI2JrArZ1EsoB-C4c6zY19G-dJi-u7hG-fLXx14iJBGmZiaEfO159TRzHdC7r5qQlRV-GuEurDmhEBJQvmX8HwqQx6bysmsZyZ2sLx4KLUnvSOdMyog8X6UF2axKIxscVTmVCOGzoXAtrw.9HQBCDcLnZBvcXihEAII795KvZQ6rkvflGGPfLovOlA%26dib_tag%3Dse%26keywords%3DTelevision%26qid%3D1710386186%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1",
+    "product_desc": [
+      " Resolution : 4K Ultra HD (3840 x 2160) | Refresh Rate : 60 Hertz | Viewing angle : 178 degrees  ",
+      " Connectivity: Dual Band Wi-Fi | 3 HDMI | 2 USB ports| Optical port| AV port| Ethernet port | 3.5 mm jack | Bluetooth 5.0  ",
+      " Sound: 40 Watts Output | Dolby Atmos | DTS-X  ",
+      " Smart TV Features: Google TV, Built-In WiFi, Chromecast built-in, 2GB RAM, 16GB ROM, Supported Apps: Netflix, Prime Video, YouTube, Zee5, etc., Ambient Light Sensor, Far Field Microphone, ALLM (Auto Low Latency Mode), Hands Free Voice Control and Google Assistant Operation  ",
+      " Display: 4K Dolby Vision IQ | HDR10+ | HDR 10 | HLG | Reality Flow MEMC | Vivid Picture Engine 2 | Wide Colour Gamut- DCI-P3 94% (typ)  ",
+      " Warranty Information: 1 Year Warranty on Product and 2 Years Warranty on Panel provided by the brand from the date of purchase  "
+    ],
+    "product_company": "Xiaomi 125 cm (50 inches) X Pro 4K Dolby Vision IQ Series Smart Google TV L50M8-5XIN (Black)"
   },
   {
     "slug": "",
     "category": "tv",
     "name": "",
-    "price": "7,499"
-  },
-  {
-    "slug": "VW-80-cm-(32-inches)-Playwall-Frameless-Series-HD-Ready-Android-Smart-LED-TV-VW3251-(Black)",
-    "category": "tv",
-    "name": "VW 80 cm (32 inches) Playwall Frameless Series HD Ready Android Smart LED TV VW3251 (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/817PTKRtJ8L._AC_UY218_.jpg",
-    "price": "7,999",
-    "product_company": "VW 80 cm (32 inches) Playwall Frameless Series HD Ready Android Smart LED TV VW3251 (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "7,999"
-  },
-  {
-    "slug": "Redmi-80-cm-(32-inches)-F-Series-HD-Ready-Smart-LED-Fire-TV-L32R8-FVIN-(Black)",
-    "category": "tv",
-    "name": "Redmi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32R8-FVIN (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/819Lw2PE8tL._AC_UL640_QL65_.jpg",
-    "price": "11,999",
-    "product_company": "Redmi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32R8-FVIN (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "11,999"
-  },
-  {
-    "slug": "Samsung-80-cm-(32-inches)-HD-Ready-Smart-LED-TV-UA32T4380AKXXL-(Glossy-Black)",
-    "category": "tv",
-    "name": "Samsung 80 cm (32 inches) HD Ready Smart LED TV UA32T4380AKXXL (Glossy Black)",
-    "img_url": "https://m.media-amazon.com/images/I/71S8iUPW9bL._AC_UY218_.jpg",
-    "price": "13,489",
-    "product_company": "Samsung 80 cm (32 inches) HD Ready Smart LED TV UA32T4380AKXXL (Glossy Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "13,489"
-  },
-  {
-    "slug": "Redmi-80-cm-(32-inches)-F-Series-HD-Ready-Smart-LED-Fire-TV-L32R8-FVIN-(Black)",
-    "category": "tv",
-    "name": "Redmi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32R8-FVIN (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/819Lw2PE8tL._AC_UY218_.jpg",
-    "price": "11,999",
-    "product_company": "Redmi 80 cm (32 inches) F Series HD Ready Smart LED Fire TV L32R8-FVIN (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "11,999"
-  },
-  {
-    "slug": "Samsung-80-cm-(32-Inches)-Wondertainment-Series-HD-Ready-LED-Smart-TV-UA32T4340BKXXL-(Glossy-Black)",
-    "category": "tv",
-    "name": "Samsung 80 cm (32 Inches) Wondertainment Series HD Ready LED Smart TV UA32T4340BKXXL (Glossy Black)",
-    "img_url": "https://m.media-amazon.com/images/I/71RxCmvnrbL._AC_UY218_.jpg",
-    "price": "13,489",
-    "product_company": "Samsung 80 cm (32 Inches) Wondertainment Series HD Ready LED Smart TV UA32T4340BKXXL (Glossy Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "13,489"
-  },
-  {
-    "slug": "LG-80-cm-(32-inches)-HD-Ready-Smart-LED-TV-32LM563BPTC-(Dark-Iron-Gray)",
-    "category": "tv",
-    "name": "LG 80 cm (32 inches) HD Ready Smart LED TV 32LM563BPTC (Dark Iron Gray)",
-    "img_url": "https://m.media-amazon.com/images/I/71kuqRw8L5L._AC_UY218_.jpg",
-    "price": "14,490",
-    "product_company": "LG 80 cm (32 inches) HD Ready Smart LED TV 32LM563BPTC (Dark Iron Gray)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "14,490"
-  },
-  {
-    "slug": "OnePlus-80-cm-(32-inches)-Y-Series-HD-Ready-LED-Smart-Android-TV-32Y1-(Black)",
-    "category": "tv",
-    "name": "OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/71d5fMDvq9L._AC_UY218_.jpg",
-    "price": "12,999",
-    "product_company": "OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "img_url": "https://m.media-amazon.com/images/I/11hfR5Cq9GL._SS200_.png",
-    "price": "12,999"
-  },
-  {
-    "slug": "Acer-109-cm-(43-inches)-Advanced-I-Series-Full-HD-Smart-LED-Google-TV-AR43GR2841FDFL-(Black)",
-    "category": "tv",
-    "name": "Acer 109 cm (43 inches) Advanced I Series Full HD Smart LED Google TV AR43GR2841FDFL (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/517liP0ov8L._AC_UY218_.jpg",
-    "price": "18,999",
-    "product_company": "Acer 109 cm (43 inches) Advanced I Series Full HD Smart LED Google TV AR43GR2841FDFL (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "18,999"
-  },
-  {
-    "slug": "Acer-126-cm-(50-inches)-V-Series-4K-Ultra-HD-Smart-QLED-Google-TV-AR50GR2851VQD-(Black)",
-    "category": "tv",
-    "name": "Acer 126 cm (50 inches) V Series 4K Ultra HD Smart QLED Google TV AR50GR2851VQD (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/81WylP+CiQL._AC_UY218_.jpg",
-    "price": "31,999",
-    "product_company": "Acer 126 cm (50 inches) V Series 4K Ultra HD Smart QLED Google TV AR50GR2851VQD (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "31,999"
-  },
-  {
-    "slug": "VW-80-cm-(32-inches)-Linux-Series-Frameless-HD-Ready-Smart-LED-TV-VW32C2-(Black)-|-with-18-Months-Warranty",
-    "category": "tv",
-    "name": "VW 80 cm (32 inches) Linux Series Frameless HD Ready Smart LED TV VW32C2 (Black) | with 18 Months Warranty",
-    "img_url": "https://m.media-amazon.com/images/I/71jVRzxB1wL._AC_UY218_.jpg",
-    "price": "7,999",
-    "product_company": "VW 80 cm (32 inches) Linux Series Frameless HD Ready Smart LED TV VW32C2 (Black) | with 18 Months Warranty"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "7,999"
-  },
-  {
-    "slug": "VW-109-cm-(43-inches)-Playwall-Frameless-Series-Full-HD-Android-Smart-LED-TV-VW43F1-(Black)",
-    "category": "tv",
-    "name": "VW 109 cm (43 inches) Playwall Frameless Series Full HD Android Smart LED TV VW43F1 (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/81SYE9YcekL._AC_UY218_.jpg",
-    "price": "14,999",
-    "product_company": "VW 109 cm (43 inches) Playwall Frameless Series Full HD Android Smart LED TV VW43F1 (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "14,999"
-  },
-  {
-    "slug": "TCL-101-cm-(40-inches)-Bezel-Less-S-Series-Full-HD-Smart-Android-LED-TV-40S5400A-(Black)",
-    "category": "tv",
-    "name": "TCL 101 cm (40 inches) Bezel-Less S Series Full HD Smart Android LED TV 40S5400A (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/71UEPRqBaeL._AC_UY218_.jpg",
-    "price": "16,990",
-    "product_company": "TCL 101 cm (40 inches) Bezel-Less S Series Full HD Smart Android LED TV 40S5400A (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "16,990"
+    "price": "41,999",
+    "product_url": "http://www.amazon.in//sspa/click?ie=UTF8&spc=MToxMTM4MDI2MDgzODc0MDczOjE3MTAzODYxODY6c3BfYXRmOjMwMDA3Njc5NDE2NzIzMjo6MDo6&url=%2FXiaomi-inches-Vision-Google-L50M8-5XIN%2Fdp%2FB0CG5STP81%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.0Ur0O6x7LR7eudu2CXnL_9bOs9TRYEys0BcwQzt0bymRkvrkayk32G5qGtQlLXkQNwG_3w7WVh3AcSKuX8aMR4DwafYiMcI2JrArZ1EsoB-C4c6zY19G-dJi-u7hG-fLXx14iJBGmZiaEfO159TRzHdC7r5qQlRV-GuEurDmhEBJQvmX8HwqQx6bysmsZyZ2sLx4KLUnvSOdMyog8X6UF2axKIxscVTmVCOGzoXAtrw.9HQBCDcLnZBvcXihEAII795KvZQ6rkvflGGPfLovOlA%26dib_tag%3Dse%26keywords%3DTelevision%26qid%3D1710386186%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1",
+    "product_desc": [
+      " Resolution : 4K Ultra HD (3840 x 2160) | Refresh Rate : 60 Hertz | Viewing angle : 178 degrees  ",
+      " Connectivity: Dual Band Wi-Fi | 3 HDMI | 2 USB ports| Optical port| AV port| Ethernet port | 3.5 mm jack | Bluetooth 5.0  ",
+      " Sound: 40 Watts Output | Dolby Atmos | DTS-X  ",
+      " Smart TV Features: Google TV, Built-In WiFi, Chromecast built-in, 2GB RAM, 16GB ROM, Supported Apps: Netflix, Prime Video, YouTube, Zee5, etc., Ambient Light Sensor, Far Field Microphone, ALLM (Auto Low Latency Mode), Hands Free Voice Control and Google Assistant Operation  ",
+      " Display: 4K Dolby Vision IQ | HDR10+ | HDR 10 | HLG | Reality Flow MEMC | Vivid Picture Engine 2 | Wide Colour Gamut- DCI-P3 94% (typ)  ",
+      " Warranty Information: 1 Year Warranty on Product and 2 Years Warranty on Panel provided by the brand from the date of purchase  "
+    ]
   },
   {
     "slug": "OnePlus-108-cm-(43-inches)-Y-Series-4K-Ultra-HD-Smart-Android-LED-TV-43Y1S-Pro-(Black)",
@@ -230,6 +67,15 @@
     "name": "OnePlus 108 cm (43 inches) Y Series 4K Ultra HD Smart Android LED TV 43Y1S Pro (Black)",
     "img_url": "https://m.media-amazon.com/images/I/819SRH2DKBL._AC_UY218_.jpg",
     "price": "22,999",
+    "product_url": "http://www.amazon.in//OnePlus-43-inches-Android-Pro/dp/B09VCHLSJF/ref=sr_1_3?dib=eyJ2IjoiMSJ9.0Ur0O6x7LR7eudu2CXnL_9bOs9TRYEys0BcwQzt0bymRkvrkayk32G5qGtQlLXkQNwG_3w7WVh3AcSKuX8aMR4DwafYiMcI2JrArZ1EsoB-C4c6zY19G-dJi-u7hG-fLXx14iJBGmZiaEfO159TRzHdC7r5qQlRV-GuEurDmhEBJQvmX8HwqQx6bysmsZyZ2sLx4KLUnvSOdMyog8X6UF2axKIxscVTmVCOGzoXAtrw.9HQBCDcLnZBvcXihEAII795KvZQ6rkvflGGPfLovOlA&dib_tag=se&keywords=Television&qid=1710386186&sr=8-3",
+    "product_desc": [
+      " Resolution : 4K Ultra HD (3840x2160) | Refresh Rate : 60 Hertz  ",
+      " Connectivity: 3 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices | Dual-band Wi-Fi  ",
+      " Sound : 24 Watts Output | Dolby Audio | Dolby Atmos Decoding  ",
+      " Smart TV features: Android TV | OnePlus Connect Ecosystem| Google Assistant | Chromecast, Miracast, DLNA | Auto Low Latency Mode | Supported Apps : Netflix, Youtube, Prime Video, Hotstar, SonyLiv, Hungama, JioCinema, Zee5, Eros Now, Oxygen Play  ",
+      " Display : Bezel-less Design | Decoding of HDR10+ HDR10, HLG | 1 billion colors | Gamma Engine with MEMC  ",
+      " Warranty Information: 1 year comprehensive warranty and additional 1 year on panel provided by the manufacturer from date of purchase  "
+    ],
     "product_company": "OnePlus 108 cm (43 inches) Y Series 4K Ultra HD Smart Android LED TV 43Y1S Pro (Black)"
   },
   {
@@ -237,104 +83,79 @@
     "category": "tv",
     "name": "",
     "img_url": "https://m.media-amazon.com/images/I/11hfR5Cq9GL._SS200_.png",
-    "price": "22,999"
+    "price": "22,999",
+    "product_url": "http://www.amazon.in//OnePlus-43-inches-Android-Pro/dp/B09VCHLSJF/ref=sr_1_3?dib=eyJ2IjoiMSJ9.0Ur0O6x7LR7eudu2CXnL_9bOs9TRYEys0BcwQzt0bymRkvrkayk32G5qGtQlLXkQNwG_3w7WVh3AcSKuX8aMR4DwafYiMcI2JrArZ1EsoB-C4c6zY19G-dJi-u7hG-fLXx14iJBGmZiaEfO159TRzHdC7r5qQlRV-GuEurDmhEBJQvmX8HwqQx6bysmsZyZ2sLx4KLUnvSOdMyog8X6UF2axKIxscVTmVCOGzoXAtrw.9HQBCDcLnZBvcXihEAII795KvZQ6rkvflGGPfLovOlA&dib_tag=se&keywords=Television&qid=1710386186&sr=8-3",
+    "product_desc": [
+      " Resolution : 4K Ultra HD (3840x2160) | Refresh Rate : 60 Hertz  ",
+      " Connectivity: 3 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices | Dual-band Wi-Fi  ",
+      " Sound : 24 Watts Output | Dolby Audio | Dolby Atmos Decoding  ",
+      " Smart TV features: Android TV | OnePlus Connect Ecosystem| Google Assistant | Chromecast, Miracast, DLNA | Auto Low Latency Mode | Supported Apps : Netflix, Youtube, Prime Video, Hotstar, SonyLiv, Hungama, JioCinema, Zee5, Eros Now, Oxygen Play  ",
+      " Display : Bezel-less Design | Decoding of HDR10+ HDR10, HLG | 1 billion colors | Gamma Engine with MEMC  ",
+      " Warranty Information: 1 year comprehensive warranty and additional 1 year on panel provided by the manufacturer from date of purchase  "
+    ]
   },
   {
-    "slug": "Acer-80-cm-(32-inches)-I-Series-HD-Ready-Android-Smart-LED-TV-AR32AR2841HDFL-(Black)",
+    "slug": "Samsung-80-cm-(32-Inches)-Wondertainment-Series-HD-Ready-LED-Smart-TV-UA32T4340BKXXL-(Glossy-Black)",
     "category": "tv",
-    "name": "Acer 80 cm (32 inches) I Series HD Ready Android Smart LED TV AR32AR2841HDFL (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/712am1RDNiL._AC_UY218_.jpg",
-    "price": "10,999",
-    "product_company": "Acer 80 cm (32 inches) I Series HD Ready Android Smart LED TV AR32AR2841HDFL (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "10,999"
-  },
-  {
-    "slug": "Acer-100-cm-(40-inches)-Advanced-I-Series-Full-HD-Smart-LED-Google-TV-AR40GR2841FDFL-(Black)",
-    "category": "tv",
-    "name": "Acer 100 cm (40 inches) Advanced I Series Full HD Smart LED Google TV AR40GR2841FDFL (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/5126gXnEjFL._AC_UY218_.jpg",
-    "price": "16,999",
-    "product_company": "Acer 100 cm (40 inches) Advanced I Series Full HD Smart LED Google TV AR40GR2841FDFL (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "16,999"
-  },
-  {
-    "slug": "Samsung-108-cm-(43-Inches)-Crystal-Vision-4K-Ultra-HD-Smart-LED-TV-UA43CUE70AKLXL-(Titan-Gray)",
-    "category": "tv",
-    "name": "Samsung 108 cm (43 Inches) Crystal Vision 4K Ultra HD Smart LED TV UA43CUE70AKLXL (Titan Gray)",
-    "img_url": "https://m.media-amazon.com/images/I/71G3w6wIhZL._AC_UY218_.jpg",
-    "price": "29,990",
-    "product_company": "Samsung 108 cm (43 Inches) Crystal Vision 4K Ultra HD Smart LED TV UA43CUE70AKLXL (Titan Gray)"
+    "name": "Samsung 80 cm (32 Inches) Wondertainment Series HD Ready LED Smart TV UA32T4340BKXXL (Glossy Black)",
+    "img_url": "https://m.media-amazon.com/images/I/71RxCmvnrbL._AC_UY218_.jpg",
+    "price": "13,489",
+    "product_url": "http://www.amazon.in//Samsung-Inches-Wondertainment-UA32T4340BKXXL-Glossy/dp/B09F6S8BT6/ref=sr_1_4?dib=eyJ2IjoiMSJ9.0Ur0O6x7LR7eudu2CXnL_9bOs9TRYEys0BcwQzt0bymRkvrkayk32G5qGtQlLXkQNwG_3w7WVh3AcSKuX8aMR4DwafYiMcI2JrArZ1EsoB-C4c6zY19G-dJi-u7hG-fLXx14iJBGmZiaEfO159TRzHdC7r5qQlRV-GuEurDmhEBJQvmX8HwqQx6bysmsZyZ2sLx4KLUnvSOdMyog8X6UF2axKIxscVTmVCOGzoXAtrw.9HQBCDcLnZBvcXihEAII795KvZQ6rkvflGGPfLovOlA&dib_tag=se&keywords=Television&qid=1710386186&sr=8-4",
+    "product_desc": [
+      " Resolution: HD Ready (1366x768) | Refresh Rate: 60 hertz  ",
+      " Connectivity: 2 HDMI ports to connect set top box, Blu Ray players, gaming console | 1 USB ports to connect hard drives and other USB devices  ",
+      " Sound : 20 Watts Output | Dolby Digital Plus  ",
+      " Smart TV Features : Personal Computer | Screen Share | Music System | Content Guide | Connect Share Movie  ",
+      " Display : LED Panel | Mega Contrast | PurColor | HD Picture Quality | Slim & Stylish Design  ",
+      " Warranty Information: 1 year comprehensive warranty plus additional 1 years on panel by brand from date of invoice  "
+    ],
+    "product_company": "Samsung 80 cm (32 Inches) Wondertainment Series HD Ready LED Smart TV UA32T4340BKXXL (Glossy Black)"
   },
   {
     "slug": "",
     "category": "tv",
     "name": "",
-    "price": "29,990"
+    "price": "13,489",
+    "product_url": "http://www.amazon.in//Samsung-Inches-Wondertainment-UA32T4340BKXXL-Glossy/dp/B09F6S8BT6/ref=sr_1_4?dib=eyJ2IjoiMSJ9.0Ur0O6x7LR7eudu2CXnL_9bOs9TRYEys0BcwQzt0bymRkvrkayk32G5qGtQlLXkQNwG_3w7WVh3AcSKuX8aMR4DwafYiMcI2JrArZ1EsoB-C4c6zY19G-dJi-u7hG-fLXx14iJBGmZiaEfO159TRzHdC7r5qQlRV-GuEurDmhEBJQvmX8HwqQx6bysmsZyZ2sLx4KLUnvSOdMyog8X6UF2axKIxscVTmVCOGzoXAtrw.9HQBCDcLnZBvcXihEAII795KvZQ6rkvflGGPfLovOlA&dib_tag=se&keywords=Television&qid=1710386186&sr=8-4",
+    "product_desc": [
+      " Resolution: HD Ready (1366x768) | Refresh Rate: 60 hertz  ",
+      " Connectivity: 2 HDMI ports to connect set top box, Blu Ray players, gaming console | 1 USB ports to connect hard drives and other USB devices  ",
+      " Sound : 20 Watts Output | Dolby Digital Plus  ",
+      " Smart TV Features : Personal Computer | Screen Share | Music System | Content Guide | Connect Share Movie  ",
+      " Display : LED Panel | Mega Contrast | PurColor | HD Picture Quality | Slim & Stylish Design  ",
+      " Warranty Information: 1 year comprehensive warranty plus additional 1 years on panel by brand from date of invoice  "
+    ]
   },
   {
-    "slug": "LG-80-cm-(32-inches)-HD-Ready-Smart-LED-TV-32LQ643BPTA-(Black)",
+    "slug": "Samsung-80-cm-(32-inches)-HD-Ready-Smart-LED-TV-UA32T4380AKXXL-(Glossy-Black)",
     "category": "tv",
-    "name": "LG 80 cm (32 inches) HD Ready Smart LED TV 32LQ643BPTA (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/71oJI9KEUPL._AC_UY218_.jpg",
-    "price": "15,490",
-    "product_company": "LG 80 cm (32 inches) HD Ready Smart LED TV 32LQ643BPTA (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "15,490"
-  },
-  {
-    "slug": "Redmi-108-cm-(43-inches)-4K-Ultra-HD-Smart-LED-Fire-TV-L43R8-FVIN-(Black)",
-    "category": "tv",
-    "name": "Redmi 108 cm (43 inches) 4K Ultra HD Smart LED Fire TV L43R8-FVIN (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/81sQWfxGDRL._AC_UY218_.jpg",
-    "price": "25,999",
-    "product_company": "Redmi 108 cm (43 inches) 4K Ultra HD Smart LED Fire TV L43R8-FVIN (Black)"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "25,999"
-  },
-  {
-    "slug": "Samsung-138-cm-(55-inches)-Crystal-4K-Neo-Series-Ultra-HD-Smart-LED-TV-UA55AUE65AKXXL-(Black)",
-    "category": "tv",
-    "name": "Samsung 138 cm (55 inches) Crystal 4K Neo Series Ultra HD Smart LED TV UA55AUE65AKXXL (Black)",
-    "img_url": "https://m.media-amazon.com/images/I/71viWVwI0JL._AC_UY218_.jpg",
-    "price": "43,990",
-    "product_company": "Samsung 138 cm (55 inches) Crystal 4K Neo Series Ultra HD Smart LED TV UA55AUE65AKXXL (Black)"
+    "name": "Samsung 80 cm (32 inches) HD Ready Smart LED TV UA32T4380AKXXL (Glossy Black)",
+    "img_url": "https://m.media-amazon.com/images/I/71S8iUPW9bL._AC_UY218_.jpg",
+    "price": "13,489",
+    "product_url": "http://www.amazon.in//Samsung-inches-Ready-UA32T4380AKXXL-Glossy/dp/B0B8YTGC23/ref=sr_1_5?dib=eyJ2IjoiMSJ9.0Ur0O6x7LR7eudu2CXnL_9bOs9TRYEys0BcwQzt0bymRkvrkayk32G5qGtQlLXkQNwG_3w7WVh3AcSKuX8aMR4DwafYiMcI2JrArZ1EsoB-C4c6zY19G-dJi-u7hG-fLXx14iJBGmZiaEfO159TRzHdC7r5qQlRV-GuEurDmhEBJQvmX8HwqQx6bysmsZyZ2sLx4KLUnvSOdMyog8X6UF2axKIxscVTmVCOGzoXAtrw.9HQBCDcLnZBvcXihEAII795KvZQ6rkvflGGPfLovOlA&dib_tag=se&keywords=Television&qid=1710386186&sr=8-5",
+    "product_desc": [
+      " Resolution: HD Ready (1366x768) | Refresh Rate: 60 hertz  ",
+      " Connectivity: 2 HDMI ports to connect set top box, Blu Ray players, gaming console | 1 USB ports to connect hard drives and other USB devices  ",
+      " Sound : 20 Watts Output | Dolby Digital Plus  ",
+      " Smart TV Features : Personal Computer | Screen Share | Music System | Content Guide | Connect Share Movie  ",
+      " Display : LED Panel | Mega Contrast | PurColor | HD Picture Quality | Slim & Stylish Design  ",
+      " Warranty Information: 1 year comprehensive warranty plus additional 1 years on panel by brand from date of invoice  "
+    ],
+    "product_company": "Samsung 80 cm (32 inches) HD Ready Smart LED TV UA32T4380AKXXL (Glossy Black)"
   },
   {
     "slug": "",
     "category": "tv",
     "name": "",
-    "price": "43,990"
-  },
-  {
-    "slug": "Oboe-Silicone-Tv-Remote-Cover-Compatible-with-Redmi-Tv-Remote-4k-Ultra-43-inch/Xiaomi-OLED-Series-55-inch/Xiaomi-5A-Series-32/40/43-inch-Protective-Case-with-Loop-(Black)-[Remote-NOT-Included]",
-    "category": "tv",
-    "name": "Oboe Silicone Tv Remote Cover Compatible with Redmi Tv Remote 4k Ultra 43 inch/Xiaomi OLED Series 55 inch/Xiaomi 5A Series 32/40/43 inch Protective Case with Loop (Black) [Remote NOT Included]",
-    "img_url": "https://m.media-amazon.com/images/I/618nEWgUvjL._AC_UL640_QL65_.jpg",
-    "price": "332",
-    "product_company": "Oboe Silicone Tv Remote Cover Compatible with Redmi Tv Remote 4k Ultra 43 inch/Xiaomi OLED Series 55 inch/Xiaomi 5A Series 32/40/43 inch Protective Case with Loop (Black) [Remote NOT Included]"
-  },
-  {
-    "slug": "",
-    "category": "tv",
-    "name": "",
-    "price": "332"
+    "price": "13,489",
+    "product_url": "http://www.amazon.in//Samsung-inches-Ready-UA32T4380AKXXL-Glossy/dp/B0B8YTGC23/ref=sr_1_5?dib=eyJ2IjoiMSJ9.0Ur0O6x7LR7eudu2CXnL_9bOs9TRYEys0BcwQzt0bymRkvrkayk32G5qGtQlLXkQNwG_3w7WVh3AcSKuX8aMR4DwafYiMcI2JrArZ1EsoB-C4c6zY19G-dJi-u7hG-fLXx14iJBGmZiaEfO159TRzHdC7r5qQlRV-GuEurDmhEBJQvmX8HwqQx6bysmsZyZ2sLx4KLUnvSOdMyog8X6UF2axKIxscVTmVCOGzoXAtrw.9HQBCDcLnZBvcXihEAII795KvZQ6rkvflGGPfLovOlA&dib_tag=se&keywords=Television&qid=1710386186&sr=8-5",
+    "product_desc": [
+      " Resolution: HD Ready (1366x768) | Refresh Rate: 60 hertz  ",
+      " Connectivity: 2 HDMI ports to connect set top box, Blu Ray players, gaming console | 1 USB ports to connect hard drives and other USB devices  ",
+      " Sound : 20 Watts Output | Dolby Digital Plus  ",
+      " Smart TV Features : Personal Computer | Screen Share | Music System | Content Guide | Connect Share Movie  ",
+      " Display : LED Panel | Mega Contrast | PurColor | HD Picture Quality | Slim & Stylish Design  ",
+      " Warranty Information: 1 year comprehensive warranty plus additional 1 years on panel by brand from date of invoice  "
+    ]
   }
 ]
