@@ -42,11 +42,11 @@
             <!-- Banner 1 -->
             <div class="banner">
                 <!-- Banner 1 -->
-                <img class="banner-img" src="/assets/banners/banner-1.avif" alt=""  />
+                <img class="banner-img" src="https://plus.unsplash.com/premium_photo-1682125227290-f62abb91ed5b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  />
                 <!-- Banner 2 -->
-                <img class="banner-img" src="/assets/banners/banner-2.jpg" alt="" />
+                <img class="banner-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                 <!-- Banner 3 -->
-                <img class="banner-img" src="/assets/banners/banner-3.jpg" alt="" />
+                <img class="banner-img" src="https://images.unsplash.com/photo-1532186773960-85649e5cb70b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                 <div class="banner-content">
                     <h2>ShopNest</h2>
                     <h4>Where every purchase unfolds a world of delightful possibilites.</h4>
@@ -96,12 +96,12 @@
             </div>
         </div>
     </div>
-    <!-- Featured Collection - Junaid Al Atoor Attar -->
+    <!-- Featured Products - ShopNest -->
     <div class="py-24 flex flex-col space-y-7">
         <!-- Title(s) -->
         <div class="flex flex-col space-y-3 items-center">
-            <h5 class="text-gray-800 text-sm">FEATURED COLLECTION</h5>
-            <p class="text-xl text-gray-800 font-semibold">JUNAID AL ATOOR ATTAR</p>
+            <h5 class="text-gray-800 text-sm">FEATURED Products</h5>
+            <p class="text-xl text-gray-800 font-semibold">ShopNest</p>
         </div>
         <!-- Product(s) -->
         <div
@@ -112,9 +112,9 @@
                     <div class="product-card">
                         <a href="/products/<%= featured_product.slug %>" target="_blank">
                             <img class=""
-                                src="<%= featured_product.absolute_img_url %>"
+                                src="<%= featured_product.img_url %>"
                                 alt="" />
-                            <p class="product-name"><%= featured_product.name %></p>
+                            <p class="product-name"><%= featured_product.name.substring(15) + "..." %></p>
                             <p class="product-price">From &#8377;<%= featured_product.price %></p>
                         </a>
                     </div>
@@ -135,100 +135,81 @@
         <!-- Section 1-->
         <div class="section group/section-img">
             <div class="section-image-wrapper">
-                <img src="//junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=667"
-                    alt="MEN PERFUMES" srcset="
-              //junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=200 200w,
-              //junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=300 300w,
-              //junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=400 400w,
-              //junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=500 500w,
-              //junaidalatoor.com/cdn/shop/collections/man_perfume.jpg?v=1674027694&amp;width=600 600w
-            " width="667" height="1000" loading="lazy" sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw"
+                <img 
+                src="https://plus.unsplash.com/premium_photo-1679943423706-570c6462f9a4?q=80&w=2010&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                 loading="lazy"
                     draggable="false"
-                    class="group-hover/section-img:scale-110"/>
+                    class="object-cover object-center group-hover/section-img:scale-110"/>
                 <div class="section-overlay"></div>
             </div>
             <div class="section-content">
-                <p class="text-white font-semibold text-lg md:text-xl">MEN'S PERFUMES</p>
+                <p class="text-white font-semibold text-lg md:text-xl">AIR CONDITIONERS</p>
                 <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
             </div>
         </div>
         <!-- Section 2-->
         <div class="section group/section-img">
             <div class="section-image-wrapper">
-                <img src="//junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=752" alt=""
-                    srcset="//junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=200 200w, //junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=300 300w, //junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=400 400w, //junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=500 500w, //junaidalatoor.com/cdn/shop/files/women_perfume.jpg?v=1674124252&amp;width=600 600w"
-                    width="752" height="752" loading="lazy" sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw"
+                <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                loading="lazy" 
                  draggable="false"
-                    class="group-hover/section-img:scale-110"/>
+                    class="object-cover object-center group-hover/section-img:scale-110"/>
                 <div class="section-overlay"></div>
             </div>
             <div class="section-content">
-                <p class="text-white font-semibold text-lg md:text-xl">WOMEN'S PERFUMES</p>
+                <p class="text-white font-semibold text-lg md:text-xl">PHONES</p>
                 <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
             </div>
         </div>
         <!-- Section 3-->
         <div class="section group/section-img">
             <div class="section-image-wrapper">
-                <img src="//junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=742" alt=""
-                    srcset="//junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=200 200w, //junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=300 300w, //junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=400 400w, //junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=500 500w, //junaidalatoor.com/cdn/shop/files/branded_perfume.jpg?v=1674032685&amp;width=600 600w"
-                    width="742" height="1000" loading="lazy"
-                    sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw"
+                <img src="https://plus.unsplash.com/premium_photo-1686090448668-8a323ffc622b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     draggable="false"
                     class="group-hover/section-img:scale-110"/>
                 <div class="section-overlay"></div>
             </div>
             <div class="section-content">
-                <p class="text-white font-semibold text-lg md:text-xl">JUNAID PERFUMES</p>
+                <p class="text-white font-semibold text-lg md:text-xl">TELEVISION</p>
                 <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
             </div>
         </div>
         <!-- Section 4-->
         <div class="section group/section-img">
             <div class="section-image-wrapper">
-                <img src="//junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=788" alt=""
-                    srcset="//junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=200 200w, //junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=300 300w, //junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=400 400w, //junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=500 500w, //junaidalatoor.com/cdn/shop/files/Attars.jpg?v=1674030724&amp;width=600 600w"
-                    width="788" height="1000" loading="lazy"
-                    sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw"
+                <img src="https://plus.unsplash.com/premium_photo-1664699099330-bec2db269b58?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     draggable="false"
                     class="group-hover/section-img:scale-110"/>
                 <div class="section-overlay"></div>
             </div>
             <div class="section-content">
-                <p class="text-white font-semibold text-lg md:text-xl">MEN'S ATTAR</p>
+                <p class="text-white font-semibold text-lg md:text-xl">DESKTOPS</p>
                 <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
             </div>
         </div>
         <!-- Section 5-->
         <div class="section group/section-img">
             <div class="section-image-wrapper">
-                <img src="//junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=3072"
-                    alt=""
-                    srcset="//junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=200 200w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=300 300w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=400 400w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=500 500w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=600 600w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=800 800w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=1000 1000w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=1200 1200w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=1400 1400w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=1600 1600w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=1800 1800w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=2000 2000w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=2200 2200w, //junaidalatoor.com/cdn/shop/files/E97B2C2B-8FF2-41F0-BC12-78BDA69EA2F0.jpg?v=1637297240&amp;width=2400 2400w"
-                    width="3072" height="3840" loading="lazy"
-                    sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw"
+                <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     draggable="false"
                     class="group-hover/section-img:scale-110"/>
                     <div class="section-overlay"></div>
             </div>
             <div class="section-content">
-                <p class="text-white font-semibold text-lg md:text-xl">WOMEN'S ATTAR</p>
+                <p class="text-white font-semibold text-lg md:text-xl">LAPTOPS</p>
                 <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
             </div>
         </div>
         <!-- Section 6-->
         <div class="section group/section-img">
             <div class="section-image-wrapper">
-                <img src="//junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=1080" alt=""
-                    srcset="//junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=200 200w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=300 300w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=400 400w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=500 500w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=600 600w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=800 800w, //junaidalatoor.com/cdn/shop/files/SHOP_DATA.jpg?v=1637261005&amp;width=1000 1000w"
-                    width="1080" height="1080" loading="lazy"
-                    sizes="(max-width: 699px) 100vw, (max-width: 1149px) 50vw, 33vw"
+                <img src="https://images.unsplash.com/photo-1556185781-a47769abb7ee?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     draggable="false"
                     class="group-hover/section-img:scale-110"/>
                     <div class="section-overlay"></div>
             </div>
             <div class="section-content">
-                <p class="text-white font-semibold text-lg md:text-xl">JUNAID ATTARS</p>
+                <p class="text-white font-semibold text-lg md:text-xl">HOME APPLIANCE</p>
                 <button class="w-11/12 mx-auto px-3 py-1 text-white bg-black md:px-5 md:py-3">VIEW PRODUCTS</button>
             </div>
         </div>

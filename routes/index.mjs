@@ -6,7 +6,7 @@ import { fetchFeaturedProducts } from "../controllers/ProductController.mjs";
 const router = express.Router();
 
 router.get("/", async (req, res) => res.render("index", {
-    title: "Junaid Al Atoor | Homepage",
+    title: "ShopNest | Homepage",
     featured_products: await fetchFeaturedProducts()
 }));
 

@@ -44,6 +44,8 @@ const mouseMoveHandler = function (e) {
     const dx = e.clientX - pos.x;
     const dy = e.clientY - pos.y;
     
+    productContainer.classList.add("dragstart");
+
     // Scroll the element
     productContainer.scrollTop = pos.top - dy;
     productContainer.scrollLeft = pos.left - dx;
@@ -57,6 +59,8 @@ const mouseUpHandler = function () {
     // Remove listeners
     productContainer.removeEventListener('mousemove', mouseMoveHandler);
     // productContainer.removeEventListener('mouseup', mouseUpHandler);
+
+    productContainer.classList.remove("dragstart");
 
     productContainer.style.cursor = 'grab';
     productContainer.style.removeProperty('user-select');

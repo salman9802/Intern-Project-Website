@@ -21,17 +21,19 @@
     <!-- Flex container -->
     <div class="flex flex-col space-y-5 md:flex-row md:space-y-0 md:space-x-7 md:py-9 lg:container lg:mx-auto">
         <!-- Image -->
-        <img src="<%= product.absolute_img_url %>" alt="" class="w-screen md:w-1/2 object-cover object-center">
+        <img src="<%= product.img_url %>" alt="" class="w-screen md:w-1/2 object-contain object-center">
         <!-- Product Details -->
-        <div class="flex flex-col space-y-5 px-9 py-12">
+        <div class="flex flex-col space-y-5 px-9 py-12 md:w-1/2">
             <!-- Name -->
             <div class="text-lg text-gray-800 font-semibold tracking-wider md:text-xl lg:text-3xl"><%= product.name %></div>
             <!-- Description -->
-            <div class="flex flex-col space-y-2">
-                <% for (const line of product.description) { %>
-                    <p class="text-gray-800 text-lg"><%= line %></p>
-                <% } %>
-            </div>
+            <% if (product.desc) { %>
+                <div class="flex flex-col space-y-2">
+                    <% for (const line of product.desc) { %>
+                        <p class="text-gray-800 text-lg"><%= line %></p>
+                    <% } %>
+                </div>
+            <% } %>
             <!-- Price -->
             <p class="text-gray-600 text-lg">&#8377; <%= product.price.toFixed(2) %></p>
             <!-- Form -->
