@@ -86,7 +86,7 @@ class AmazonScraper {
                 const productPrice = product.find("span.a-price-whole").text().toString().replace(/[^0-9]/gm, ""); // remove all non-numeric values
                 const productUrl = product.find("a.a-link-normal.s-underline-text.s-underline-link-text.s-link-style.a-text-normal").attr("href");
                 // let productCompany = product.find("span.a-size-medium.a-color-base").text();
-                let productCompany = productName.split(/\s+/gm)[0]; // first word in name
+                let productCompany = productName.split(/\s+/gm)[0].startsWith("(") ? productName.split(/\s+/gm)[1] : productName.split(/\s+/gm)[0]; // first word in name
 
                 const productDesc = []; // Product Description lines
                 try { // cannot fetch description
@@ -109,7 +109,9 @@ class AmazonScraper {
                     }
                 }
 
-                const productSlug = productName.replace(/\s+/gm, "-"); // make slug for product 
+                const productSlug = productName
+                    .replace(/\s+/gm, "-")
+                    .replace(/[\/\\,\(\)]+/gm, "-"); // make slug for product 
 
                 const productData = {
                     slug: productSlug,
@@ -145,44 +147,44 @@ class AmazonScraper {
 }
 
 
-// const phoneScraper = new AmazonScraper({
-//     product: "Smartphones",
-//     category: "phone",
-//     file: "./phones.json"
-// });
-// await phoneScraper.saveProducts();
+const phoneScraper = new AmazonScraper({
+    product: "Smartphones",
+    category: "phone",
+    file: "./phones.json"
+});
+await phoneScraper.saveProducts();
 
-// const acScraper = new AmazonScraper({
-//     product: "Air Conditioners",
-//     category: "ac",
-//     file: "./ac.json"
-// });
-// await acScraper.saveProducts();
+const acScraper = new AmazonScraper({
+    product: "Air Conditioners",
+    category: "ac",
+    file: "./ac.json"
+});
+await acScraper.saveProducts();
 
-// const tvcraper = new AmazonScraper({
-//     product: "Television",
-//     category: "tv",
-//     file: "./tv.json"
-// });
-// await tvcraper.saveProducts();
+const tvcraper = new AmazonScraper({
+    product: "Television",
+    category: "tv",
+    file: "./tv.json"
+});
+await tvcraper.saveProducts();
 
-// const desktopScraper = new AmazonScraper({
-//     product: "Desktops",
-//     category: "desktop",
-//     file: "./desktop.json"
-// });
-// await desktopScraper.saveProducts();
+const desktopScraper = new AmazonScraper({
+    product: "Desktops",
+    category: "desktop",
+    file: "./desktop.json"
+});
+await desktopScraper.saveProducts();
 
-// const laptopScraper = new AmazonScraper({
-//     product: "Laptops",
-//     category: "laptop",
-//     file: "./laptop.json"
-// });
-// await laptopScraper.saveProducts();
+const laptopScraper = new AmazonScraper({
+    product: "Laptops",
+    category: "laptop",
+    file: "./laptop.json"
+});
+await laptopScraper.saveProducts();
 
-// const homeApplianceScraper = new AmazonScraper({
-//     product: "Home Appliances",
-//     category: "home-appliance",
-//     file: "./home-appliance.json"
-// });
-// await homeApplianceScraper.saveProducts();
+const homeApplianceScraper = new AmazonScraper({
+    product: "Home Appliances",
+    category: "home-appliance",
+    file: "./home-appliance.json"
+});
+await homeApplianceScraper.saveProducts();
