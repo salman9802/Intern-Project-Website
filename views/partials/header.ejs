@@ -37,14 +37,29 @@
     <!-- Cart Menu -->
     <div id="cart-overlay" class="hidden w-screen h-screen absolute z-40 -top-4 -left-4 bg-black opacity-30"></div>
     <div id="cart-menu"
-        class="px-7 h-screen w-full absolute right-0 z-50 bg-white flex flex-col space-y-5 translate-x-full transition-transform md:w-1/4">
+        class="px-7 pb-16 h-screen w-full absolute right-0 z-50 bg-white flex flex-col space-y-5 translate-x-full transition-transform md:w-1/4">
         <div class="p-5 flex justify-between items-center">
             <span class="text-2xl">CART</span>
             <span id="close-cart-btn" class="text-4xl">&times;</span>
         </div>
-        <div class="h-full flex justify-center items-center">
+        <!-- If cart is empty -->
+        <!-- <div class="h-full flex justify-center items-center">
             YOUR CART IS EMPTY
+        </div> -->
+        <!-- else -->
+        <!-- cart items -->
+        <div class="h-full flex flex-col space-y-3">
+            <div class="flex space-x-1">
+                <!-- product image -->
+                <div class="flex flex-col space-y-1">
+                    <!-- product name -->
+                    <!-- product price -->
+                    <!-- product quantity --> <!-- remove btn -->
+                </div>
+            </div>
         </div>
+        <!-- checkout btn -->
+        <button class="primary-btn-full overflow-y-hidden hover:before:translate-x-0 hover:text-black">Checkout</button>
     </div>
 
     <!-- Flex Container -->

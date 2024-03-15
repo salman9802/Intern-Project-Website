@@ -1,0 +1,107 @@
+<%- include("./partials/header") %>
+
+<div class="bg-slate-100 w-screen min-h-screen">
+    <!-- Title -->
+    <h4 class="text-4xl font-semibold text-gray-800 text-center py-4 mb-12 md:text-5xl">Checkout</h4>
+    <!-- Flex Container -->
+    <div class="w-screen p-12 flex flex-col space-y-5 md:flex-row md:space-y-0 md:space-x-5">
+         <!-- Billing Details -->
+         <div class="flex flex-col space-y-2 md:space-y-5 lg:w-1/2">
+            <h4 class="text-xl font-semibold py-3 my-5 border-b border-b-gray-300">Billing Details</h4>
+            <!-- Country/Region -->
+            <div class="flex flex-col space-y-2 md:space-y-3">
+                <label for="country" class="">Country/Region</label>
+                <select name="country" id="country" class="px-3 py-2 border border-gray-300 outline-none"></select>
+            </div>
+            <!-- Street Address -->
+            <div class="flex flex-col space-y-2 md:space-y-3">
+                <label for="street-address" class="">Street address</label>
+                <input type="text" name="street-address" id="street-address" class="px-3 py-2 border border-gray-300 outline-none">
+            </div>
+            <!-- Town/City -->
+            <div class="flex flex-col space-y-2 md:space-y-3">
+                <label for="city" class="">Town/City</label>
+                <input type="text" name="city" id="city" class="px-3 py-2 border border-gray-300 outline-none">
+            </div>
+            <!-- State -->
+            <div class="flex flex-col space-y-2 md:space-y-3">
+                <label for="state" class="">State</label>
+                <select name="state" id="state" class="px-3 py-2 border border-gray-300 outline-none">
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Karnataka">Karnataka</option>
+                </select>
+            </div>
+            <!-- Pin Code -->
+            <div class="flex flex-col space-y-2 md:space-y-3">
+                <label for="pincode" class="">Pin Code</label>
+                <input type="number" name="pincode" id="pincode" class="px-3 py-2 border border-gray-300 outline-none">
+            </div>
+            <!-- Phone -->
+            <div class="flex flex-col space-y-2 md:space-y-3">
+                <label for="phone" class="">Phone Number</label>
+                <input type="number" name="phone" id="phone" class="px-3 py-2 border border-gray-300 outline-none">
+            </div>
+            <!-- Email address -->
+            <div class="flex flex-col space-y-2 md:space-y-3">
+                <label for="email" class="">Email address</label>
+                <input type="text" name="email" id="email" class="px-3 py-2 border border-gray-300 outline-none">
+            </div>
+         </div>
+         <!-- Order -->
+         <div class="w-11/12 p-4 flex flex-col space-y-5 border border-gray-300 lg:w-1/2">
+            <h5 class="text-xl font-semibold">Your order(s)</h5>
+            <!-- Product(s) -->
+            <div class="flex flex-col space-y-3 divide-y divide-gray-300 border-b border-b-gray-300">
+                <div class="flex py-3 items-center justify-between">
+                    <span class="font-semibold text-gray-600">Product</span>
+                    <span class="font-semibold text-gray-600">Subtotal</span>
+                </div>
+                <!-- Data -->
+                <div class="flex py-3 items-center justify-between">
+                    <span class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis esse recusandae. Voluptas iste laboriosam dolores cumque aliquid temporibus cum enim porro saepe, ad esse iusto veniam dolorem commodi molestiae dolorum libero debitis consectetur et quos expedita modi ipsum laudantium. Quod autem enim blanditiis, officiis fugiat necessitatibus et obcaecati animi?</span>
+                    <span class="text-gray-600">&#8377;100</span>
+                </div>
+                <div class="flex py-3 items-center justify-between">
+                    <span class="text-gray-600">Product name</span>
+                    <span class="text-gray-600">&#8377;100</span>
+                </div>
+                <div class="flex py-3 items-center justify-between">
+                    <span class="text-gray-600">Total</span>
+                    <span class="text-gray-600">&#8377;500</span>
+                </div>
+            </div>
+            <!-- Payment options -->
+            <div class="flex flex-col space-y-3 my-5">
+                <!-- bank transfer -->
+                <div class="group flex flex-col space-y-2">
+                    <div class="flex space-x-3">
+                        <input type="radio" class="outline-none" name="payment" id="bank-transfer" checked="checked">
+                        <label for="bank-transfer">Direct Bank Transfer</label>
+                    </div>
+                    <div class=" hidden p-3 border bg-gray-200 group-has-[:checked]:block">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</div>
+                </div>
+                <!-- cod -->
+                <div class="group flex flex-col space-y-2">
+                    <div class="flex space-x-3">
+                        <input type="radio" class="outline-none" name="payment" id="cash-on-deliver">
+                        <label for="cash-on-deliver">Cash on Delivery</label>
+                    </div>
+                    <div class="hidden p-3 border bg-gray-200 group-has-[:checked]:block">Pay with cash upon delivery.</div>
+                </div>
+                <!-- paypal -->
+                <div class="group flex flex-col space-y-2">
+                    <div class="flex space-x-3">
+                        <input type="radio" class="outline-none" name="payment" id="pay-pal">
+                        <label for="pay-pal">PayPal</label>
+                    </div>
+                    <div class="hidden p-3 border bg-gray-200 group-has-[:checked]:block">Pay via PayPal.</div>
+                </div>
+            </div>
+            <!-- order btn -->
+            <button id="order-btn" class="px-3 py-2 primary-btn-full w-1/2 mx-auto outline-none hover:before:translate-x-0 hover:text-black">PLACE ORDER</button>
+         </div>
+    </div>
+</div>
+
+<%- include("./partials/footer") %>
