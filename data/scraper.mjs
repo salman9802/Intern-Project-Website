@@ -1,7 +1,7 @@
 import fs from "fs";
 import https from "https";
 
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import cheerio from "cheerio";
 import got from "got";
 
@@ -11,9 +11,11 @@ import got from "got";
         slug: slug for product,
         category: product category [ac, phone, tv, desktop, laptop, home-appliance],
         name: product name,
+        company: product company,
         img_url: absolute url for product image,
         price: product price,
-        description: array of product features
+        url: product url,
+        desc: array of product features (optional)
     }
 */
 
@@ -50,6 +52,12 @@ class AmazonScraper {
         this.product = product;
         this.file = file;
         this.category = category;
+
+        this.products = (!fs.existsSync(this.file) || fs.statSync(this.file).size == 0) ? [] : JSON.parse(fs.readFileSync(this.file).toString()); // load previous file data if any
+    }
+
+    static wait(ms) {
+        return new Promise( (resolve) => {setTimeout(resolve, ms)});
     }
 
     async saveProducts() {
@@ -64,7 +72,6 @@ class AmazonScraper {
             const $ = cheerio.load(html);
             // const products = JSON.parse((fs.readFileSync(this.file).toString().length != 0) ? (fs.readFileSync(this.file)).toString() : "[]"); /* load previous file data if any */
 
-            this.products = (!fs.existsSync(this.file) || fs.statSync(this.file).size == 0) ? [] : JSON.parse(fs.readFileSync(this.file).toString()); // load previous file data if any 
 
             const productElems = $(AmazonScraper.productEle).toArray(); // get all product html elements
             for(let i = 0; i < productElems.length; i++) {
@@ -73,23 +80,33 @@ class AmazonScraper {
 
                 const productName = product.find("span.a-size-medium.a-color-base.a-text-normal").text();
                 const productImageUrl = product.find("img.s-image").attr("src");
-                const productPrice = product.find("span.a-price-whole").text();
-                const productUrl = `http://www.amazon.in/${product.find("a.a-link-normal.s-underline-text.s-underline-link-text.s-link-style.a-text-normal").attr("href")}`;
-                let productCompany = product.find("span.a-size-medium.a-color-base").text();
-                
-                const productDesc = []; // Product Description lines
-                const productPageResponse = await axios.get(productUrl, { headers: AmazonScraper.httpHeaders });
-                const productPageHtml = productPageResponse.data; // Product Page
-                const productPage = cheerio.load(productPageHtml);
-                // productPage("#feature-bullets span.a-list-item").each((index, ele) => { // features bullet points
-                //     const line = productPage(ele).text();
-                //     productDesc.push(line);
-                // });
 
-                const lines = productPage("#feature-bullets span.a-list-item").toArray();
-                for(let i = 0; i < lines.length; i++) {
-                    const line = productPage(lines[i]).text();
-                    productDesc.push(line);
+                if(!productName || !productImageUrl) continue; // product name and image url required
+
+                const productPrice = product.find("span.a-price-whole").text().toString().replace(/[^0-9]/gm, ""); // remove all non-numeric values
+                const productUrl = product.find("a.a-link-normal.s-underline-text.s-underline-link-text.s-link-style.a-text-normal").attr("href");
+                // let productCompany = product.find("span.a-size-medium.a-color-base").text();
+                let productCompany = productName.split(/\s+/gm)[0]; // first word in name
+
+                const productDesc = []; // Product Description lines
+                try { // cannot fetch description
+                    const productPageResponse = await axios.get(`http://www.amazon.in/${productUrl}`, { headers: AmazonScraper.httpHeaders });
+                    const productPageHtml = productPageResponse.data; // Product Page
+                    const productPage = cheerio.load(productPageHtml);
+                    
+                    const lines = productPage("#feature-bullets span.a-list-item").toArray();
+                    for(let i = 0; i < lines.length; i++) {
+                        const line = productPage(lines[i]).text();
+                        productDesc.push(line);
+                    }
+                }catch(e) {
+                    if(e instanceof AxiosError) {
+                        if(e.response.status !== 404) {
+                            console.log(e.response.status);
+                            console.log(e.message);
+                            console.log(e.stack);
+                        }
+                    }
                 }
 
                 const productSlug = productName.replace(/\s+/gm, "-"); // make slug for product 
@@ -98,46 +115,49 @@ class AmazonScraper {
                     slug: productSlug,
                     category: this.category,
                     name: productName,
+                    company: productCompany,
                     img_url: productImageUrl,
                     price: productPrice,
-                    product_url: productUrl,
-                    product_desc: productDesc
+                    url: productUrl,
                 };
-                if(productCompany) productData["product_company"] = productCompany;
+                if(productDesc.length !== 0) productData["desc"] = productDesc;
                 this.products.push(productData);
             }
 
             // console.log(this.products);
 
-            fs.writeFileSync(this.file, JSON.stringify(this.products, null, 2));
-            console.log(`Products '${this.category}' saved at '${this.file}'`);
+            this.save();
         } catch (err) {
             console.log("\n-------------------------------------");
             console.error(err.message);
             console.log("Writing fetched data...");
-            fs.writeFileSync(this.file, JSON.stringify(this.products, null, 2));
-            console.log(`Products '${this.category}' saved at '${this.file}'`);
+            this.save();
             console.log("-------------------------------------");
             console.error(err.stack);
             console.log("-------------------------------------");
         }
     }
+
+    save() {
+        fs.writeFileSync(this.file, JSON.stringify(this.products, null, 2));
+        console.log(`Products '${this.product}' saved at '${this.file}'`);
+    }
 }
 
 
-/* const phoneScraper = new AmazonScraper({
-    product: "Smartphones",
-    category: "phone",
-    file: "./phones.json"
-});
-await phoneScraper.saveProducts(); */
+// const phoneScraper = new AmazonScraper({
+//     product: "Smartphones",
+//     category: "phone",
+//     file: "./phones.json"
+// });
+// await phoneScraper.saveProducts();
 
-/* const acScraper = new AmazonScraper({
-    product: "Air Conditioners",
-    category: "ac",
-    file: "./ac.json"
-});
-await acScraper.saveProducts(); */
+// const acScraper = new AmazonScraper({
+//     product: "Air Conditioners",
+//     category: "ac",
+//     file: "./ac.json"
+// });
+// await acScraper.saveProducts();
 
 // const tvcraper = new AmazonScraper({
 //     product: "Television",
