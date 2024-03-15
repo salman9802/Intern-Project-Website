@@ -37,7 +37,7 @@ export async function fetchProduct(req, res) {
 }
 
 export async function fetchProducts(req, res) {
-    const { category } = req.query;
+    const { category, q } = req.query;
     if(category) {
         const categoryProducts = await ProductModel.find({category});
         if(!categoryProducts) res.status(404);
@@ -46,18 +46,20 @@ export async function fetchProducts(req, res) {
                 products: categoryProducts
             });
         }
+    } else if(q) {
+        const queriedProducts = await ProductModel.find({ $text: {$search: q} });
+        if(!queriedProducts) res.redirect("/");
+        else {
+            res.render("products", {
+                products: queriedProducts
+            });
+        }
     } else {
         const products = await ProductModel.find();
         if(!products) res.status(404);
         else {
             res.status(200).render("products", {
                 products
-                // products: [
-                //     products[0],
-                //     products[1],
-                //     products[2],
-                //     products[3],
-                // ]
             });
         }
     }
