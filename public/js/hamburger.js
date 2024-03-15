@@ -3,6 +3,7 @@ const closeHamburgerBtn = document.getElementById("close-hamburger-btn");
 const hamburgerMenu = document.getElementById("hamburger-menu");
 
 openHamburgerBtn.addEventListener("click", e => {
+    document.body.style.overflowY = "hidden";
     hamburgerMenu.classList.add("hamburger--open");
     document.getElementById("hamburger-overlay").classList.remove("hidden");
 });
@@ -10,4 +11,5 @@ openHamburgerBtn.addEventListener("click", e => {
 closeHamburgerBtn.addEventListener("click", e => {
     hamburgerMenu.classList.remove("hamburger--open");
     document.getElementById("hamburger-overlay").classList.add("hidden");
+    document.body.style.overflowY = "auto";
 });
