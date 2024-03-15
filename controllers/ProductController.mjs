@@ -36,6 +36,33 @@ export async function fetchProduct(req, res) {
     }
 }
 
+export async function fetchProducts(req, res) {
+    const { category } = req.query;
+    if(category) {
+        const categoryProducts = await ProductModel.find({category});
+        if(!categoryProducts) res.status(404);
+        else {
+            res.status(200).render("products", {
+                products: categoryProducts
+            });
+        }
+    } else {
+        const products = await ProductModel.find();
+        if(!products) res.status(404);
+        else {
+            res.status(200).render("products", {
+                products
+                // products: [
+                //     products[0],
+                //     products[1],
+                //     products[2],
+                //     products[3],
+                // ]
+            });
+        }
+    }
+}
+
 export async function sendWhatsapp(req, res) {
     const productFound = await ProductModel.find({ slug: req.params.slug }).catch(err => {
         res.sendStatus(500);

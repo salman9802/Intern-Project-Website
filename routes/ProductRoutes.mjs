@@ -1,8 +1,11 @@
 import express from "express";
 
-import { fetchProduct, sendWhatsapp } from "../controllers/ProductController.mjs";
+import { fetchProduct, fetchProducts, sendWhatsapp } from "../controllers/ProductController.mjs";
 
 const router = express.Router();
+
+router.get("/", fetchProducts);
+
 
 router.get("/:slug", fetchProduct);
 
