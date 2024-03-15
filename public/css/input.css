@@ -9,6 +9,13 @@
 .hamburger--close {
     @apply -translate-x-full;
 }
+/* Cart */
+.cart--open {
+    @apply translate-x-0;
+}
+.cart--close {
+    @apply translate-x-full;
+}
 /* Banner */
 .banner {
     @apply absolute h-full w-full;
