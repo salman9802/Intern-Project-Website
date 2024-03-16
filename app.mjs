@@ -4,8 +4,10 @@ import path from "path";
 
 import express from "express";
 import expressLayouts from "express-ejs-layouts";
-import defaultRoutes from "./routes/index.mjs";
+import cookieParser from "cookie-parser";
 
+
+import defaultRoutes from "./routes/index.mjs";
 import { connectDB } from "./config/db.mjs";
 connectDB();
 
@@ -34,6 +36,10 @@ app.use((req, res, next) => {
     res.locals._url_ = req.url;
     next();
 });
+
+// Set cookie parser middleware
+app.use(cookieParser(process.env.COOKIE_SECRET_KEY));
+
 
 // main routes
 app.use("/", defaultRoutes);

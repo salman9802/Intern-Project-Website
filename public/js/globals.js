@@ -54,7 +54,7 @@ closeHamburgerBtn.addEventListener("click", e => {
     document.body.style.overflowY = "auto";
 });
 
-// CART
+// CART MENU
 const openCartBtn = document.getElementById("open-cart-btn");
 const closeCartBtn = document.getElementById("close-cart-btn");
 const cartMenu = document.getElementById("cart-menu");

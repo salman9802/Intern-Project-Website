@@ -37,13 +37,15 @@
             <!-- Price -->
             <p class="text-gray-600 text-lg">&#8377; <%= product.price.toFixed(2) %></p>
             <!-- Form -->
-            <form action="/products/<%= product.slug %>" method="post" class="w-4/5 mx-auto flex flex-col space-y-3 md:w-3/4 lg:w-1/2">
-                <input type="text" name="user_name" id="user_name" placeholder="Name"
-                class="outline-none px-3 py-2 border border-gray-300" />
-                <button type="submit" class="w-full mx-auto primary-btn-bordered hover:before:translate-x-0 hover:text-white md:w-3/4">Whatsapp Product</button>
+            <form action="/user/cart/add/<%= product.slug %>" method="post" class="w-4/5 mx-auto flex flex-col space-y-3 md:w-3/4 lg:w-1/2">
+                <button type="submit" class="primary-btn-bordered hover:before:translate-x-0 hover:text-white">Add to Cart</button>
+                <!-- <input type="text" name="user_name" id="user_name" placeholder="Name" class="outline-none px-3 py-2 border border-gray-300" />
+                <button type="submit" class="w-full mx-auto primary-btn-bordered hover:before:translate-x-0 hover:text-white md:w-3/4">Whatsapp Product</button> -->
             </form>
         </div>
     </div>
 </div>
 
 <%- include('./partials/footer.ejs') %>
+
+<script src="/js/product.js" type="module" defer></script>
