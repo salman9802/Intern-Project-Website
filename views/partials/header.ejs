@@ -49,17 +49,42 @@
         <!-- else -->
         <!-- cart items -->
         <div class="h-full flex flex-col space-y-3">
-            <div class="flex space-x-1">
-                <!-- product image -->
+            <% if (cartProducts.length > 0) { %> <!-- if cart is not empty -->
+                <% for( const product of cartProducts ) { %>
+                    <div class="p-2 flex space-x-3"> <!-- cart item -->
+                        <!-- product image -->
+                        <img src="<%= product.img_url %>" class="object-contain object-center w-1/2">
+                        <div class="flex flex-col space-y-1">
+                            <h3 class="text-lg text-gray-800"><%= product.name %></h3>
+                            <span class="text-sm text-gray-500">&#8377; <%= product.price?.toLocaleString() %></span>
+                            <form action='/user/cart/modify/<%= product.slug %>'  class="flex space-x-2">
+                                <input onchange="this.form.submit();" type="number" name="quantity" class="px-3 py-1 w-12 text-gray-800 md:w-16" min="1" max="10" value="<%= product.quantity %>">
+                                <button type="submit" name="remove" value="true" class="text-black underline hover:no-underline">Remove</button>
+                            </form>
+                        </div>
+                    </div>
+                <% } %>
+                <% } else { %> <!-- if cart is empty -->
+                    <div class="h-full flex justify-center items-center">
+                        YOUR CART IS EMPTY
+                    </div>
+                <% } %>
+            <!-- <div class="p-2 flex space-x-3"> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s" class="w-1/2 h-1/2 object-contain object-center">
                 <div class="flex flex-col space-y-1">
-                    <!-- product name -->
-                    <!-- product price -->
-                    <!-- product quantity --> <!-- remove btn -->
+                    <h3 class="text-lg text-gray-800">Product Name</h3>
+                    <span class="text-sm text-gray-500">&#8377; 500</span>
+                    <form action="/user/cart/modify/:slug"  class="flex space-x-2">
+                        <input onchange="this.form.submit();" type="number" name="product-quantity" id="product-quantity" class="px-3 py-1 w-12 text-gray-800 md:w-16" min="1" max="10" value="1">
+                        <button type="submit" name="remove-btn" value="true" class="text-black underline hover:no-underline">Remove</button>
+                    </form>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- checkout btn -->
-        <button class="primary-btn-full overflow-y-hidden hover:before:translate-x-0 hover:text-black">Checkout</button>
+        <% if (cartProducts.length > 0) { %>
+            <a href="/user/checkout" class="primary-btn-full overflow-y-hidden hover:before:translate-x-0 hover:text-black">Checkout</a>
+        <% } %>
     </div>
 
     <!-- Flex Container -->

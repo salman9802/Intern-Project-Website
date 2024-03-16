@@ -699,6 +699,10 @@ video {
   height: 100vh;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
 .max-h-\[500px\] {
   max-height: 500px;
 }
@@ -749,6 +753,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .grow {
@@ -861,6 +869,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -1728,6 +1742,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:no-underline:hover {
+  text-decoration-line: none;
+}
+
 .hover\:shadow-md:hover {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1810,6 +1828,10 @@ video {
 
   .md\:w-\[10\%\] {
     width: 10%;
+  }
+
+  .md\:w-16 {
+    width: 4rem;
   }
 
   .md\:grid-cols-2 {

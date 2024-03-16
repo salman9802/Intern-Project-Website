@@ -4,6 +4,7 @@ dotenv.config();
 import ProductModel from "../models/ProductModel.mjs";
 import WhatsappMessage from "../wi/WhatsappMessage.mjs";
 import WhatsappApiResponseModel from "../models/WhatsappApiResponseModel.mjs";
+import { fetchCartProducts } from "./UserController.mjs";
 
 
 export async function fetchFeaturedProducts() {
@@ -31,7 +32,8 @@ export async function fetchProduct(req, res) {
     else {
         const product = productFound[0];
         res.render("product", {
-            product
+            product,
+            cartProducts: fetchCartProducts(req, res)
         });
     }
 }
@@ -43,7 +45,8 @@ export async function fetchProducts(req, res) {
         if(!categoryProducts) res.status(404);
         else {
             res.status(200).render("products", {
-                products: categoryProducts
+                products: categoryProducts,
+                cartProducts: fetchCartProducts(req, res)
             });
         }
     } else if(q) {
@@ -51,7 +54,8 @@ export async function fetchProducts(req, res) {
         if(!queriedProducts) res.redirect("/");
         else {
             res.render("products", {
-                products: queriedProducts
+                products: queriedProducts,
+                cartProducts: fetchCartProducts(req, res)
             });
         }
     } else {
@@ -59,7 +63,8 @@ export async function fetchProducts(req, res) {
         if(!products) res.status(404);
         else {
             res.status(200).render("products", {
-                products
+                products,
+                cartProducts: fetchCartProducts(req, res)
             });
         }
     }

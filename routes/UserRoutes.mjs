@@ -1,7 +1,7 @@
 import express from "express";
 
 import ProductModel from "../models/ProductModel.mjs";
-import { fetchCartProducts, addProductToCart } from "../controllers/UserController.mjs";
+import { fetchCartProducts, addProductToCart, removeProductInCart, modifyProductInCart } from "../controllers/UserController.mjs";
 
 
 const router = express.Router();
@@ -30,6 +30,19 @@ router.post("/cart/add/:slug", async (req, res) => {
         if(addProductToCart(req, res, productToAdd)) res.redirect("/user/checkout");
         else res.redirect("/");
     }
+});
+
+router.get("/cart/modify/:slug", (req, res) => {
+    const { slug } = req.params;
+    const { quantity, remove } = req.query;
+    if(remove) {
+        removeProductInCart(req, res, slug);
+        res.redirect("/");
+    } else if(quantity) {
+        modifyProductInCart(req, res, { quantity });
+        res.redirect("/");
+    }
+    // res.redirect("/");
 });
 
 export default router;
