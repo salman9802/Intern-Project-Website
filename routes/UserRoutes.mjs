@@ -27,7 +27,7 @@ router.post("/cart/add/:slug", async (req, res) => {
     else {
         const productToAdd = productFound[0];
 
-        if(addProductToCart(req, res, productToAdd)) res.redirect("/user/checkout");
+        if(addProductToCart(req, res, productToAdd)) res.redirect(`/products/${slug}`);
         else res.redirect("/");
     }
 });

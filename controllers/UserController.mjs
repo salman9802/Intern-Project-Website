@@ -10,7 +10,12 @@ export function fetchCartProducts(req, res) {
 export function addProductToCart(req, res, product) {
     try {
         const cartProducts = fetchCartProducts(req, res); // Get existing products if any
-        cartProducts.push({...(product._doc), quantity: 1}); // add new product with initial quantity
+
+        const productIndex = cartProducts.findIndex(p => p._id == product._id);
+        if(productIndex === -1) cartProducts.push({...(product._doc), quantity: 1}); // add new product with initial quantity
+        else {
+            cartProducts[productIndex]["quantity"] = cartProducts[productIndex]["quantity"] + 1; // increment quantity
+        }
         res.cookie(COOKIE_CART_KEY_NAME, JSON.stringify(cartProducts), {signed: true, maxAge: new Date(Date.now() + (COOKIE_CART_EXPIRE_DAYS * 24 * 60 * 60 * 1000))}); // set cookies
         return true;
     } catch (err) {
