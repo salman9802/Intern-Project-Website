@@ -8,7 +8,7 @@ export function fetchCartProducts(req, res) {
     // JSON.parse(req.signedCookies[COOKIE_CART_KEY_NAME] ? req.signedCookies[COOKIE_CART_KEY_NAME] : "[]");
 }
 
-export function setCartProducts(req, res, product) {
+export function addProductToCart(req, res, product) {
     try {
         const cartProducts = fetchCartProducts(req, res); // Get existing products if any
         cartProducts.push(product); // add new product

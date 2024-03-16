@@ -1,13 +1,12 @@
 import express from "express";
 
 import ProductModel from "../models/ProductModel.mjs";
-import { fetchCartProducts, setCartProducts } from "../controllers/UserController.mjs";
+import { fetchCartProducts, addProductToCart } from "../controllers/UserController.mjs";
 
 
 const router = express.Router();
 
 router.get("/checkout", (req, res) => {
-    // const cartProducts = JSON.parse(req.signedCookies[COOKIE_CART_KEY_NAME]);
     const cartProducts = fetchCartProducts(req, res);
     if(!cartProducts) res.redirect("/");
     else {
@@ -27,17 +26,9 @@ router.post("/cart/add/:slug", async (req, res) => {
     if(!productFound) res.redirect("/");
     else {
         const productToAdd = productFound[0];
-        // Get existing cookies if any
-        // const cartProducts = fetchCartProducts(req, res);
-        // let cartProducts = JSON.parse(req.signedCookies[COOKIE_CART_KEY_NAME] ? req.signedCookies[COOKIE_CART_KEY_NAME] : "[]");
 
-        if(setCartProducts(req, res, productToAdd)) res.redirect("/user/checkout");
+        if(addProductToCart(req, res, productToAdd)) res.redirect("/user/checkout");
         else res.redirect("/");
-
-        // cartProducts.push(productToAdd);
-        // Set cookie
-        // res.cookie(COOKIE_CART_KEY_NAME, JSON.stringify(cartProducts), {signed: true, maxAge: new Date(Date.now() + (COOKIE_CART_EXPIRE_DAYS * 24 * 60 * 60 * 1000))});
-        // res.redirect("/user/checkout");
     }
 });
 
