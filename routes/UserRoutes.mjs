@@ -2,7 +2,8 @@ import express from "express";
 
 import ProductModel from "../models/ProductModel.mjs";
 import OrderModel from "../models/OrderModel.mjs";
-import { fetchCartProducts, addProductToCart, removeProductInCart, modifyProductInCart } from "../controllers/UserController.mjs";
+import { fetchCartProducts, addProductToCart, removeProductInCart, modifyProductInCart, emptyCart } from "../controllers/UserController.mjs";
+import { checkoutController, sendWhatsapp } from "../controllers/ProductController.mjs";
 
 
 const router = express.Router();
@@ -19,53 +20,7 @@ router.get("/checkout", (req, res) => {
     }
 });
 
-router.post("/checkout", (req, res) => {
-    const {
-        "full-name": fullName,
-        phone,
-        "email-id": emailId,
-        country,
-        "street-address": streetAddress,
-        city,
-        state,
-        pincode
-    } = req.body;
-
-    // Validations
-    
-    try {
-        const cartProducts = fetchCartProducts(req, res);
-
-        // Add order in db
-        const order = new OrderModel({
-            products: cartProducts,
-            contact: {
-                "full_name": fullName,
-                phone,
-                email_id: emailId
-            },
-            address: {
-                country,
-                street_address: streetAddress,
-                city,
-                state,
-                pincode
-            },
-            createdAt: new Date().toISOString()
-        });
-        order.save();
-
-        // Send whatsapp message
-
-        res.send(`Order Successful!. Order id: ${order._id}`);
-    } catch (err) {
-        console.log();
-        console.log(err.message);
-        console.log();
-        console.log(err.stack);
-        console.log();
-    }
-});
+router.post("/checkout", checkoutController);
 
 router.post("/cart/add/:slug", async (req, res) => {
     const { slug } = req.params;

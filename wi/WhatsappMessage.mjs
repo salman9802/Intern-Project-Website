@@ -44,6 +44,7 @@ export default class WhatsappMessage {
         
 
         try {
+            // console.log(JSON.stringify(this.httpBody));
             const result = await axios.post(process.env.WHATSAPP_URL, JSON.stringify(this.httpBody), { headers: WhatsappMessage.httpHeaders });
             return [result.data, null];
         }catch(err) {

@@ -67,3 +67,7 @@ export function removeProductInCart(req, res, slug) {
         return false;
     }
 }
+
+export function emptyCart(req, res) {
+    res.cookie(COOKIE_CART_KEY_NAME, "[]", {signed: true, maxAge: new Date(Date.now() + (COOKIE_CART_EXPIRE_DAYS * 24 * 60 * 60 * 1000))}); // set cookies
+}
