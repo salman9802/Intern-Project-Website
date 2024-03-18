@@ -218,7 +218,7 @@ async function sendOrderWhatsappMessage(req, res) {
                     {
                         type: "image",
                         image: {
-                            link: "https://www.mgt-commerce.com/astatic/assets/images/article/2023/225/hero.svg?v=1.0.2", // Product image url
+                            link: "https://cdn.vectorstock.com/i/preview-1x/86/54/flat-isometric-3d-complete-order-vector-45108654.jpg", // Order complete image
                             // caption: product.name // Product caption
                         }
                     }
@@ -241,7 +241,7 @@ async function sendOrderWhatsappMessage(req, res) {
                     },
                     {
                         type: "text",
-                        text: createdAt // date time
+                        text: createdAt.toLocaleString() // date time
                     },
                     {
                         type: "text",
@@ -297,8 +297,7 @@ export async function checkoutController(req, res)  {
                 city,
                 state,
                 pincode
-            },
-            createdAt: new Date().toISOString()
+            }
         });
         order.save();
         res.order = order;
