@@ -22,16 +22,28 @@ router.get("/checkout", (req, res) => {
 
 router.post("/checkout", checkoutController);
 
-router.post("/cart/add/:slug", async (req, res) => {
+router.get("/cart/add/:slug", async (req, res) => {
     const { slug } = req.params;
-    const productFound = await ProductModel.find({slug}, {url: false, desc: false}).catch(err => {
+    const productFound = await ProductModel.find({slug}, {url: false}).catch(err => {
         res.sendStatus(500);
     });
     if(!productFound) res.redirect("/");
     else {
         const productToAdd = productFound[0];
 
-        if(addProductToCart(req, res, productToAdd)) res.redirect(`/products/${slug}`);
+        if(addProductToCart(req, res, productToAdd)) {
+            // fetchCartProduct doesn't include the current product after adding the cart
+            // because the cookie was not set on client side.
+            const updatedCartProducts = [...(fetchCartProducts(req, res))];
+            const productExistInCart = updatedCartProducts.findIndex(p => p.slug === productToAdd.slug);
+            if(productExistInCart === -1) updatedCartProducts.push({...(productToAdd._doc), quantity: 1}); // if product is added in cart first time
+            else updatedCartProducts[productExistInCart]["quantity"] = updatedCartProducts[productExistInCart]["quantity"] + 1; // if product exsisted before
+            res.render("product", {
+                cartProducts: updatedCartProducts,
+                add: { status: "OK", msg: "Product added to cart!" },
+                product: productToAdd
+            });
+        }
         else res.redirect("/");
     }
 });

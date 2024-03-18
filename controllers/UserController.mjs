@@ -3,6 +3,7 @@ const COOKIE_CART_KEY_NAME = "ca-shopnest-rt", COOKIE_CART_EXPIRE_DAYS = 30;
 
 export function fetchCartProducts(req, res) {
     const cart = req.signedCookies[COOKIE_CART_KEY_NAME];
+    // console.log(cart);
     if(!cart) return [];
     else return JSON.parse(cart);
 }
