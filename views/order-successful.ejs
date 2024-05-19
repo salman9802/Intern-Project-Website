@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script>setTimeout( _ => document.location = "/", <%= order.redirectDuration %>)</script>
+</head>
+<body>
+    <!-- Message Container -->
+    <div class="bg-green-100 text-green-600 flex flex-col justify-between items-center w-11/12 m-4 mx-auto p-2 lg:container">
+        <span class="bg-white px-3 py-1 rounded-full">&check;</span>
+        <span class="text-3xl">Order Successful</span>
+        <p class="text-xl">Order id: <%= order._id %></p>
+        <p>Page will be redirected in <%= order.redirectDuration / 1000 %> seconds.</p>
+    </div>
+</body>
+</html>

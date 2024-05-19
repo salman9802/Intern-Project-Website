@@ -309,7 +309,8 @@ export async function checkoutController(req, res)  {
         }
         else {
             emptyCart(req, res);
-            res.send(`Order Successful!. Order id: ${order._id}`);
+            // res.send(`Order Successful!. Order id: ${order._id}`);
+            res.render("order-successful", {order: {...order, redirectDuration: 3000}});
         }
 
     } catch (err) {

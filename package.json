@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.mjs",
   "scripts": {
-    "start": "node app",
+    "start": "node app.mjs",
     "dev": "nodemon . --delay 1",
     "tailwindcss": "tailwindcss",
     "build:css": "tailwindcss -i ./public/css/input.css -o ./public/css/style.css",
