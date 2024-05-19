@@ -304,7 +304,8 @@ export async function checkoutController(req, res)  {
 
         // Send whatsapp message
         const messageErr = await sendOrderWhatsappMessage(req, res);
-        if(messageErr) {
+        // if(messageErr) {
+        if(false) {
             res.status(500).send("Cannot send whatsapp message");
         }
         else {
