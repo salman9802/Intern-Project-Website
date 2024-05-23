@@ -578,10 +578,6 @@ video {
   }
 }
 
-.collapse {
-  visibility: collapse;
-}
-
 .absolute {
   position: absolute;
 }
@@ -781,10 +777,6 @@ video {
 
 .grow {
   flex-grow: 1;
-}
-
-.border-collapse {
-  border-collapse: collapse;
 }
 
 .-translate-x-full {
@@ -1766,6 +1758,21 @@ video {
 
 .invoice-order-cell {
   padding: .5rem;
+}
+
+/* Hide <input type="number"> 's arrows */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+  /* Firefox */
 }
 
 @media (min-width: 1024px) {

@@ -37,7 +37,7 @@
     <!-- Cart Menu -->
     <div id="cart-overlay" class="hidden w-screen h-screen absolute z-40 -top-4 -left-4 bg-black opacity-30"></div>
     <div id="cart-menu"
-        class="px-7 pb-16 h-screen w-full absolute right-0 z-50 bg-white flex flex-col space-y-5 translate-x-full transition-transform md:w-1/4">
+        class="px-7 pb-16 h-screen w-full absolute top-0 right-0 z-50 bg-white flex flex-col space-y-5 translate-x-full transition-transform md:w-1/4">
         <div class="p-5 flex justify-between items-center">
             <span class="text-2xl">CART</span>
             <span id="close-cart-btn" class="text-4xl cursor-pointer">&times;</span>
@@ -57,10 +57,14 @@
                         <div class="flex flex-col space-y-1">
                             <h3 class="text-lg text-gray-800"><%= product.name %></h3>
                             <span class="text-sm text-gray-500">&#8377; <%= product.price?.toLocaleString() %></span>
-                            <form action='/user/cart/modify/<%= product.slug %>'  class="flex space-x-2">
-                                <input onchange="this.form.submit();" type="number" name="quantity" class="px-3 py-1 w-12 text-gray-800 md:w-16" min="1" max="10" value="<%= product.quantity %>">
-                                <button type="submit" name="remove" value="true" class="text-black underline hover:no-underline">Remove</button>
-                            </form>
+                            
+                            <input type="hidden" name="slug" class="product-slug" value="<%= product.slug %>">
+                            <input type="number" name="quantity" class="cart-quantity-input px-3 py-1 w-12 text-gray-800 md:w-16" min="1" max="10" value="<%= product.quantity %>">
+                            
+                            <button name="remove" value="true" class="cart-remove-btn text-black underline hover:no-underline">Remove</button>
+                            
+                            <!-- <form action='/user/cart/modify/<%= product.slug %>'  class="flex space-x-2">
+                            </form> -->
                         </div>
                     </div>
                 <% } %>

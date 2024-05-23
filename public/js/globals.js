@@ -70,3 +70,50 @@ closeCartBtn.addEventListener("click", e => {
     document.getElementById("cart-overlay").classList.add("hidden"); // hide overlay
     document.body.style.overflowY = "auto"; // enable scroll
 });
+
+const cartQuantityInputs = document.querySelectorAll(".cart-quantity-input");
+const cartRemoveBtns = document.querySelectorAll(".cart-remove-btn");
+
+
+cartQuantityInputs.forEach(cartQuantityInput => {
+    cartQuantityInput.addEventListener("change", e => {
+        const input = e.target;
+        if(input.value > 0 && input.value < 11) {
+            const slug = input.parentElement.querySelector(".product-slug").value;
+            console.log(input.value);
+            fetch(`/user/cart/modify/${slug}`, {
+                method: "POST",
+                credentials: "include",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ quantity: input.value })
+            })
+                .then(res => res.json())
+                .then(json => {
+                    console.log(json);
+                });
+        } else input.value = 1;
+    });
+});
+
+cartRemoveBtns.forEach(cartRemoveBtn => {
+    cartRemoveBtn.addEventListener("click", e => {
+    const input = e.target;
+        const slug = input.parentElement.querySelector(".product-slug").value;
+        fetch(`/user/cart/modify/${slug}`, {
+            method: "POST",
+            credentials: "include",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ toRemove: true })
+        })
+            .then(res => res.json())
+            .then(json => {
+                console.log(json);
+                console.log(input.parentElement.parentElement);
+                input.parentElement.parentElement.remove();
+            });
+    });
+});

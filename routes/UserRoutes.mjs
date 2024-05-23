@@ -37,7 +37,7 @@ router.get("/cart/add/:slug", async (req, res) => {
             const updatedCartProducts = [...(fetchCartProducts(req, res))];
             const productExistInCart = updatedCartProducts.findIndex(p => p.slug === productToAdd.slug);
             if(productExistInCart === -1) updatedCartProducts.push({...(productToAdd._doc), quantity: 1}); // if product is added in cart first time
-            else updatedCartProducts[productExistInCart]["quantity"] = updatedCartProducts[productExistInCart]["quantity"] + 1; // if product exsisted before
+            else updatedCartProducts[productExistInCart]["quantity"] = parseInt(updatedCartProducts[productExistInCart]["quantity"]) + 1; // if product exsisted before
             res.render("product", {
                 cartProducts: updatedCartProducts,
                 add: { status: "OK", msg: "Product added to cart!" },
@@ -48,17 +48,29 @@ router.get("/cart/add/:slug", async (req, res) => {
     }
 });
 
-router.get("/cart/modify/:slug", (req, res) => {
+// router.get("/cart/modify/:slug", (req, res) => {
+//     const { slug } = req.params;
+//     const { quantity, remove } = req.query;
+//     if(remove) {
+//         removeProductInCart(req, res, slug);
+//         res.redirect("/");
+//     } else if(quantity) {
+//         modifyProductInCart(req, res, { quantity });
+//         res.redirect("/");
+//     }
+//     // res.redirect("/");
+// });
+
+router.post("/cart/modify/:slug", (req, res) => {
     const { slug } = req.params;
-    const { quantity, remove } = req.query;
-    if(remove) {
+    const { quantity, toRemove } = req.body;
+    if(toRemove) {
         removeProductInCart(req, res, slug);
-        res.redirect("/");
+        res.status(201).json({code: 201, msg: "Product removed from cart."});
     } else if(quantity) {
-        modifyProductInCart(req, res, { quantity });
-        res.redirect("/");
+        if(quantity > 0 && quantity < 11) modifyProductInCart(req, res, { quantity });
+        res.status(201).json({code: 201, msg: "Product quantity changed."});
     }
-    // res.redirect("/");
 });
 
 export default router;
