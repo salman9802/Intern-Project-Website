@@ -1,5 +1,15 @@
+import fs from "fs";
+import { dirname } from "node:path"; // buildin module from `node:` schema
+import { fileURLToPath } from 'node:url';
+import path from "path";
+import { Readable } from "stream";
+
 import dotenv from "dotenv";
 dotenv.config();
+import * as ejs from "ejs";
+// import {default as HTMLToPDF} from "convert-html-to-pdf";
+// import pdf from "pdf-creator-node";
+import puppeteer from "puppeteer";
 
 import ProductModel from "../models/ProductModel.mjs";
 import WhatsappMessage from "../wi/WhatsappMessage.mjs";
@@ -7,6 +17,10 @@ import WhatsappApiResponseModel from "../models/WhatsappApiResponseModel.mjs";
 import { emptyCart, fetchCartProducts } from "./UserController.mjs";
 import OrderModel from "../models/OrderModel.mjs";
 
+
+// __filename & __dirname not available in es6 files
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export async function fetchFeaturedProducts() {
     try {
@@ -266,6 +280,39 @@ async function sendOrderWhatsappMessage(req, res) {
     }
 }
 
+async function createInvoice(order) {
+    const invoiceDate = new Date(order.createdAt);
+    order.invoice_date = `${invoiceDate.getDate()}/${invoiceDate.getMonth() + 1}/${invoiceDate.getFullYear()}`;
+
+    try {
+        const html = fs.readFileSync("views/invoice-template.ejs");
+        const invoiceHTML = ejs.render(html.toString(), {order});
+        
+        const browser = await puppeteer.launch({ 
+            args: ['--no-sandbox', '--disable-setuid-sandbox'],
+            timeout: 0,
+            headless: true,
+            defaultViewport: null
+        });
+        const page = await browser.newPage();
+
+        await page.setContent(invoiceHTML, {waitUntil: "load"});
+        await page.addStyleTag({url:"http://localhost/css/style.css"});
+
+        const pdfStream = await page.pdf({ format: 'A4', printBackground: true });
+        await browser.close();
+
+        return Readable.from(pdfStream);
+    } catch(err) {
+        console.log();
+        console.log(err.message);
+        console.log();
+        console.log(err.stack);
+        console.log();
+    }
+
+}
+
 export async function checkoutController(req, res)  {
     const {
         "full-name": fullName,
@@ -282,6 +329,7 @@ export async function checkoutController(req, res)  {
     
     try {
         const cartProducts = fetchCartProducts(req, res);
+        const totalAmount = cartProducts.reduce((accumulator, currValue) => accumulator + currValue.price, 0);
 
         // Add order in db
         const order = new OrderModel({
@@ -297,22 +345,27 @@ export async function checkoutController(req, res)  {
                 city,
                 state,
                 pincode
-            }
+            },
+            total: totalAmount
         });
         order.save();
         res.order = order;
 
         // Send whatsapp message
-        const messageErr = await sendOrderWhatsappMessage(req, res);
-        // if(messageErr) {
-        if(false) {
-            res.status(500).send("Cannot send whatsapp message");
-        }
-        else {
-            emptyCart(req, res);
-            // res.send(`Order Successful!. Order id: ${order._id}`);
-            res.render("order-successful", {order: {...order, redirectDuration: 3000}});
-        }
+        await sendOrderWhatsappMessage(req, res);
+        
+        const invoice = await createInvoice(res.order);
+        res.set("Content-Disposition", 'attachment; filename="invoice.pdf"')
+        emptyCart(req, res);
+        invoice.pipe(res);
+
+        // // if(messageErr) {
+        // if(false) {
+        //     res.status(500).send("Cannot send whatsapp message");
+        // }
+        // else {
+        //     res.render("order-successful", {order: {...order, redirectDuration: 3000}});
+        // }
 
     } catch (err) {
         console.log();

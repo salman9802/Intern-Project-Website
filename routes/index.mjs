@@ -13,6 +13,25 @@ router.get("/", async (req, res) => res.render("index", {
     cartProducts: fetchCartProducts(req, res)
 }));
 
+router.get("/templates/invoice", (req, res) => res.render("invoice-template", {order: {
+    _id: 12345,
+    contact: {
+        full_name: "John Doe"
+    },
+    invoice_date: "23/05/2024",
+    address: {
+        city: "Pune",
+        state: "Maharashtra",
+        country: "India"
+    },
+    products: {
+        name: "Sample Product",
+        price: "100",
+        quantity: "1"
+    },
+    total: "100"
+}}));
+
 // Product Routes
 router.use("/products", ProductRoutes);
 

@@ -113,3 +113,11 @@
     /* @apply hover:before:translate-x-0 hover:text-black; */
     @apply md:px-5 md:py-3;
 }
+
+/* Invoice */
+.invoice-order-table {
+    border-collapse: collapse;
+}
+.invoice-order-cell {
+    padding: .5rem;
+}

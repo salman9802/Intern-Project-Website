@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Template</title>
+</head>
+<body class="m-12">
+    <!-- Invoice header -->
+    <div class="mb-12 flex justify-between items-center">
+        <!-- logo -->
+        <h1 class="text-5xl text-blue-600 capitalize tracking-wide">ShopNest</h1>
+        <!-- addr -->
+        <div class="space-y-1">
+            <p>ShopNest</p>
+            <p>Pune city</p>
+            <p>Maha, India 41104</p>
+        </div>
+    </div>
+
+    <!-- Invoice -->
+    <h2 class="text-4xl text-gray-800">Invoice</h2>
+    <div class="border-y border-gray-400 flex flex-col space-y-2 text-gray-600 mb-12">
+        <span class="flex justify-between">
+            <span>Invoice Number: <span class="font-semibold"><%= order._id.toString().substring(0, 8) %></span></span>
+            <span class="font-bold"><%= order.contact.full_name %></span>
+        </span>
+        <span class="flex justify-between">
+            <span>Invoice Date: <span class="font-semibold"><%= order.invoice_date %></span></span>
+            <span>ABC Street</span>
+        </span>
+        <span class="flex justify-between">
+            <span>Total Amount: <span class="font-semibold">₹<%= order.total %></span></span>
+            <span><%= order.address.city %>, <%= order.address.state %>, <%= order.address.country %></span>
+        </span>
+    </div>
+
+    <!-- Item(s) -->
+    <table class="invoice-order-table">
+        <thead class="border-b border-b-gray-400">
+            <tr>
+                <th class="invoice-order-cell">No.</th>
+                <th class="invoice-order-cell">Product</th>
+                <th class="invoice-order-cell">Unit Cost</th>
+                <th class="invoice-order-cell">Quantity</th>
+                <th class="invoice-order-cell">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for( let i = 0; i < order.products.length; i++ ) { %>
+                <tr class="border-b border-b-gray-400">
+                    <td class="invoice-order-cell"><%= i+1 %></td>
+                    <td class="invoice-order-cell"><%= order.products[i].name %></td>
+                    <td class="invoice-order-cell">₹<%= order.products[i].price %></td>
+                    <td class="invoice-order-cell"><%= order.products[i].quantity %></td>
+                    <td class="invoice-order-cell">₹<%= order.products[i].price * order.products[i].quantity %></td>
+                </tr>
+            <% } %>
+
+            <tr>
+                <td class="invoice-order-cell" colspan="3" class="text-right">Subtotal</td>
+                <td class="invoice-order-cell" colspan="2" class="text-right">₹<%= order.total %></td>
+            </tr>
+            <tr class="font-semibold">
+                <td class="invoice-order-cell" colspan="3" class="text-right">Total</td>
+                <td class="invoice-order-cell" colspan="2" class="text-right">₹<%= order.total %></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
