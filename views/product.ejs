@@ -2,26 +2,16 @@
 </div> -->
 <%- include('./partials/header.ejs') %>
 
-<div class="bg-slate-100 w-screen min-h-screen">
+<div id="cart-alerts" class="bg-slate-100 w-screen min-h-screen">
     <!-- Alerts -->
     <% if (locals.add) { %>
         <% if (add.status === "OK") { %>
-            <div class="notification-alert w-11/12 mx-auto my-2 px-3 py-2 flex items-center justify-center space-x-1 bg-green-200 text-green-700 rounded-lg md:px-5 md:py-3 md:space-x-3 lg:container">
-                <span class="bg-white px-3 py-1 rounded-full">&check;</span>
-                <span><%= add.msg %></span> 
-            </div>
+            
         <% } else { %>
-            <div class="notification-alert w-11/12 mx-auto my-2 px-3 py-2 flex items-center justify-center space-x-1 bg-red-200 text-red-700 rounded-lg md:px-5 md:py-3 md:space-x-3 lg:container">
-                <span class="bg-white px-3 py-1 rounded-full">&excl;</span>
-                <span><%= add.msg %></span>
-            </div>
+            
         <% } %>
         <script>
-            setTimeout(() => {
-                document.querySelectorAll(".notification-alert").forEach(e => {
-                    e.remove();
-                });
-            }, 2500);
+            
         </script>
     <% } %>
     
@@ -44,11 +34,10 @@
             <!-- Price -->
             <p class="text-gray-600 text-lg">&#8377; <%= product.price.toFixed(2) %></p>
             <!-- Form -->
-            <form action="/user/cart/add/<%= product.slug %>" method="get" class="w-4/5 mx-auto flex flex-col space-y-3 md:w-3/4 lg:w-1/2">
-                <button type="submit" class="primary-btn-bordered hover:before:translate-x-0 hover:text-white">Add to Cart</button>
-                <!-- <input type="text" name="user_name" id="user_name" placeholder="Name" class="outline-none px-3 py-2 border border-gray-300" />
-                <button type="submit" class="w-full mx-auto primary-btn-bordered hover:before:translate-x-0 hover:text-white md:w-3/4">Whatsapp Product</button> -->
-            </form>
+            <!-- <form action="/user/cart/add/<%= product.slug %>" method="get" class="w-4/5 mx-auto flex flex-col space-y-3 md:w-3/4 lg:w-1/2"> -->
+                <input id="product-slug-input" type="hidden" value="<%= product.slug %>">
+                <button id="add-to-cart-btn" class="primary-btn-bordered hover:before:translate-x-0 hover:text-white">Add to Cart</button>
+            <!-- </form> -->
         </div>
     </div>
 </div>

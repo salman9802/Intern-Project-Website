@@ -22,17 +22,23 @@ router.get("/checkout", (req, res) => {
 
 router.post("/checkout", checkoutController);
 
-router.get("/cart/add/:slug", async (req, res) => {
-    const { slug } = req.params;
+router.post("/cart/add/", async (req, res) => {
+    const { slug } = req.body;
+
     const productFound = await ProductModel.find({slug}, {url: false}).catch(err => {
-        res.sendStatus(500);
+        res.status(500).json({ code: 500, msg: "Internal server error."});
     });
-    if(!productFound) res.redirect("/");
+
+    if(!productFound || !productFound?.length) res.status(404).json({ code: 404, msg: "Product not found"});
     else {
         const productToAdd = productFound[0];
 
-        if(addProductToCart(req, res, productToAdd)) {
-            // fetchCartProduct doesn't include the current product after adding the cart
+        const productInCart = addProductToCart(req, res, productToAdd);
+        if(productInCart) {
+
+            res.status(201).json({ code: 201, msg: "Product added to cart", addedProduct: productInCart });
+
+            /* // fetchCartProduct doesn't include the current product after adding the cart
             // because the cookie was not set on client side.
             const updatedCartProducts = [...(fetchCartProducts(req, res))];
             const productExistInCart = updatedCartProducts.findIndex(p => p.slug === productToAdd.slug);
@@ -42,9 +48,12 @@ router.get("/cart/add/:slug", async (req, res) => {
                 cartProducts: updatedCartProducts,
                 add: { status: "OK", msg: "Product added to cart!" },
                 product: productToAdd
-            });
+            }); */
+
         }
-        else res.redirect("/");
+        else {
+            res.status(500).json({ code: 500, msg: "Product not found"});
+        }
     }
 });
 

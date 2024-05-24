@@ -92,6 +92,7 @@ cartQuantityInputs.forEach(cartQuantityInput => {
                 .then(res => res.json())
                 .then(json => {
                     console.log(json);
+                    location.reload();
                 });
         } else input.value = 1;
     });
@@ -112,8 +113,16 @@ cartRemoveBtns.forEach(cartRemoveBtn => {
             .then(res => res.json())
             .then(json => {
                 console.log(json);
-                console.log(input.parentElement.parentElement);
                 input.parentElement.parentElement.remove();
+                location.reload();
             });
     });
 });
+
+// Helper functions
+// function to create an html node from string
+export const strToHtmlNode = str => {
+    const placeholder = document.createElement("div");
+    placeholder.innerHTML = str;
+    return placeholder.firstElementChild;
+}

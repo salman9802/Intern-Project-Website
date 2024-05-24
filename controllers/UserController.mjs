@@ -14,10 +14,12 @@ export function addProductToCart(req, res, product) {
         const productIndex = cartProducts.findIndex(p => p._id == product._id);
         if(productIndex === -1) cartProducts.push({...(product._doc), quantity: 1}); // add new product with initial quantity
         else {
-            cartProducts[productIndex]["quantity"] = cartProducts[productIndex]["quantity"] + 1; // increment quantity
+            const quantity = parseInt(cartProducts[productIndex]["quantity"]);
+            if(quantity > 0 && quantity < 10) cartProducts[productIndex]["quantity"] = quantity + 1; // increment quantity
+            else cartProducts[productIndex]["quantity"] = 1;
         }
         res.cookie(COOKIE_CART_KEY_NAME, JSON.stringify(cartProducts), {signed: true, maxAge: new Date(Date.now() + (COOKIE_CART_EXPIRE_DAYS * 24 * 60 * 60 * 1000))}); // set cookies
-        return true;
+        return productIndex === -1 ? {...(product._doc), quantity: 1} : cartProducts[productIndex] ;
     } catch (err) {
         console.log();
         console.error(err.message);
