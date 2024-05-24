@@ -41,6 +41,6 @@ addToCartBtn.addEventListener("click", e => {
             setTimeout(() => {
                 div.remove();
                 location.reload();
-            }, 2500);
+            }, 500);
         });
 });

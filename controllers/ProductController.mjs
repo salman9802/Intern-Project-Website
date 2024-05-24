@@ -315,21 +315,22 @@ async function createInvoice(order) {
 
 export async function checkoutController(req, res)  {
     const {
-        "full-name": fullName,
+        fullName,
         phone,
-        "email-id": emailId,
+        emailId,
         country,
-        "street-address": streetAddress,
+        streetAddress,
         city,
         state,
-        pincode
+        pincode,
+        paymentMethod
     } = req.body;
 
     // Validations
     
     try {
         const cartProducts = fetchCartProducts(req, res);
-        const totalAmount = cartProducts.reduce((accumulator, currValue) => accumulator + currValue.price, 0);
+        const totalAmount = cartProducts.reduce((accumulator, currValue) => accumulator + currValue.price, 0); // calculate total amount
 
         // Add order in db
         const order = new OrderModel({
@@ -354,6 +355,7 @@ export async function checkoutController(req, res)  {
         // Send whatsapp message
         await sendOrderWhatsappMessage(req, res);
         
+        // create invoice
         const invoice = await createInvoice(res.order);
         res.set("Content-Disposition", 'attachment; filename="invoice.pdf"')
         emptyCart(req, res);

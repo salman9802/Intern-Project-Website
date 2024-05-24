@@ -4,7 +4,7 @@
     <!-- Title -->
     <h4 class="text-4xl font-semibold text-gray-800 text-center py-4 mb-12 md:text-5xl">Checkout</h4>
     <!-- Flex Container -->
-    <form action="/user/checkout" method="POST" class="w-screen p-12 flex flex-col space-y-5 md:flex-row md:space-y-0 md:space-x-5">
+    <form id="checkout-form" action="" class="w-screen p-12 flex flex-col space-y-5 md:flex-row md:space-y-0 md:space-x-5">
          <!-- Billing Details -->
          <div class="flex flex-col space-y-2 md:space-y-5 lg:w-1/2">
             <h4 class="text-xl font-semibold py-3 mt-5 border-b border-b-gray-300">Contact</h4>
@@ -90,7 +90,7 @@
                 <!-- bank transfer -->
                 <div class="group flex flex-col space-y-2">
                     <div class="flex space-x-3">
-                        <input type="radio" class="outline-none" name="payment" value="direct-bank-transfer" id="bank-transfer" checked="checked">
+                        <input type="radio" class="outline-none" name="payment" value="Direct Bank Transfer" id="bank-transfer" checked="checked">
                         <label for="bank-transfer">Direct Bank Transfer</label>
                     </div>
                     <div class=" hidden p-3 border bg-gray-200 group-has-[:checked]:block">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</div>
@@ -98,7 +98,7 @@
                 <!-- cod -->
                 <div class="group flex flex-col space-y-2">
                     <div class="flex space-x-3">
-                        <input type="radio" class="outline-none" name="payment" value="cash-on-delivery" id="cash-on-deliver">
+                        <input type="radio" class="outline-none" name="payment" value="Cash on Delivery" id="cash-on-deliver">
                         <label for="cash-on-deliver">Cash on Delivery</label>
                     </div>
                     <div class="hidden p-3 border bg-gray-200 group-has-[:checked]:block">Pay with cash upon delivery.</div>
@@ -106,16 +106,16 @@
                 <!-- paypal -->
                 <div class="group flex flex-col space-y-2">
                     <div class="flex space-x-3">
-                        <input type="radio" class="outline-none" name="payment" value="paypal" id="pay-pal">
+                        <input type="radio" class="outline-none" name="payment" value="Paypal" id="pay-pal">
                         <label for="pay-pal">PayPal</label>
                     </div>
                     <div class="hidden p-3 border bg-gray-200 group-has-[:checked]:block">Pay via PayPal.</div>
                 </div>
             </div>
             <!-- order btn -->
-            <button id="order-btn" class="px-3 py-2 primary-btn-full w-1/2 mx-auto outline-none hover:before:translate-x-0 hover:text-black">PLACE ORDER</button>
+            <button id="order-btn" class="px-3 py-2 flex justify-center space-x-3 items-center primary-btn-full w-1/2 mx-auto outline-none hover:before:translate-x-0 hover:text-black">PLACE ORDER</button>
          </div>
     </div>
 </div>
-
+<script src="/js/checkout.js"></script>
 <%- include("./partials/footer") %>
