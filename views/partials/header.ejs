@@ -59,12 +59,15 @@
                             <span class="text-sm text-gray-500">&#8377; <%= product.price?.toLocaleString() %></span>
                             
                             <input type="hidden" name="slug" class="product-slug" value="<%= product.slug %>">
-                            <input type="number" name="quantity" class="cart-quantity-input px-3 py-1 w-12 text-gray-800 md:w-16" min="1" max="10" value="<%= product.quantity %>">
-                            
-                            <button name="remove" value="true" class="cart-remove-btn text-black underline hover:no-underline">Remove</button>
-                            
-                            <!-- <form action='/user/cart/modify/<%= product.slug %>'  class="flex space-x-2">
-                            </form> -->
+                            <div class="flex justify-between">
+                                <span class="flex border border-gray-800">
+                                    <button class="cart-quantity-decrement-btn px-2 border border-y-gray-800">-</button>
+                                    <input readonly type="number" name="quantity" class="cart-quantity-input w-4 text-center text-gray-800 md:w-16" min="1" max="10" value="<%= product.quantity %>">
+                                    <button class="cart-quantity-increment-btn px-2 border border-y-gray-800">+</button>
+                                </span>
+                                
+                                <button name="remove" value="true" class="cart-remove-btn text-black underline hover:no-underline">Remove</button>
+                            </div>
                         </div>
                     </div>
                 <% } %>
@@ -156,7 +159,7 @@
 
         <!-- user + search + cart -->
         <div class="flex space-x-1 px-3 md:space-x-3 md:px-5">
-            <img src="/assets/person.svg" alt="" class=" hidden cursor-pointer <%= _url_ === "/" ? "invert group-hover:invert-0" : "" %> w-8 md:w-10 md:block">
+            <!-- <img src="/assets/person.svg" alt="" class=" hidden cursor-pointer <%= _url_ === "/" ? "invert group-hover:invert-0" : "" %> w-8 md:w-10 md:block"> -->
             <img src="/assets/search.svg" alt="" class="cursor-pointer <%= _url_ === "/" ? "invert group-hover:invert-0" : "" %> w-8 md:w-10" id="header-search-btn">
             <img id="open-cart-btn" src="/assets/shopping-bag.svg" alt="" class="cursor-pointer <%= _url_ === "/" ? "invert group-hover:invert-0" : "" %> w-8 md:w-10">
         </div>

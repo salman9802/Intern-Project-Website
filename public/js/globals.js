@@ -73,13 +73,52 @@ closeCartBtn.addEventListener("click", e => {
 
 const cartQuantityInputs = document.querySelectorAll(".cart-quantity-input");
 const cartRemoveBtns = document.querySelectorAll(".cart-remove-btn");
+const cartQuantityDecrementBtns = document.querySelectorAll(".cart-quantity-decrement-btn");
+const cartQuantityIncrementBtns = document.querySelectorAll(".cart-quantity-increment-btn");
 
 
-cartQuantityInputs.forEach(cartQuantityInput => {
+function cartModified({productEle, toRemove, quantityEle}) {
+    const slug = productEle.querySelector(".product-slug").value;
+    if(toRemove) { // remove product
+        fetch(`/user/cart/modify/${slug}`, {
+            method: "POST",
+            credentials: "include",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ toRemove: true })
+        })
+            .then(res => res.json())
+            .then(json => {
+                console.log(json);
+                productEle.remove();
+                location.reload();
+            });
+    } else { // quantity change
+        if(quantityEle.value > 0 && quantityEle.value < 11) {
+            fetch(`/user/cart/modify/${slug}`, {
+                method: "POST",
+                credentials: "include",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ quantity: quantityEle.value })
+            })
+                .then(res => res.json())
+                .then(json => {
+                    console.log(json);
+                    // location.reload();
+                });
+        } else quantityEle.value = 1;
+    }
+}
+
+// quantity input change
+/* cartQuantityInputs.forEach(cartQuantityInput => {
     cartQuantityInput.addEventListener("change", e => {
         const input = e.target;
         if(input.value > 0 && input.value < 11) {
-            const slug = input.parentElement.querySelector(".product-slug").value;
+            const slug = input.parentElement.parentElement.parentElement.querySelector(".product-slug").value;
             console.log(input.value);
             fetch(`/user/cart/modify/${slug}`, {
                 method: "POST",
@@ -96,11 +135,17 @@ cartQuantityInputs.forEach(cartQuantityInput => {
                 });
         } else input.value = 1;
     });
-});
+}); */
 
+// cart remove btn
 cartRemoveBtns.forEach(cartRemoveBtn => {
     cartRemoveBtn.addEventListener("click", e => {
-    const input = e.target;
+        const productEle = e.target.parentElement.parentElement.parentElement;
+        cartModified({
+            productEle,
+            toRemove: true
+        });
+    /* const input = e.target;
         const slug = input.parentElement.querySelector(".product-slug").value;
         fetch(`/user/cart/modify/${slug}`, {
             method: "POST",
@@ -113,9 +158,33 @@ cartRemoveBtns.forEach(cartRemoveBtn => {
             .then(res => res.json())
             .then(json => {
                 console.log(json);
-                input.parentElement.parentElement.remove();
+                input.parentElement.parentElement.parentElement.remove();
                 location.reload();
-            });
+            }); */
+    });
+});
+
+// increment/decrement btns
+cartQuantityIncrementBtns.forEach(cartQuantityIncrementBtn => {
+    cartQuantityIncrementBtn.addEventListener("click", e => {
+        const productEle = e.target.parentElement.parentElement.parentElement.parentElement;
+        const quantityEle = productEle.querySelector(".cart-quantity-input");
+        quantityEle.value = parseInt(quantityEle.value) + 1;
+        cartModified({
+            productEle,
+            quantityEle
+        });
+    });
+});
+cartQuantityDecrementBtns.forEach(cartQuantityDecrementBtn => {
+    cartQuantityDecrementBtn.addEventListener("click", e => {
+        const productEle = e.target.parentElement.parentElement.parentElement.parentElement;
+        const quantityEle = productEle.querySelector(".cart-quantity-input");
+        quantityEle.value = parseInt(quantityEle.value) - 1;
+        cartModified({
+            productEle,
+            quantityEle
+        });
     });
 });
 
