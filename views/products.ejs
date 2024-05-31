@@ -6,6 +6,16 @@
     <!-- <hr class="w-[20%] h-1 bg-blue-500 mx-auto md:w-[10%] mb-12"> -->
     <!-- Flex container -->
     <!-- <div class="flex flex-wrap justify-center gap-2 mx-auto w-4/5 lg:container"> -->
+
+    <form class="mx-auto mb-12 flex justify-center space-x-8 lg:container">
+        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="tv">TV</button>
+        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="phone">Phone</button>
+        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="desktop">Desktop</button>
+        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="laptop">Laptop</button>
+        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="home-appliance">Home Appliance</button>
+        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="ac">AC</button>
+    </form>
+
     <div class="grid grid-cols-1 gap-4 mx-auto w-4/5 md:grid-cols-3 lg:container lg:grid-cols-3">
         <% if (products.length) { %>
             <% for (const product of products) { %>
@@ -18,11 +28,12 @@
                     <% } %>
 
                     <p class="text-gray-800 text-sm"><%= product.name?.substring(0, 45) + "..." %></p>
-                    <p class="text-lg font-semibold">&#8377;<%= product.price %></p>
+                    <p class="text-lg font-semibold">&#8377;<%= product.price?.toLocaleString(undefined, {minimumFractionDigits: 2}) %></p>
                 </a>
             <% } %>
         <% } %>
     </div>
 </div>
 
+<script src="/js/products.js"></script>
 <%- include('./partials/footer') %>
