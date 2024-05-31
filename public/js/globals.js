@@ -24,7 +24,7 @@ document.getElementById("header-search-input").addEventListener("keyup", async e
     if (e.key === 'Enter' || e.keyCode === 13) {
         const search = e.target.value.toLowerCase();
         e.target.value = "";
-        location.href = `/products?q=${escapeHtml(search)}`;
+        location.href = `/products?s=${escapeHtml(search)}`;
     }
     const search = escapeHtml(e.target.value);
     console.log(search);

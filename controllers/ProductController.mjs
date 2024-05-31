@@ -54,18 +54,29 @@ export async function fetchProduct(req, res) {
 }
 
 export async function fetchProducts(req, res) {
-    const { category, q } = req.query;
+    const { category, s, company } = req.query;
     if(category) {
         const categoryProducts = await ProductModel.find({category});
         if(!categoryProducts) res.status(404);
         else {
             res.status(200).render("products", {
+                query: req.query,
                 products: categoryProducts,
                 cartProducts: fetchCartProducts(req, res)
             });
         }
-    } else if(q) {
-        const queriedProducts = await ProductModel.find({ $text: {$search: q} });
+    } else if(company) {
+        const companyProducts = await ProductModel.find({company});
+        if(!companyProducts) res.status(404);
+        else {
+            res.status(200).render("products", {
+                query: req.query,
+                products: companyProducts,
+                cartProducts: fetchCartProducts(req, res)
+            });
+        }
+    } else if(s) {
+        const queriedProducts = await ProductModel.find({ $text: {$search: s} });
         if(!queriedProducts) res.redirect("/");
         else {
             res.render("products", {

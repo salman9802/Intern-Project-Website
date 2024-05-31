@@ -7,32 +7,61 @@
     <!-- Flex container -->
     <!-- <div class="flex flex-wrap justify-center gap-2 mx-auto w-4/5 lg:container"> -->
 
-    <form class="mx-auto mb-12 flex justify-center space-x-8 lg:container">
-        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="tv">TV</button>
-        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="phone">Phone</button>
-        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="desktop">Desktop</button>
-        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="laptop">Laptop</button>
-        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="home-appliance">Home Appliance</button>
-        <button type="submit" formaction="/products" class="p-3 border border-gray-300" name="category" value="ac">AC</button>
-    </form>
-
-    <div class="grid grid-cols-1 gap-4 mx-auto w-4/5 md:grid-cols-3 lg:container lg:grid-cols-3">
-        <% if (products.length) { %>
-            <% for (const product of products) { %>
-                <!-- Product -->
-                <a href="/products/<%= product.slug %>" class="bg-white mb-auto text-center flex flex-col space-y-2 p-2 transition-all hover:shadow-md">
-
-                    <img src="<%= product.img_url %>" alt="" class="w-full h-[150px] object-contain object-center transition-all group-hover:scale-110 lg:h-[250px]">
-                    <% if (product.company) { %>
-                        <h4 class="text-base font-bold capitalize"><%= product.company %></h4>
-                    <% } %>
-
-                    <p class="text-gray-800 text-sm"><%= product.name?.substring(0, 45) + "..." %></p>
-                    <p class="text-lg font-semibold">&#8377;<%= product.price?.toLocaleString(undefined, {minimumFractionDigits: 2}) %></p>
-                </a>
-            <% } %>
-        <% } %>
+    
+    <!-- Category filter -->
+    <div id="category-filter-form" class="mx-auto mb-12 flex justify-center space-x-8 lg:container">
+        <button type="submit" class="category-filter-btn p-3 border border-gray-300" name="category" value="tv">TV</button>
+        <button type="submit" class="category-filter-btn p-3 border border-gray-300" name="category" value="phone">Phone</button>
+        <button type="submit" class="category-filter-btn p-3 border border-gray-300" name="category" value="desktop">Desktop</button>
+        <button type="submit" class="category-filter-btn p-3 border border-gray-300" name="category" value="laptop">Laptop</button>
+        <button type="submit" class="category-filter-btn p-3 border border-gray-300" name="category" value="home-appliance">Home Appliance</button>
+        <button type="submit" class="category-filter-btn p-3 border border-gray-300" name="category" value="ac">AC</button>
     </div>
+
+    <div class="mx-auto flex space-x-24 lg:container">
+        <!-- Brand filter -->
+        <div class="w-1/5 flex flex-col">
+            <div class="text-lg text-gray-700 border-b border-b-gray-300">BRAND</div>
+            <div class="my-4 flex flex-col space-y-2">
+                <span class="flex items-center space-x-2">
+                    <input style="-webkit-appearance: none;" class="brand-filter-checkbox" type="checkbox" name="company" value="LG" <%= locals.query?.company === "LG" ? "checked" : "" %> ><span>LG</span>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <input style="-webkit-appearance: none;" class="brand-filter-checkbox" type="checkbox" name="company" value="Voltas" <%= locals.query?.company === "Voltas" ? "checked" : "" %> ><span>Voltas</span>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <input style="-webkit-appearance: none;" class="brand-filter-checkbox" type="checkbox" name="company" value="ASUS" <%= locals.query?.company === "ASUS" ? "checked" : "" %> ><span>ASUS</span>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <input style="-webkit-appearance: none;" class="brand-filter-checkbox" type="checkbox" name="company" value="Acer" <%= locals.query?.company === "Acer" ? "checked" : "" %> ><span>Acer</span>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <input style="-webkit-appearance: none;" class="brand-filter-checkbox" type="checkbox" name="company" value="Lenovo" <%= locals.query?.company === "Lenovo" ? "checked" : "" %> ><span>Lenovo</span>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <input style="-webkit-appearance: none;" class="brand-filter-checkbox" type="checkbox" name="company" value="HP" <%= locals.query?.company === "HP" ? "checked" : "" %> ><span>HP</span>
+                </span>
+            </div>
+        </div>
+        <!-- Products -->
+        <!-- w-4/5 -->
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
+            <% if (products.length) { %>
+                <% for (const product of products) { %>
+                    <!-- Product -->
+                    <a href="/products/<%= product.slug %>" class="bg-white mb-auto text-center flex flex-col space-y-2 p-2 transition-all hover:shadow-md">
+                        <img src="<%= product.img_url %>" alt="" class="w-full h-[150px] object-contain object-center transition-all group-hover:scale-110 lg:h-[250px]">
+                        <% if (product.company) { %>
+                            <h4 class="text-base font-bold capitalize"><%= product.company %></h4>
+                        <% } %>
+                        <p class="text-gray-800 text-sm"><%= product.name?.substring(0, 45) + "..." %></p>
+                        <p class="text-lg font-semibold">&#8377;<%= product.price?.toLocaleString(undefined, {minimumFractionDigits: 2}) %></p>
+                    </a>
+                <% } %>
+            <% } %>
+        </div>
+    </div>
+
 </div>
 
 <script src="/js/products.js"></script>
