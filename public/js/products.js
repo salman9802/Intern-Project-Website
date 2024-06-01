@@ -1,12 +1,5 @@
-// const brandFilterForm = document.getElementById("brand-filter-form");
-// const categoryFilterForm = document.getElementById("category-filter-form");
 const brandFilterCheckboxes = document.querySelectorAll(".brand-filter-checkbox");
 const categoryFilterBtns = document.querySelectorAll(".category-filter-btn");
-
-// brandFilterForm.addEventListener("submit", e => {
-//     console.log("jfldksjklj");
-//     e.preventDefault();
-// });
 
 brandFilterCheckboxes.forEach(brandFilterCheckbox => {
     brandFilterCheckbox.addEventListener("change", e => {
@@ -24,4 +17,18 @@ categoryFilterBtns.forEach(categoryFilterBtn => {
         else url.searchParams.set("category", e.target.value);
         location.href = url;
     });
+});
+
+document.getElementById("price-filter-btn").addEventListener("click", e => {
+    const minPrice = parseInt(document.getElementById("min-price-input").value);
+    const maxPrice = parseInt(document.getElementById("max-price-input").value);
+    const url = new URL(location.href);
+    if(minPrice && maxPrice) {
+        url.searchParams.set("minPrice", minPrice);
+        url.searchParams.set("maxPrice", maxPrice);
+    } else {
+        url.searchParams.delete("minPrice");
+        url.searchParams.delete("maxPrice");
+    }
+    location.href = url;
 });

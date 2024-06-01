@@ -20,7 +20,7 @@
 
     <div class="mx-auto flex space-x-24 lg:container">
         <!-- Brand filter -->
-        <div class="w-1/5 flex flex-col">
+        <div class="w-1/6 flex flex-col">
             <div class="text-lg text-gray-700 border-b border-b-gray-300">BRAND</div>
             <div class="my-4 flex flex-col space-y-2">
                 <span class="flex items-center space-x-2">
@@ -42,10 +42,15 @@
                     <input style="-webkit-appearance: none;" class="brand-filter-checkbox" type="checkbox" name="company" value="HP" <%= locals.query?.company === "HP" ? "checked" : "" %> ><span>HP</span>
                 </span>
             </div>
+            <div class="text-lg text-gray-700 border-b border-b-gray-300">PRICE</div>
+            <div class="my-4 space-x-2">
+                <input id="min-price-input" type="number" value="<%= locals.query?.minPrice %>" placeholder="₹" class="px-2 py-1 w-1/3 border border-gray-400"> - <input id="max-price-input" type="number" value="<%= locals.query?.maxPrice %>" placeholder="₹" class="px-2 py-1 w-1/3 border border-gray-400">
+                <button id="price-filter-btn" class="px-1 py-1 border border-gray-400">Go</button>
+            </div>
         </div>
         <!-- Products -->
         <!-- w-4/5 -->
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
+        <div class="w-5/6 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
             <% if (products.length) { %>
                 <% for (const product of products) { %>
                     <!-- Product -->

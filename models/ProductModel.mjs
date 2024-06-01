@@ -28,10 +28,10 @@ const productSchema = mongoose.Schema({
     },
     desc: [String]
 }, {
-    collection: "products"
+    collection: "products2"
 });
 
 // https://stackoverflow.com/questions/28775051/best-way-to-perform-a-full-text-search-in-mongodb-and-mongoose
 productSchema.index({name: "text", "name": "text"});
 
-export default mongoose.model("products", productSchema);
+export default mongoose.model("products2", productSchema);

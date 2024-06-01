@@ -54,14 +54,28 @@ export async function fetchProduct(req, res) {
 }
 
 export async function fetchProducts(req, res) {
-    const { category, s, company } = req.query;
-    if(category) {
+    const { category, s, company, minPrice, maxPrice } = req.query;
+    // console.log(typeof minPrice);
+    // console.log(minPrice || maxPrice);
+    // console.log(!!(minPrice || maxPrice));
+    /* if(category) {
         const categoryProducts = await ProductModel.find({category});
         if(!categoryProducts) res.status(404);
         else {
             res.status(200).render("products", {
                 query: req.query,
                 products: categoryProducts,
+                cartProducts: fetchCartProducts(req, res)
+            });
+        }
+    } else if(minPrice || maxPrice) {
+        console.log(minPrice, maxPrice);
+        const filteredProducts = await ProductModel.find({price: {$elemMatch: {$gte: parseInt(maxPrice), $lte: parseInt(minPrice)}}});
+        if(!filteredProducts) res.status(404);
+        else {
+            res.status(200).render("products", {
+                query: req.query,
+                products: filteredProducts,
                 cartProducts: fetchCartProducts(req, res)
             });
         }
@@ -93,7 +107,29 @@ export async function fetchProducts(req, res) {
                 cartProducts: fetchCartProducts(req, res)
             });
         }
+    } */
+
+    const filter = {};
+
+    if(category) filter["category"] = category;
+    if(company) filter["company"] = company;
+    if(s) filter["$text"] = {$search: s};
+    // if(minPrice || maxPrice) filter["price"] = {$elemMatch: {$gte: parseInt(minPrice), $lte: parseInt(maxPrice)}};
+    if(minPrice || maxPrice) filter["price"] =  {$gte: parseInt(minPrice), $lte: parseInt(maxPrice)};
+    
+    const filteredProducts = await ProductModel.find(filter).catch(err => {
+        res.sendStatus(500);
+    });
+
+    if(!filteredProducts) res.status(404);
+    else {
+        res.status(200).render("products", {
+            query: req.query,
+            products: filteredProducts,
+            cartProducts: fetchCartProducts(req, res)
+        });
     }
+
 }
 
 export async function sendWhatsapp(req, res) {
