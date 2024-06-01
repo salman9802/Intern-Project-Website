@@ -10,18 +10,20 @@
             <h4 class="text-xl font-semibold py-3 mt-5 border-b border-b-gray-300">Contact</h4>
             <!-- Full Name -->
             <div class="flex flex-col space-y-2 md:space-y-3">
-                <label for="full-name" class="">Full Name</label>
-                <input type="text" name="full-name" id="full-name" class="px-3 py-2 border border-gray-300 outline-none">
+                <label for="full-name" class="peer-invalid:text-red-500">Full Name</label>
+                <input type="text" name="full-name" placeholder="Full name" id="full-name" class="peer px-3 py-2 border border-gray-300 outline-none [&:not(:placeholder-shown):not(:focus):invalid]:border-red-500" pattern="^[A-za-z0-9\s]{2,25}$">
+                <p class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Name should be 2 to 25 characters.</p>
             </div>
             <!-- Phone -->
             <div class="flex flex-col space-y-2 md:space-y-3">
                 <label for="phone" class="">Phone Number</label>
-                <input disabled value="+91XXXXXXXXXX" type="text" name="phone" id="phone" class="px-3 py-2 border border-gray-300 outline-none">
+                <input disabled value="+91XXXXXXXXXX" type="text" name="phone" id="phone" class="peer px-3 py-2 border border-gray-300 outline-none">
             </div>
             <!-- Email address -->
             <div class="flex flex-col space-y-2 md:space-y-3">
                 <label for="email" class="">Email address</label>
-                <input type="text" name="email-id" id="email" class="px-3 py-2 border border-gray-300 outline-none">
+                <input type="text" name="email-id" placeholder="Email address" id="email" class="peer px-3 py-2 border border-gray-300 outline-none [&:not(:placeholder-shown):not(:focus):invalid]:border-red-500" pattern="^[\w\.]+@([\w]+\.)+[\w]{2,4}$">
+                <p class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Please enter valid email address.</p>
             </div>
             <h4 class="text-xl font-semibold py-3 mt-5 border-b border-b-gray-300">Billing Details</h4>
             <!-- Country/Region -->
@@ -36,12 +38,14 @@
             <!-- Street Address -->
             <div class="flex flex-col space-y-2 md:space-y-3">
                 <label for="street-address" class="">Street address</label>
-                <input type="text" name="street-address" id="street-address" class="px-3 py-2 border border-gray-300 outline-none">
+                <input type="text" name="street-address" placeholder="Street Address" id="street-address" class="peer px-3 py-2 border border-gray-300 outline-none [&:not(:placeholder-shown):not(:focus):invalid]:border-red-500" pattern="^[A-za-z0-9\s]{2,60}$">
+                <p class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Street address should be less than 60 characters.</p>
             </div>
             <!-- Town/City -->
             <div class="flex flex-col space-y-2 md:space-y-3">
                 <label for="city" class="">Town/City</label>
-                <input type="text" name="city" id="city" class="px-3 py-2 border border-gray-300 outline-none">
+                <input type="text" name="city" placeholder="Town/City" id="city" class="peer px-3 py-2 border border-gray-300 outline-none [&:not(:placeholder-shown):not(:focus):invalid]:border-red-500" pattern="^[A-za-z0-9\s]{2,25}$">
+                <p class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">City should be less than 25 characters.</p>
             </div>
             <!-- State -->
             <div class="flex flex-col space-y-2 md:space-y-3">
@@ -55,7 +59,8 @@
             <!-- Pin Code -->
             <div class="flex flex-col space-y-2 md:space-y-3">
                 <label for="pincode" class="">Pin Code</label>
-                <input type="number" name="pincode" id="pincode" class="px-3 py-2 border border-gray-300 outline-none">
+                <input type="number" name="pincode" placeholder="Pin code" id="pincode" class="peer px-3 py-2 border border-gray-300 outline-none [&:not(:placeholder-shown):not(:focus):invalid]:border-red-500" pattern="^[0-9]{6}$">
+                <p class="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Pin code should be 6 digits.</p>
             </div>
          </div>
          <!-- Order -->
