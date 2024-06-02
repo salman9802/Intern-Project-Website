@@ -2,17 +2,20 @@ import express from "express";
 
 import ProductRoutes from "./ProductRoutes.mjs";
 import UserRoutes from "./UserRoutes.mjs";
+import AdminRoutes from "./AdminRoutes.mjs";
 import { fetchFeaturedProducts } from "../controllers/ProductController.mjs";
 import { fetchCartProducts } from "../controllers/UserController.mjs";
 
 const router = express.Router();
 
+// Homepage
 router.get("/", async (req, res) => res.render("index", {
     title: "ShopNest | Homepage",
     featured_products: await fetchFeaturedProducts(),
     cartProducts: fetchCartProducts(req, res)
 }));
 
+// Invoice template
 router.get("/templates/invoice", (req, res) => res.render("invoice-template", {order: {
     _id: 12345,
     contact: {
@@ -37,5 +40,8 @@ router.use("/products", ProductRoutes);
 
 // User Routes
 router.use("/user", UserRoutes);
+
+// Admin Routes
+router.use("/admin", AdminRoutes);
 
 export default router;
