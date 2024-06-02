@@ -1,5 +1,5 @@
 <div class="mx-auto my-5 lg:container">
-    <h3>Add Product</h3>
+    <h3 class="text-5xl text-gray-600">Add Product</h3>
     <form action="/admin/add-product" method="POST">
         <div class="space-y-12">
           <div class="border-b border-gray-900/10 pb-12">
@@ -8,7 +8,7 @@
               <div class="sm:col-span-4">
                 <label for="product-name" class="block text-sm font-medium leading-6 text-gray-900">Product Name</label>
                 <div class="mt-2">
-                  <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                  <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 sm:max-w-md">
                     <input type="text" name="product-name" id="product-name" autocomplete="product-name" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Prouct Name">
                   </div>
                 </div>
@@ -17,7 +17,7 @@
               <div class="sm:col-span-4">
                 <label for="product-price" class="block text-sm font-medium leading-6 text-gray-900">Product Price</label>
                 <div class="mt-2">
-                  <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                  <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 sm:max-w-md">
                     <input type="number" name="product-price" id="product-price" autocomplete="product-price" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Product Price">
                   </div>
                 </div>
@@ -26,7 +26,7 @@
               <div class="sm:col-span-4">
                 <label for="product-img-url" class="block text-sm font-medium leading-6 text-gray-900">Product Image URL</label>
                 <div class="mt-2">
-                  <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                  <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 sm:max-w-md">
                     <input type="text" name="product-img-url" id="product-img-url" autocomplete="product-img-url" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Prouct Image URL">
                   </div>
                 </div>
@@ -35,7 +35,7 @@
               <div class="col-span-full">
                 <label for="product-desc" class="block text-sm font-medium leading-6 text-gray-900">Product Description</label>
                 <div class="mt-2">
-                  <textarea id="product-desc" name="product-desc" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                  <textarea id="product-desc" name="product-desc" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"></textarea>
                 </div>
               </div>
       
@@ -49,7 +49,7 @@
                       <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" clip-rule="evenodd" />
                     </svg>
                     <div class="mt-4 flex text-sm leading-6 text-gray-600">
-                      <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                      <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-blue-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-600 focus-within:ring-offset-2 hover:text-blue-500">
                         <span>Upload a file</span>
                         <input id="file-upload" name="file-upload" type="file" class="sr-only">
                       </label>
@@ -72,7 +72,7 @@
                 <div class="mt-6 space-y-6">
                   <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                      <input id="tv" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" value="tv">
+                      <input id="tv" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" value="tv">
                     </div>
                     <div class="text-sm leading-6">
                       <label for="tv" class="font-medium text-gray-900">TV</label>
@@ -81,7 +81,7 @@
                   
                   <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                      <input id="phone" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" value="phone">
+                      <input id="phone" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" value="phone">
                     </div>
                     <div class="text-sm leading-6">
                       <label for="phone" class="font-medium text-gray-900">Phone</label>
@@ -90,7 +90,7 @@
 
                   <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                      <input id="desktop" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" value="desktop">
+                      <input id="desktop" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" value="desktop">
                     </div>
                     <div class="text-sm leading-6">
                       <label for="desktop" class="font-medium text-gray-900">Desktop</label>
@@ -99,7 +99,7 @@
 
                   <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                      <input id="laptop" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" value="laptop">
+                      <input id="laptop" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" value="laptop">
                     </div>
                     <div class="text-sm leading-6">
                       <label for="laptop" class="font-medium text-gray-900">Laptop</label>
@@ -108,7 +108,7 @@
 
                   <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                      <input id="home-appliance" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" value="home-appliance">
+                      <input id="home-appliance" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" value="home-appliance">
                     </div>
                     <div class="text-sm leading-6">
                       <label for="home-appliance" class="font-medium text-gray-900">Home Appliance</label>
@@ -117,7 +117,7 @@
 
                   <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
-                      <input id="ac" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" value="ac">
+                      <input id="ac" name="product-category" type="radio" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" value="ac">
                     </div>
                     <div class="text-sm leading-6">
                       <label for="ac" class="font-medium text-gray-900">AC</label>
@@ -129,32 +129,32 @@
                 <legend class="text-sm font-semibold leading-6 text-gray-900">Product Brand</legend>
                 <div class="mt-6 space-y-6">
                   <div class="flex items-center gap-x-3">
-                    <input id="lg" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" value="lg">
+                    <input id="lg" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-600" value="lg">
                     <label for="lg" class="block text-sm font-medium leading-6 text-gray-900">LG</label>
                   </div>
 
                   <div class="flex items-center gap-x-3">
-                    <input id="voltas" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" value="voltas">
+                    <input id="voltas" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-600" value="voltas">
                     <label for="voltas" class="block text-sm font-medium leading-6 text-gray-900">Voltas</label>
                   </div>
 
                   <div class="flex items-center gap-x-3">
-                    <input id="asus" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" value="asus">
+                    <input id="asus" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-600" value="asus">
                     <label for="asus" class="block text-sm font-medium leading-6 text-gray-900">ASUS</label>
                   </div>
 
                   <div class="flex items-center gap-x-3">
-                    <input id="acer" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" value="acer">
+                    <input id="acer" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-600" value="acer">
                     <label for="acer" class="block text-sm font-medium leading-6 text-gray-900">Acer</label>
                   </div>
 
                   <div class="flex items-center gap-x-3">
-                    <input id="lenovo" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" value="lenovo">
+                    <input id="lenovo" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-600" value="lenovo">
                     <label for="lenovo" class="block text-sm font-medium leading-6 text-gray-900">Lenovo</label>
                   </div>
 
                   <div class="flex items-center gap-x-3">
-                    <input id="hp" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" value="hp">
+                    <input id="hp" name="product-company" type="radio" class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-600" value="hp">
                     <label for="hp" class="block text-sm font-medium leading-6 text-gray-900">HP</label>
                   </div>
                 </div>
@@ -165,7 +165,7 @@
       
         <div class="mt-6 flex items-center justify-end gap-x-6">
           <a href="/admin" type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</a>
-          <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+          <button type="submit" class="rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Save</button>
         </div>
       </form>
 </div>

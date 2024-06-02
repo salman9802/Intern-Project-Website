@@ -42,6 +42,12 @@ export function addProduct(req, res) {
     } catch (err) {
         console.log(err);
     }
+}
 
-    
+export async function removeProduct(req, res) {
+    const { slug } = req.body;
+    const result = await ProductModel.deleteOne({slug}).catch(err => {
+        res.status(500).json({code: 500, msg: err});
+    });
+    res.redirect("/admin");
 }
