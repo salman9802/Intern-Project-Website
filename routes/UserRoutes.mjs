@@ -12,7 +12,7 @@ router.get("/checkout", (req, res) => {
     const cartProducts = fetchCartProducts(req, res);
     if(!cartProducts) res.redirect("/");
     else {
-        const total = cartProducts.reduce((accumulator, currValue) => accumulator + currValue.price, 0);
+        const total = cartProducts.reduce((accumulator, currValue) => accumulator + (currValue.quantity * currValue.price), 0);
         res.status(200).render("checkout", {
             cartProducts,
             total

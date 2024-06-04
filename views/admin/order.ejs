@@ -1,0 +1,52 @@
+<div class="flex flex-col space-y-8">
+    <!-- Info -->
+    <div class="w-11/12 mx-auto p-4 border border-gray-400 flex flex-col">
+        <h3 class="text-4xl text-gray-800 border-b border-b-gray-400 py-5">Information</h3>
+        <div class="flex justify-between">
+            <div class="p-4 flex flex-col space-y-5">
+                <p class="text-2xl">Order Id: <span class="font-semibold text-lg"><%= order._id %></span></p>
+                <p class="text-2xl">Date: <span class="font-semibold text-lg"><%= order.datetime %></span></p>
+                <p class="text-2xl">Total: <span class="text-xl">₹ <%= order.total?.toLocaleString(undefined, {minimumFractionDigits: 2}) %></span></p>
+            </div>
+            <div class="p-4 flex flex-col space-y-5">
+                <p class="text-2xl">Customer Name: <span class="text-xl"><%= order.contact.full_name %></span></p>
+                <p class="text-2xl">Email Id: <span class="text-xl"><%= order.contact.email_id %></span></p>
+                <p class="text-2xl">Address: <span class="text-xl"><%= order.addressStr %></span></p>
+            </div>
+        </div>
+    </div>
+    <!-- Product(s) table -->
+    <div class="w-11/12 mx-auto p-4 border border-gray-400 flex flex-col">
+        <h3 class="text-4xl text-gray-800 border-b border-b-gray-400 py-5">Products</h3>
+        <table class="mx-auto w-full" style="border-collapse: collapse;">
+            <thead class="text-center border-b border-b-gray-400">
+                <tr>
+                    <th class="py-4">Id</th>
+                    <th class="py-4">Name</th>
+                    <th class="py-4">Category</th>
+                    <th class="py-4">Company</th>
+                    <th class="py-4">Price</th>
+                    <th class="py-4">Quantity</th>
+                    <th class="py-4">Total</th>
+                </tr>
+            </thead>
+            <tbody class="">
+                <% for( const product of order.products ) { %>
+                    <tr class="text-center">
+                        <td class="py-4 font-semibold"><%= product._id %></td>
+                        <td class="py-4"><%= product.name %></td>
+                        <td class="py-4"><%= product.category %></td>
+                        <td class="py-4"><%= product.company %></td>
+                        <td class="py-4">₹<%= product.price?.toLocaleString(undefined, {minimumFractionDigits: 2}) %></td>
+                        <td class="py-4"><%= product.quantity %></td>
+                        <td class="py-4">₹<%= (product.price * product.quantity)?.toLocaleString(undefined, {minimumFractionDigits: 2}) %></td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+    <!-- Action(s) -->
+    <form method="POST" class="flex justify-center items-center">
+        <button formmethod="POST" formaction="/admin/orders/<%= order._id %>/complete" type="submit" class="px-3 py-1 border border-gray-400 hover:bg-blue-600 hover:text-white">Mark as Complete</button>
+    </form>
+</div>

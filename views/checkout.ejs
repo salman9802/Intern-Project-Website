@@ -77,7 +77,7 @@
                     <% for(const product of cartProducts) { %>
                         <div class="flex py-3 items-center justify-between">
                             <span class="text-gray-600"><%= product.name %></span>
-                            <span class="text-gray-600">&#8377;<%= product.price.toLocaleString() %></span>
+                            <span class="text-gray-600">&#8377;<%= (product.price * product.quantity).toLocaleString() %></span>
                         </div>
                     <% } %>
                 <% } %>

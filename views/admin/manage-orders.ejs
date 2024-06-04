@@ -1,0 +1,30 @@
+<% if (locals.orders?.length && locals.orders?.notComplete) { %>
+    <table class="mx-auto mt-12 w-11/12 border-x border-x-gray-400" style="border-collapse: collapse;">
+        <thead class="text-center border-b border-b-gray-400">
+            <tr>
+                <th class="py-4">Id</th>
+                <th class="py-4">Date & Time</th>
+                <th class="py-4">Total Units</th>
+                <th class="py-4">Total</th>
+                <th class="py-4">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-400">
+            <% for( const order of orders ) { %>
+                <% if (order.complete != "Complete") { %>
+                    <tr class="text-center">
+                        <td class="py-4 font-semibold"><%= order._id %></td>
+                        <td class="py-4"><%= order.datetime %></td>
+                        <td class="py-4"><%= order.units %></td>
+                        <td class="py-4">₹<%= order.total?.toLocaleString(undefined, {minimumFractionDigits: 2}) %></td>
+                        <td class="py-4">
+                            <a href="/admin/orders/<%= order._id %>" class="px-3 py-1 border border-gray-400 hover:bg-blue-600 hover:text-white">View Order</a>
+                        </td>
+                    </tr>
+                <% } %>
+            <% } %>
+        </tbody>
+    </table>
+<% } else { %>
+    <div class="mt-12 flex justify-center items-center text-6xl text-gray-700">No Orders</div>
+<% } %>

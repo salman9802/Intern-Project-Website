@@ -394,7 +394,8 @@ export async function checkoutController(req, res)  {
                 state,
                 pincode
             },
-            total: totalAmount
+            total: totalAmount,
+            complete: "Not Complete"
         });
         order.save();
         res.order = order;

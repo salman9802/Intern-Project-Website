@@ -1,0 +1,57 @@
+<div class="w-11/12 mx-auto p-4  space-y-12">
+    <h3 class="p-6 text-5xl text-gray-800 border-b border-b-gray-400">Sales Summary</h3>
+    <div class="flex flex-col mx-auto lg:w-1/2">
+        <div class="border-b border-b-gray-400 pb-5 flex flex-col justify-between items-center md:flex-row">
+            <p class="flex flex-col">
+                <span class="text-6xl font-semibold">₹<%= report.total_earned?.toLocaleString(undefined, {minimumFractionDigits: 2}) %></span>
+                <span class="text-gray-500">Total Earned</span>
+            </p>
+            <p class="flex flex-col">
+                <span class="text-6xl font-semibold"><%= report.sales %></span>
+                <span class="text-gray-500">Sales</span>
+            </p>
+            <p class="flex flex-col">
+                <span class="text-6xl font-semibold"><%= report.units_sold %></span>
+                <span class="text-gray-500">Units Sold</span>
+            </p>
+        </div>
+        <div class="border-b border-b-gray-400 pb-5 mt-8 flex flex-col justify-between items-center md:flex-row">
+            <p class="flex flex-col">
+                <span class="text-6xl font-semibold">₹<%= report.average_earned?.toLocaleString(undefined, {minimumFractionDigits: 2}) %></span>
+                <span class="text-gray-500">Average Earned</span>
+            </p>
+            <p class="flex flex-col">
+                <span class="text-6xl font-semibold capitalize"><%= report.highest_sold %></span>
+                <span class="text-gray-500">Highest Sold</span>
+            </p>
+            <p class="flex flex-col">
+                <span class="text-6xl font-semibold capitalize"><%= report.highest_brand %></span>
+                <span class="text-gray-500">Highest Brand</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- <table class="mx-auto mt-12 w-11/12 border-x border-x-gray-400" style="border-collapse: collapse;">
+        <thead class="text-center border-b border-b-gray-400">
+            <tr>
+                <th class="py-4">Id</th>
+                <th class="py-4">Date & Time</th>
+                <th class="py-4">Total Units</th>
+                <th class="py-4">Total</th>
+                <th class="py-4">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-400">
+            <% //for( const order of orders ) { %>
+                <% //if (order.complete != "Complete") { %>
+                    <tr class="text-center">
+                        <td class="py-4 font-semibold">order._id</td>
+                        <td class="py-4">order.datetime</td>
+                        <td class="py-4">order.units</td>
+                        <td class="py-4">₹order.total</td>
+                    </tr>
+                <% //} %>
+            <% //} %>
+        </tbody>
+    </table> -->
+</div>
