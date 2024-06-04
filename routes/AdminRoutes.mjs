@@ -55,7 +55,7 @@ router.get("/logout", (req, res) => {
 });
 
 
-router.get("/add-product", (req, res) => res.status(200).render("admin/add-product"));
+router.get("/add-product", authenticateLogin, (req, res) => res.status(200).render("admin/add-product"));
 
 router.post("/add-product", addProduct);
 
@@ -84,12 +84,14 @@ router.get("/remove-product", authenticateLogin, async (req, res) => {
     }
 });
 
-router.post("/remove-product", removeProduct);
+router.post("/remove-product", authenticateLogin, removeProduct);
 
 
-router.get("/manage-orders", async(req, res) => {
+router.get("/manage-orders", authenticateLogin, async(req, res) => {
     try {
-        const orders = await OrderModel.find();
+        let orders = await OrderModel.find();
+        // filter orders not completed
+        orders = orders.filter(order => order.complete !== "Complete");
         // Calculate total units and format date
         orders.forEach(order => {
             order.units = order.products.reduce((accumulator, currProduct) => accumulator + parseInt(currProduct.quantity), 0);
@@ -97,18 +99,16 @@ router.get("/manage-orders", async(req, res) => {
             const date = new Date(order.createdAt);
             order.datetime = `${date.toDateString()} ${date.toTimeString().substring(0, 8)}`;
         });
-
-        orders.notCompleted = orders.filter(order => order.complete !== "Complete");
-
         res.status(200).render("admin/manage-orders", {
             orders
         });
     } catch (err) {
-        res.status(500).send("INTERNAL SERVER ERROR")
+        console.log(err);
+        res.status(500).send(err.msg);
     }
 });
 
-router.get("/orders/:orderId", async(req, res) => {
+router.get("/orders/:orderId", authenticateLogin, async(req, res) => {
     const { orderId } = req.params;
     if(!orderId) res.status(500).send("Server Error");
     else {
@@ -137,14 +137,14 @@ router.post("/orders/:orderId/complete", authenticateLogin, async(req, res) => {
         });
         if(!orders) res.status(404).send("Order Not found");
         else {
-            OrderModel.updateOne({_id: orderId}, {complete: "Complete"});
+            await OrderModel.updateOne({_id: orderId}, {complete: "Complete"});
             res.redirect("/admin");
         }
     }
 });
 
 
-router.get("/view-sales", async(req, res) => {
+router.get("/view-sales", authenticateLogin, async(req, res) => {
     const report = {};
     try {
         const completedOrders = await OrderModel.find({complete: "Complete"});
